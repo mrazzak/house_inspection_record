@@ -39,6 +39,46 @@ button {
   padding: max(18px, env(safe-area-inset-top)) 18px 34px;
 }
 
+.login-shell {
+  min-height: calc(100vh - 52px);
+  display: grid;
+  place-items: center;
+}
+
+.login-panel {
+  width: min(460px, 100%);
+  display: grid;
+  gap: 14px;
+  padding: 24px;
+  border: 1px solid #dce5e1;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 18px 52px rgba(22, 43, 39, 0.14);
+}
+
+.login-panel h1 {
+  font-size: 1.7rem;
+}
+
+.login-copy,
+.login-hint {
+  margin: 0;
+  color: #60716d;
+}
+
+.login-hint {
+  font-size: 0.82rem;
+}
+
+.form-error {
+  padding: 10px 12px;
+  border: 1px solid #e3b4b4;
+  border-radius: 7px;
+  background: #fff0f0;
+  color: #a51e1e;
+  font-weight: 760;
+}
+
 .topbar {
   display: flex;
   align-items: center;
@@ -98,7 +138,7 @@ h3 {
 
 .property-grid {
   display: grid;
-  grid-template-columns: 1.5fr 0.7fr 0.9fr 0.7fr;
+  grid-template-columns: 1.5fr 0.7fr 0.9fr 0.7fr 1fr;
   gap: 14px;
 }
 
@@ -133,6 +173,17 @@ h3 {
 
 .field.compact {
   gap: 6px;
+}
+
+.field.is-disabled span {
+  color: #9aa6a2;
+}
+
+.field.is-disabled select,
+.field.is-disabled input,
+.field.is-disabled textarea {
+  background: #eef2f0;
+  color: #8a9692;
 }
 
 input,
@@ -170,6 +221,98 @@ select:focus {
   margin: 0;
   color: #60716d;
   font-size: 0.92rem;
+}
+
+.account-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 14px;
+  align-items: start;
+}
+
+.account-panel p {
+  margin: 0;
+  color: #60716d;
+}
+
+.password-form {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) auto;
+  gap: 10px;
+  align-items: end;
+  padding-top: 12px;
+  border-top: 1px solid #e2ebe7;
+}
+
+.password-form .form-error {
+  grid-column: 1 / -1;
+}
+
+.user-create-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 0.6fr 0.7fr 0.8fr auto;
+  gap: 10px;
+  align-items: end;
+  margin-bottom: 14px;
+}
+
+.add-user-button {
+  min-width: 118px;
+}
+
+.user-table-wrap {
+  overflow-x: auto;
+  border: 1px solid #dce5e1;
+  border-radius: 8px;
+}
+
+.user-table {
+  width: 100%;
+  min-width: 860px;
+  border-collapse: collapse;
+  background: #fff;
+}
+
+.user-table th,
+.user-table td {
+  padding: 10px;
+  border-bottom: 1px solid #e4ece9;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.user-table th {
+  color: #526460;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+}
+
+.user-table tr:last-child td {
+  border-bottom: 0;
+}
+
+.status-active,
+.status-inactive {
+  display: inline-flex;
+  min-height: 28px;
+  align-items: center;
+  padding: 5px 9px;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.status-active {
+  background: #edf8f1;
+  color: #2c6d4a;
+  border: 1px solid #c5e2d0;
+}
+
+.status-inactive {
+  background: #fff0f0;
+  color: #a51e1e;
+  border: 1px solid #e3b4b4;
 }
 
 .primary-action,
@@ -291,6 +434,113 @@ figure img {
 .checks-panel {
   display: grid;
   gap: 12px;
+}
+
+.checks-workspace {
+  display: grid;
+  grid-template-columns: minmax(180px, 240px) minmax(0, 1fr);
+  gap: 14px;
+  align-items: start;
+}
+
+.checks-list {
+  display: grid;
+  gap: 12px;
+  min-width: 0;
+}
+
+.group-tabs {
+  position: sticky;
+  top: 12px;
+  display: grid;
+  gap: 7px;
+  max-height: calc(100vh - 24px);
+  overflow: auto;
+  padding: 10px;
+  border: 1px solid #dce5e1;
+  border-radius: 8px;
+  background: #fbfcfc;
+}
+
+.group-tabs-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+  margin-bottom: 3px;
+}
+
+.mini-action {
+  min-height: 32px;
+  padding: 6px 8px;
+  border: 1px solid #c9ddd6;
+  border-radius: 7px;
+  background: #e5f0ec;
+  color: #244b5a;
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.group-tab {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 8px;
+  align-items: center;
+  width: 100%;
+  min-height: 38px;
+  padding: 8px 9px;
+  border: 1px solid #d7e3df;
+  border-radius: 7px;
+  background: #fff;
+  color: #35534d;
+  text-align: left;
+}
+
+.group-tab.is-selected {
+  border-color: #244b5a;
+  background: #244b5a;
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(36, 75, 90, 0.15);
+}
+
+.group-tab-title {
+  overflow: hidden;
+  font-size: 0.84rem;
+  font-weight: 800;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.group-tab-count {
+  min-width: 28px;
+  padding: 3px 7px;
+  border-radius: 999px;
+  background: #edf5f2;
+  color: #48625d;
+  font-size: 0.76rem;
+  font-weight: 850;
+  text-align: center;
+}
+
+.group-tab.is-selected .group-tab-count {
+  background: rgba(255, 255, 255, 0.18);
+  color: #fff;
+}
+
+.group-tab-count.has-deficiency {
+  background: #fff0f0;
+  color: #a51e1e;
+}
+
+.empty-selection {
+  display: grid;
+  min-height: 150px;
+  place-items: center;
+  padding: 18px;
+  border: 1px dashed #cbd8d4;
+  border-radius: 8px;
+  background: #f9fbfa;
+  color: #74817d;
+  text-align: center;
 }
 
 .check-group {
@@ -524,12 +774,25 @@ button.chip {
     grid-template-columns: 1fr 1fr;
   }
 
+  .password-form,
+  .user-create-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .add-user-button {
+    width: 100%;
+  }
+
   .field.wide {
     grid-column: 1 / -1;
   }
 
   .triple-grid {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .checks-workspace {
+    grid-template-columns: minmax(150px, 190px) minmax(0, 1fr);
   }
 }
 
@@ -548,6 +811,12 @@ button.chip {
     flex-direction: column;
   }
 
+  .account-panel,
+  .password-form,
+  .user-create-grid {
+    grid-template-columns: 1fr;
+  }
+
   h1 {
     font-size: 1.65rem;
   }
@@ -559,6 +828,7 @@ button.chip {
   .property-grid,
   .library-grid,
   .template-grid,
+  .checks-workspace,
   .triple-grid,
   .add-row,
   .library-box .add-row:has(select) {
@@ -578,5 +848,24 @@ button.chip {
   .check-group-head {
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  .group-tabs {
+    position: static;
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(132px, max-content);
+    grid-template-columns: none;
+    overflow-x: auto;
+    overflow-y: hidden;
+    max-height: none;
+  }
+
+  .group-tabs-actions {
+    grid-auto-flow: column;
+    grid-template-columns: none;
+  }
+
+  .group-tab {
+    min-width: 132px;
   }
 }

@@ -1,5 +1,8 @@
 const STORAGE_KEY = "finalinspect-state-v1";
+const BACKUP_KEY = "finalinspect-state-backup-v1";
 const REPORT_KEY = "finalinspect-last-report-v1";
+const USERS_KEY = "finalinspect-users-v1";
+const SESSION_KEY = "finalinspect-session-v1";
 const DB_NAME = "finalinspect-db";
 const STORE_NAME = "inspections";
 
@@ -52,6 +55,8 @@ const defaultTemplate = {
   bathrooms: 2,
   basement: "None",
   legalSuite: "No",
+  suiteBedrooms: 1,
+  suiteBathrooms: 1,
   propertyStyle: "Detached",
   ensuite: "Yes",
   fireplaces: 1,
@@ -63,10 +68,12 @@ const defaultState = {
   propertyType: "Residential",
   inspector: "",
   inspectionDate: new Date().toISOString().slice(0, 10),
+  reportFileName: "",
   locations: defaultLocations,
   types: defaultTypes,
   criteria: defaultCriteria,
   template: defaultTemplate,
+  selectedGroups: [],
   exteriorPhotos: [],
   checks: defaultCriteria.map((criterion) => ({
     id: crypto.randomUUID(),
@@ -84,15 +91,24 @@ let state = structuredClone(defaultState);
 let activePhotoHandler = null;
 let reportDialog = null;
 let toastTimer = null;
+let users = [];
+let currentUser = null;
+let authView = "login";
+let loginForm = { username: "", password: "", error: "" };
+let passwordForm = { current: "", next: "", confirm: "", error: "" };
+let newUserForm = { username: "", password: "", role: "user", lifetime: "Yes", activeUntil: "" };
 
 async function loadState() {
   try {
     const saved = await idbGet(STORAGE_KEY);
-    return saved ? { ...structuredClone(defaultState), ...saved } : structuredClone(defaultState);
+    const backup = loadBackupState();
+    const restored = pickNewestState(saved, backup);
+    return restored ? mergeSavedState(restored, saved) : structuredClone(defaultState);
   } catch {
     try {
+      const backup = loadBackupState();
       const legacy = localStorage.getItem(STORAGE_KEY);
-      return legacy ? { ...structuredClone(defaultState), ...JSON.parse(legacy) } : structuredClone(defaultState);
+      return mergeSavedState(backup || (legacy ? JSON.parse(legacy) : null));
     } catch {
       return structuredClone(defaultState);
     }
@@ -100,6 +116,8 @@ async function loadState() {
 }
 
 function saveState() {
+  state.savedAt = Date.now();
+  saveBackupState(state);
   return idbSet(STORAGE_KEY, state).catch(() => {
     try {
       localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
@@ -107,6 +125,109 @@ function saveState() {
       alert("This device could not save the latest change. Remove a few photos or free browser storage, then try again.");
     }
   });
+}
+
+async function loadUsers() {
+  const saved = localStorage.getItem(USERS_KEY);
+  if (saved) return JSON.parse(saved);
+  const admin = {
+    id: crypto.randomUUID(),
+    username: "admin",
+    passwordHash: await hashPassword("admin123"),
+    role: "admin",
+    lifetime: true,
+    activeUntil: "",
+    createdAt: new Date().toISOString()
+  };
+  localStorage.setItem(USERS_KEY, JSON.stringify([admin]));
+  return [admin];
+}
+
+function saveUsers() {
+  localStorage.setItem(USERS_KEY, JSON.stringify(users));
+}
+
+function loadSession() {
+  try {
+    const session = JSON.parse(localStorage.getItem(SESSION_KEY) || "null");
+    if (!session?.userId) return null;
+    const user = users.find((candidate) => candidate.id === session.userId);
+    return user && isUserActive(user) ? user : null;
+  } catch {
+    return null;
+  }
+}
+
+function saveSession(user) {
+  localStorage.setItem(SESSION_KEY, JSON.stringify({ userId: user.id, username: user.username, loggedInAt: new Date().toISOString() }));
+}
+
+async function hashPassword(password) {
+  const bytes = new TextEncoder().encode(password);
+  const hash = await crypto.subtle.digest("SHA-256", bytes);
+  return [...new Uint8Array(hash)].map((byte) => byte.toString(16).padStart(2, "0")).join("");
+}
+
+function isUserActive(user) {
+  if (user.lifetime) return true;
+  if (!user.activeUntil) return false;
+  const end = new Date(`${user.activeUntil}T23:59:59`);
+  return end >= new Date();
+}
+
+function isAdmin() {
+  return currentUser?.role === "admin";
+}
+
+function loadBackupState() {
+  try {
+    const backup = localStorage.getItem(BACKUP_KEY);
+    return backup ? JSON.parse(backup) : null;
+  } catch {
+    return null;
+  }
+}
+
+function saveBackupState(nextState) {
+  try {
+    localStorage.setItem(BACKUP_KEY, JSON.stringify(stripPhotoData(nextState)));
+  } catch {
+    // Full photo evidence can exceed localStorage, so IndexedDB remains the source for images.
+  }
+}
+
+function stripPhotoData(value) {
+  const copy = structuredClone(value);
+  copy.exteriorPhotos = copy.exteriorPhotos?.map(({ id, name, createdAt }) => ({ id, name, createdAt, dataUrl: "" })) || [];
+  copy.checks = copy.checks?.map((check) => ({
+    ...check,
+    photos: check.photos?.map(({ id, name, createdAt }) => ({ id, name, createdAt, dataUrl: "" })) || []
+  })) || [];
+  return copy;
+}
+
+function pickNewestState(primary, backup) {
+  if (!primary) return backup;
+  if (!backup) return primary;
+  return (backup.savedAt || 0) > (primary.savedAt || 0) ? backup : primary;
+}
+
+function mergeSavedState(saved, photoSource = saved) {
+  if (!saved) return structuredClone(defaultState);
+  const merged = { ...structuredClone(defaultState), ...saved };
+  if (photoSource && photoSource !== saved) {
+    merged.exteriorPhotos = mergePhotos(saved.exteriorPhotos, photoSource.exteriorPhotos);
+    merged.checks = merged.checks.map((check) => {
+      const sourceCheck = photoSource.checks?.find((candidate) => candidate.id === check.id);
+      return { ...check, photos: mergePhotos(check.photos, sourceCheck?.photos) };
+    });
+  }
+  return merged;
+}
+
+function mergePhotos(savedPhotos = [], sourcePhotos = []) {
+  const byId = new Map((sourcePhotos || []).map((photo) => [photo.id, photo]));
+  return (savedPhotos || []).map((photo) => byId.get(photo.id)?.dataUrl ? byId.get(photo.id) : photo).filter((photo) => photo.dataUrl !== "");
 }
 
 function openDb() {
@@ -191,10 +312,17 @@ function el(tag, attrs = {}, children = []) {
 
 function render() {
   const app = document.querySelector("#app");
+  if (!currentUser) {
+    app.innerHTML = "";
+    app.append(renderLoginPage());
+    return;
+  }
   const deficiencies = state.checks.filter((check) => check.status === "Deficiency");
   app.innerHTML = "";
   app.append(
     renderHeader(deficiencies.length),
+    renderAccountPanel(),
+    ...(isAdmin() ? [renderUserManagement()] : []),
     renderPropertyPanel(),
     renderTemplatePanel(),
     renderExteriorPhotos(),
@@ -213,6 +341,14 @@ function renderHeader(deficiencyCount) {
       el("h1", { text: "Final Inspection Record Application" })
     ]),
     el("div", { class: "topbar-actions" }, [
+      el("button", {
+        class: "ghost-action",
+        type: "button",
+        onClick: logout
+      }, [
+        icon("log-out"),
+        el("span", { text: "Logout" })
+      ]),
       el("button", {
         class: "secondary-action",
         type: "button",
@@ -233,12 +369,252 @@ function renderHeader(deficiencyCount) {
   ]);
 }
 
+function renderLoginPage() {
+  return el("main", { class: "login-shell" }, [
+    el("section", { class: "login-panel" }, [
+      el("p", { class: "eyebrow", text: "Secure access" }),
+      el("h1", { text: "Final Inspection Record Application" }),
+      el("p", { class: "login-copy", text: "Sign in to view inspection records, manage evidence, and create reports." }),
+      loginForm.error ? el("div", { class: "form-error", text: loginForm.error }) : el("span"),
+      el("label", { class: "field" }, [
+        el("span", { text: "Username" }),
+        loginInput("text", loginForm.username, (value) => (loginForm.username = value), "Username")
+      ]),
+      el("label", { class: "field" }, [
+        el("span", { text: "Password" }),
+        loginInput("password", loginForm.password, (value) => (loginForm.password = value), "Password")
+      ]),
+      el("button", { class: "primary-action full", type: "button", onClick: login }, [
+        icon("log-in"),
+        el("span", { text: "Login" })
+      ]),
+      el("p", { class: "login-hint", text: "Initial admin login: admin / admin123" })
+    ])
+  ]);
+}
+
+function loginInput(type, value, onInput, placeholder) {
+  const input = el("input", { type, placeholder });
+  input.value = value;
+  input.addEventListener("input", () => onInput(input.value));
+  input.addEventListener("keydown", (event) => {
+    if (event.key === "Enter") login();
+  });
+  return input;
+}
+
+async function login() {
+  const username = loginForm.username.trim();
+  const passwordHash = await hashPassword(loginForm.password);
+  const user = users.find((candidate) => candidate.username.toLowerCase() === username.toLowerCase() && candidate.passwordHash === passwordHash);
+  if (!user) {
+    loginForm.error = "Username or password is incorrect.";
+    render();
+    return;
+  }
+  if (!isUserActive(user)) {
+    loginForm.error = "This user account is not active.";
+    render();
+    return;
+  }
+  currentUser = user;
+  loginForm = { username: "", password: "", error: "" };
+  saveSession(user);
+  render();
+}
+
+function logout() {
+  currentUser = null;
+  localStorage.removeItem(SESSION_KEY);
+  render();
+}
+
+function renderAccountPanel() {
+  const expiry = currentUser.lifetime ? "Lifetime pass" : `Active until ${currentUser.activeUntil || "not set"}`;
+  return el("section", { class: "panel account-panel" }, [
+    el("div", {}, [
+      el("h2", { text: `Signed in as ${currentUser.username}` }),
+      el("p", { text: `${currentUser.role === "admin" ? "Administrator" : "User"} | ${expiry}` })
+    ]),
+    el("div", { class: "account-password" }, [
+      el("button", { class: "secondary-action", type: "button", onClick: () => toggleAuthView("password") }, [
+        icon("key"),
+        el("span", { text: "Change password" })
+      ])
+    ]),
+    ...(authView === "password" ? [renderPasswordForm()] : [])
+  ]);
+}
+
+function toggleAuthView(view) {
+  authView = authView === view ? "login" : view;
+  passwordForm.error = "";
+  render();
+}
+
+function renderPasswordForm() {
+  return el("div", { class: "password-form" }, [
+    passwordForm.error ? el("div", { class: "form-error", text: passwordForm.error }) : el("span"),
+    formInput("Current password", "password", passwordForm.current, (value) => (passwordForm.current = value)),
+    formInput("New password", "password", passwordForm.next, (value) => (passwordForm.next = value)),
+    formInput("Confirm new password", "password", passwordForm.confirm, (value) => (passwordForm.confirm = value)),
+    el("button", { class: "primary-action", type: "button", onClick: changeOwnPassword }, [
+      icon("save"),
+      el("span", { text: "Update password" })
+    ])
+  ]);
+}
+
+function formInput(label, type, value, onInput) {
+  const input = el("input", { type });
+  input.value = value;
+  input.addEventListener("input", () => onInput(input.value));
+  return el("label", { class: "field" }, [el("span", { text: label }), input]);
+}
+
+async function changeOwnPassword() {
+  if (await hashPassword(passwordForm.current) !== currentUser.passwordHash) {
+    passwordForm.error = "Current password is incorrect.";
+    render();
+    return;
+  }
+  if (passwordForm.next.length < 6) {
+    passwordForm.error = "New password must be at least 6 characters.";
+    render();
+    return;
+  }
+  if (passwordForm.next !== passwordForm.confirm) {
+    passwordForm.error = "New passwords do not match.";
+    render();
+    return;
+  }
+  currentUser.passwordHash = await hashPassword(passwordForm.next);
+  users = users.map((user) => user.id === currentUser.id ? currentUser : user);
+  saveUsers();
+  passwordForm = { current: "", next: "", confirm: "", error: "" };
+  authView = "login";
+  showToast("Password updated.");
+  render();
+}
+
+function renderUserManagement() {
+  return el("section", { class: "panel user-panel" }, [
+    sectionTitle("User Management", "Admin users can add users, set access dates, and grant lifetime passes."),
+    el("div", { class: "user-create-grid" }, [
+      formInput("Username", "text", newUserForm.username, (value) => (newUserForm.username = value)),
+      formInput("Password", "password", newUserForm.password, (value) => (newUserForm.password = value)),
+      labeledControl("Role", selectControl(["user", "admin"], newUserForm.role, (value) => {
+        newUserForm.role = value;
+        saveState();
+      })),
+      labeledControl("Lifetime pass", selectControl(["Yes", "No"], newUserForm.lifetime, (value) => {
+        newUserForm.lifetime = value;
+        render();
+      })),
+      field("Active until", "date", newUserForm.activeUntil, (value) => (newUserForm.activeUntil = value), "", [], newUserForm.lifetime === "Yes"),
+      el("button", { class: "primary-action add-user-button", type: "button", onClick: addUser }, [
+        icon("plus"),
+        el("span", { text: "Add user" })
+      ])
+    ]),
+    el("div", { class: "user-table-wrap" }, [
+      el("table", { class: "user-table" }, [
+        el("thead", {}, [
+          el("tr", {}, ["Username", "Role", "Status", "Lifetime", "Active until", "Password", ""].map((heading) => el("th", { text: heading })))
+        ]),
+        el("tbody", {}, users.map(renderUserRow))
+      ])
+    ])
+  ]);
+}
+
+function renderUserRow(user) {
+  return el("tr", {}, [
+    el("td", { text: user.username }),
+    el("td", {}, [selectControl(["user", "admin"], user.role, (value) => updateUser(user.id, { role: value }))]),
+    el("td", {}, [el("span", { class: isUserActive(user) ? "status-active" : "status-inactive", text: isUserActive(user) ? "Active" : "Inactive" })]),
+    el("td", {}, [selectControl(["Yes", "No"], user.lifetime ? "Yes" : "No", (value) => updateUser(user.id, { lifetime: value === "Yes" }))]),
+    el("td", {}, [userDateInput(user)]),
+    el("td", {}, [userPasswordButton(user)]),
+    el("td", {}, [el("button", { class: "icon-button danger", type: "button", title: "Delete user", disabled: user.id === currentUser.id ? "true" : null, onClick: () => deleteUser(user.id) }, [icon("trash")])])
+  ]);
+}
+
+function userDateInput(user) {
+  const input = el("input", { type: "date" });
+  input.value = user.activeUntil || "";
+  input.disabled = user.lifetime;
+  input.addEventListener("change", () => updateUser(user.id, { activeUntil: input.value }));
+  return input;
+}
+
+function userPasswordButton(user) {
+  return el("button", { class: "secondary-action", type: "button", onClick: () => resetUserPassword(user.id) }, [
+    icon("key"),
+    el("span", { text: "Reset" })
+  ]);
+}
+
+async function addUser() {
+  const username = newUserForm.username.trim();
+  if (!username || newUserForm.password.length < 6) {
+    showToast("Enter a username and password of at least 6 characters.");
+    return;
+  }
+  if (users.some((user) => user.username.toLowerCase() === username.toLowerCase())) {
+    showToast("That username already exists.");
+    return;
+  }
+  const lifetime = newUserForm.lifetime === "Yes";
+  users.push({
+    id: crypto.randomUUID(),
+    username,
+    passwordHash: await hashPassword(newUserForm.password),
+    role: newUserForm.role,
+    lifetime,
+    activeUntil: lifetime ? "" : newUserForm.activeUntil,
+    createdAt: new Date().toISOString()
+  });
+  saveUsers();
+  newUserForm = { username: "", password: "", role: "user", lifetime: "Yes", activeUntil: "" };
+  showToast("User added.");
+  render();
+}
+
+function updateUser(id, changes) {
+  users = users.map((user) => user.id === id ? { ...user, ...changes, activeUntil: changes.lifetime ? "" : (changes.activeUntil ?? user.activeUntil) } : user);
+  currentUser = users.find((user) => user.id === currentUser.id);
+  saveUsers();
+  render();
+}
+
+async function resetUserPassword(id) {
+  const next = prompt("Enter the new password. Minimum 6 characters.");
+  if (!next) return;
+  if (next.length < 6) {
+    showToast("Password must be at least 6 characters.");
+    return;
+  }
+  const passwordHash = await hashPassword(next);
+  updateUser(id, { passwordHash });
+  showToast("Password reset.");
+}
+
+function deleteUser(id) {
+  if (id === currentUser.id) return;
+  if (!confirm("Delete this user?")) return;
+  users = users.filter((user) => user.id !== id);
+  saveUsers();
+  render();
+}
+
 function renderPropertyPanel() {
   return el("section", { class: "panel property-grid" }, [
     field("Address", "textarea", state.address, (value) => (state.address = value), "Property address"),
     field("Property type", "select", state.propertyType, (value) => (state.propertyType = value), "", ["Residential", "Commercial"]),
     field("Inspector", "input", state.inspector, (value) => (state.inspector = value), "Inspector name"),
-    field("Inspection date", "date", state.inspectionDate, (value) => (state.inspectionDate = value))
+    field("Inspection date", "date", state.inspectionDate, (value) => (state.inspectionDate = value)),
+    field("Report file name", "input", state.reportFileName, (value) => (state.reportFileName = value), "Optional report file name")
   ]);
 }
 
@@ -251,6 +627,8 @@ function renderTemplatePanel() {
       numberField("Bathrooms", state.template.bathrooms, (value) => (state.template.bathrooms = clampNumber(value, 0, 12))),
       field("Basement", "select", state.template.basement, (value) => (state.template.basement = value), "", ["None", "Unfinished", "Finished"]),
       field("Legal suite", "select", state.template.legalSuite, (value) => (state.template.legalSuite = value), "", ["No", "Yes"]),
+      field("Suite bedrooms", "select", String(state.template.suiteBedrooms), (value) => (state.template.suiteBedrooms = clampNumber(value, 0, 6)), "", ["0", "1", "2", "3", "4", "5", "6"], !isSuiteCountActive()),
+      field("Suite bathrooms", "select", String(state.template.suiteBathrooms), (value) => (state.template.suiteBathrooms = clampNumber(value, 0, 4)), "", ["0", "1", "2", "3", "4"], !isSuiteCountActive()),
       field("Property style", "select", state.template.propertyStyle, (value) => (state.template.propertyStyle = value), "", ["Detached", "Semi-detached", "Duplex", "Townhome", "Condo", "Commercial"]),
       field("Ensuite", "select", state.template.ensuite, (value) => (state.template.ensuite = value), "", ["Yes", "No"]),
       numberField("Fireplaces", state.template.fireplaces, (value) => (state.template.fireplaces = clampNumber(value, 0, 8))),
@@ -265,6 +643,10 @@ function renderTemplatePanel() {
   ]);
 }
 
+function isSuiteCountActive() {
+  return state.template.basement === "Finished" && state.template.legalSuite === "Yes";
+}
+
 function numberField(label, value, onChange) {
   return field(label, "number", value, onChange);
 }
@@ -275,7 +657,7 @@ function clampNumber(value, min, max) {
   return Math.min(max, Math.max(min, parsed));
 }
 
-function field(label, type, value, onChange, placeholder = "", options = []) {
+function field(label, type, value, onChange, placeholder = "", options = [], disabled = false) {
   const id = `${label}-${crypto.randomUUID()}`;
   let control;
   if (type === "select") {
@@ -288,6 +670,7 @@ function field(label, type, value, onChange, placeholder = "", options = []) {
     control = el("input", { id, type, placeholder });
     control.value = value;
   }
+  if (disabled) control.disabled = true;
   control.addEventListener("change", () => {
     onChange(control.value);
     saveState();
@@ -296,7 +679,7 @@ function field(label, type, value, onChange, placeholder = "", options = []) {
     onChange(control.value);
     saveState();
   });
-  return el("label", { class: `field ${type === "textarea" ? "wide" : ""}` }, [
+  return el("label", { class: `field ${type === "textarea" ? "wide" : ""} ${disabled ? "is-disabled" : ""}` }, [
     el("span", { text: label }),
     control
   ]);
@@ -315,14 +698,29 @@ function renderExteriorPhotos() {
 
 function renderChecks(deficiencyCount) {
   const groupedChecks = groupChecksByLocation(state.checks);
+  syncSelectedGroups(groupedChecks);
+  const selected = new Set(state.selectedGroups);
+  const visibleGroups = groupedChecks.filter(([location]) => selected.has(location));
   return el("main", { class: "panel checks-panel" }, [
     sectionTitle("Inspection Checks", deficiencyCount ? `${deficiencyCount} deficiency item${deficiencyCount === 1 ? "" : "s"} marked for the report.` : "Mark every item as pass, monitor, or deficiency."),
-    ...groupedChecks.map(([location, checks]) => renderCheckGroup(location, checks)),
+    el("div", { class: "checks-workspace" }, [
+      renderGroupTabs(groupedChecks),
+      el("div", { class: "checks-list" }, visibleGroups.length
+        ? visibleGroups.map(([location, checks]) => renderCheckGroup(location, checks))
+        : [el("div", { class: "empty-selection", text: "Select one or more room tabs to view inspection items." })]
+      )
+    ]),
     el("button", { class: "secondary-action full", type: "button", onClick: addBlankCheck }, [
       icon("plus"),
       el("span", { text: "Add inspection check" })
     ])
   ]);
+}
+
+function syncSelectedGroups(groupedChecks) {
+  const locations = groupedChecks.map(([location]) => location);
+  state.selectedGroups = (state.selectedGroups || []).filter((location) => locations.includes(location));
+  if (!state.selectedGroups.length && locations.length) state.selectedGroups = [locations[0]];
 }
 
 function groupChecksByLocation(checks) {
@@ -338,6 +736,44 @@ function groupChecksByLocation(checks) {
 function locationSortIndex(location) {
   const index = state.locations.indexOf(location);
   return index === -1 ? Number.MAX_SAFE_INTEGER : index;
+}
+
+function renderGroupTabs(groupedChecks) {
+  return el("aside", { class: "group-tabs", "aria-label": "Inspection rooms" }, [
+    el("div", { class: "group-tabs-actions" }, [
+      el("button", { class: "mini-action", type: "button", onClick: () => setAllGroups(groupedChecks, true) }, [el("span", { text: "All" })]),
+      el("button", { class: "mini-action", type: "button", onClick: () => setAllGroups(groupedChecks, false) }, [el("span", { text: "Clear" })])
+    ]),
+    ...groupedChecks.map(([location, checks]) => renderGroupTab(location, checks))
+  ]);
+}
+
+function renderGroupTab(location, checks) {
+  const isSelected = state.selectedGroups.includes(location);
+  const deficiencies = checks.filter((check) => check.status === "Deficiency").length;
+  return el("button", {
+    class: `group-tab ${isSelected ? "is-selected" : ""}`,
+    type: "button",
+    "aria-pressed": String(isSelected),
+    onClick: () => toggleGroup(location)
+  }, [
+    el("span", { class: "group-tab-title", text: location }),
+    el("span", { class: deficiencies ? "group-tab-count has-deficiency" : "group-tab-count", text: deficiencies ? `${deficiencies}/${checks.length}` : String(checks.length) })
+  ]);
+}
+
+function toggleGroup(location) {
+  if (state.selectedGroups.includes(location)) {
+    state.selectedGroups = state.selectedGroups.filter((selected) => selected !== location);
+  } else {
+    state.selectedGroups = [...state.selectedGroups, location];
+  }
+  saveAndRender();
+}
+
+function setAllGroups(groupedChecks, shouldSelect) {
+  state.selectedGroups = shouldSelect ? groupedChecks.map(([location]) => location) : [];
+  saveAndRender();
 }
 
 function renderCheckGroup(location, checks) {
@@ -587,6 +1023,7 @@ function generateTemplateChecks() {
 }
 
 function buildTemplateLocations(template) {
+  const hasActiveSuite = template.basement === "Finished" && template.legalSuite === "Yes";
   const locations = ["Exterior - Front", "Exterior - Rear", "Garage", "Main Kitchen", "Living Room", "Laundry Room", "Mechanical Room"];
   for (let floor = 1; floor <= template.floors; floor += 1) {
     const name = floorName(floor);
@@ -596,7 +1033,11 @@ function buildTemplateLocations(template) {
   for (let bathroom = 1; bathroom <= template.bathrooms; bathroom += 1) locations.push(`Bathroom ${bathroom}`);
   if (template.ensuite === "Yes") locations.push("Primary Ensuite");
   if (template.basement !== "None") locations.push(`Basement - ${template.basement}`, "Basement - Mechanical");
-  if (template.legalSuite === "Yes") locations.push("Basement Legal Suite - Kitchen", "Basement Legal Suite - Bathroom", "Basement Legal Suite - Bedroom", "Basement Legal Suite - Entrance");
+  if (hasActiveSuite) {
+    locations.push("Basement Legal Suite - Kitchen", "Basement Legal Suite - Entrance");
+    for (let bedroom = 1; bedroom <= template.suiteBedrooms; bedroom += 1) locations.push(`Basement Legal Suite - Bedroom ${bedroom}`);
+    for (let bathroom = 1; bathroom <= template.suiteBathrooms; bathroom += 1) locations.push(`Basement Legal Suite - Bathroom ${bathroom}`);
+  }
   if (template.atticInsulation === "Yes") locations.push("Attic");
   return uniqueValues(locations);
 }
@@ -607,6 +1048,7 @@ function floorName(floor) {
 }
 
 function buildTemplateChecks(template, locations) {
+  const hasActiveSuite = template.basement === "Finished" && template.legalSuite === "Yes";
   const checks = [];
   const add = (type, item, location) => checks.push({
     id: crypto.randomUUID(),
@@ -658,7 +1100,7 @@ function buildTemplateChecks(template, locations) {
     add("Safety", "Basement egress, smoke/CO alarms, handrails, guards, and final safety checks", `Basement - ${template.basement}`);
   }
 
-  if (template.legalSuite === "Yes") {
+  if (hasActiveSuite) {
     add("Suite", "Legal suite fire separation, suite entry, alarms, egress, and labeling", "Basement Legal Suite - Entrance");
     add("Electrical Outlets", "Legal suite panel labeling, outlets, GFCI/AFCI where applicable", "Basement Legal Suite - Kitchen");
   }
@@ -823,8 +1265,9 @@ async function exportPdf() {
     await addPhotoSection(doc, "Evidence Photos", check.photos, ensureRoom, () => y, (value) => (y = value), margin, contentWidth, true);
   }
 
-  const safeAddress = (state.address || "inspection").replace(/[^a-z0-9]+/gi, "-").replace(/^-|-$/g, "").slice(0, 42);
-  const filename = `${safeAddress || "inspection"}-final-report.pdf`;
+  const requestedName = state.reportFileName || state.address || "inspection";
+  const safeName = requestedName.replace(/[^a-z0-9]+/gi, "-").replace(/^-|-$/g, "").slice(0, 60);
+  const filename = `${safeName || "inspection"}-final-report.pdf`;
   const blob = doc.output("blob");
   const url = URL.createObjectURL(blob);
   reportDialog = { blob, url, filename };
@@ -905,6 +1348,9 @@ function icon(name) {
     "file-text": "M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z M14 2v6h6 M8 13h8 M8 17h8 M8 9h1",
     plus: "M12 5v14 M5 12h14",
     save: "M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z M17 21v-8H7v8 M7 3v5h8",
+    key: "M21 2l-2 2m-7.6 7.6a5.5 5.5 0 1 1-2.8-2.8L21 2l1 1-3 3 2 2-3 3-2-2-4.6 4.6z M7.5 14.5h.01",
+    "log-in": "M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4 M10 17l5-5-5-5 M15 12H3",
+    "log-out": "M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4 M16 17l5-5-5-5 M21 12H9",
     "layout-template": "M3 3h18v18H3z M3 9h18 M9 21V9",
     camera: "M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z M12 17a4 4 0 1 0 0-8 4 4 0 0 0 0 8z",
     upload: "M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4 M17 8l-5-5-5 5 M12 3v12",
@@ -925,5 +1371,12 @@ if ("serviceWorker" in navigator) {
   window.addEventListener("load", () => navigator.serviceWorker.register("/sw.js").catch(() => {}));
 }
 
+window.addEventListener("pagehide", () => saveState());
+document.addEventListener("visibilitychange", () => {
+  if (document.visibilityState === "hidden") saveState();
+});
+
+users = await loadUsers();
+currentUser = loadSession();
 state = await loadState();
 render();
