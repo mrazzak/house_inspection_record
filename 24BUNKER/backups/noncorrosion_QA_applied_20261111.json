@@ -1,0 +1,1782 @@
+{
+  "backup": "C:\\Users\\razza\\house_inspection_record\\24BUNKER\\backups\\24BUNKER_Rev0-4_before_NC_full_QA_review_20261111.xlsx",
+  "backup_sha256": "3d320ad5fd1fb8187acdda594c0d40673771274efacfda0259a23888fc242321",
+  "status": "SAVED;70 values exact;8 expected held QA comparisons;no formula errors;independent audit pending",
+  "worksheet": "Non-Corrosion Metal Loss",
+  "writes": [
+    {
+      "cell": "O20",
+      "row": 20,
+      "item": 77,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS20",
+      "qa_value": "-",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU20",
+      "preserve_existing_format": true,
+      "primary_source": null,
+      "MOCOM_record": 104,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA has no applicable old matched anomaly. Equivalent historical distance does not establish a matched event. For replaced rows, explicit reviewer exclusion governs despite a raw MOCOM match."
+    },
+    {
+      "cell": "N21",
+      "row": 21,
+      "item": 94,
+      "field": "Log Distance\n(ft)",
+      "current_value": 361.0406245,
+      "qa_cell": "AR21",
+      "qa_value": 361.041,
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BT21",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "MOCOM",
+        "csv_record_with_header": 115,
+        "field": "ol_dist",
+        "value": "361.0406245"
+      },
+      "MOCOM_record": 115,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "Same MOCOM equivalent historical distance, rounded to QA3 decimals. Difference below0.0005ft; no association change. Retain raw source value in this audit."
+    },
+    {
+      "cell": "O21",
+      "row": 21,
+      "item": 94,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS21",
+      "qa_value": "-",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU21",
+      "preserve_existing_format": true,
+      "primary_source": null,
+      "MOCOM_record": 115,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA has no applicable old matched anomaly. Equivalent historical distance does not establish a matched event. For replaced rows, explicit reviewer exclusion governs despite a raw MOCOM match."
+    },
+    {
+      "cell": "O22",
+      "row": 22,
+      "item": 167,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS22",
+      "qa_value": "Metal loss - non-corrosion anomaly",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU22",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "2020_tally",
+        "sheet": "Pipe Tally",
+        "row": 224,
+        "cell": "I224",
+        "value": "Metal loss - non-corrosion anomaly"
+      },
+      "MOCOM_record": 155,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA event agrees with exact associated2020 pipe tally event and MOCOM old type; current historical event label is incorrect."
+    },
+    {
+      "cell": "O23",
+      "row": 23,
+      "item": 168,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS23",
+      "qa_value": "Metal loss - non-corrosion anomaly",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU23",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "2020_tally",
+        "sheet": "Pipe Tally",
+        "row": 225,
+        "cell": "I225",
+        "value": "Metal loss - non-corrosion anomaly"
+      },
+      "MOCOM_record": 156,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA event agrees with exact associated2020 pipe tally event and MOCOM old type; current historical event label is incorrect."
+    },
+    {
+      "cell": "O24",
+      "row": 24,
+      "item": 176,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS24",
+      "qa_value": "Metal loss - non-corrosion anomaly",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU24",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "2020_tally",
+        "sheet": "Pipe Tally",
+        "row": 231,
+        "cell": "I231",
+        "value": "Metal loss - non-corrosion anomaly"
+      },
+      "MOCOM_record": 164,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA event agrees with exact associated2020 pipe tally event and MOCOM old type; current historical event label is incorrect."
+    },
+    {
+      "cell": "O25",
+      "row": 25,
+      "item": 190,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS25",
+      "qa_value": "Metal loss - non-corrosion anomaly",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU25",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "2020_tally",
+        "sheet": "Pipe Tally",
+        "row": 242,
+        "cell": "I242",
+        "value": "Metal loss - non-corrosion anomaly"
+      },
+      "MOCOM_record": 175,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA event agrees with exact associated2020 pipe tally event and MOCOM old type; current historical event label is incorrect."
+    },
+    {
+      "cell": "O26",
+      "row": 26,
+      "item": 228,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS26",
+      "qa_value": "Metal loss - non-corrosion anomaly",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU26",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "2020_tally",
+        "sheet": "Pipe Tally",
+        "row": 273,
+        "cell": "I273",
+        "value": "Metal loss - non-corrosion anomaly"
+      },
+      "MOCOM_record": 198,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA event agrees with exact associated2020 pipe tally event and MOCOM old type; current historical event label is incorrect."
+    },
+    {
+      "cell": "O27",
+      "row": 27,
+      "item": 235,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS27",
+      "qa_value": "Metal loss - non-corrosion anomaly",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU27",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "2020_tally",
+        "sheet": "Pipe Tally",
+        "row": 278,
+        "cell": "I278",
+        "value": "Metal loss - non-corrosion anomaly"
+      },
+      "MOCOM_record": 202,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA event agrees with exact associated2020 pipe tally event and MOCOM old type; current historical event label is incorrect."
+    },
+    {
+      "cell": "N28",
+      "row": 28,
+      "item": 328,
+      "field": "Log Distance\n(ft)",
+      "current_value": 1433.459776,
+      "qa_cell": "AR28",
+      "qa_value": 1433.46,
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BT28",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "MOCOM",
+        "csv_record_with_header": 456,
+        "field": "ol_dist",
+        "value": "1433.459776"
+      },
+      "MOCOM_record": 456,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "Same MOCOM equivalent historical distance, rounded to QA3 decimals. Difference below0.0005ft; no association change. Retain raw source value in this audit."
+    },
+    {
+      "cell": "O28",
+      "row": 28,
+      "item": 328,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS28",
+      "qa_value": "-",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU28",
+      "preserve_existing_format": true,
+      "primary_source": null,
+      "MOCOM_record": 456,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA has no applicable old matched anomaly. Equivalent historical distance does not establish a matched event. For replaced rows, explicit reviewer exclusion governs despite a raw MOCOM match."
+    },
+    {
+      "cell": "O29",
+      "row": 29,
+      "item": 335,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS29",
+      "qa_value": "-",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU29",
+      "preserve_existing_format": true,
+      "primary_source": null,
+      "MOCOM_record": 471,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA has no applicable old matched anomaly. Equivalent historical distance does not establish a matched event. For replaced rows, explicit reviewer exclusion governs despite a raw MOCOM match."
+    },
+    {
+      "cell": "Q29",
+      "row": 29,
+      "item": 335,
+      "field": "Depth\n(%wt)",
+      "current_value": 72.0,
+      "qa_cell": "AU29",
+      "qa_value": "-",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BW29",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "2020_tally",
+        "sheet": "Pipe Tally",
+        "row": 613,
+        "field": "J",
+        "value": 72.0,
+        "applicability": "excluded by reviewer replacement decision"
+      },
+      "MOCOM_record": 471,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "ExistingX29 andQA BB29 mark replacement section. Kristin Q/R/U header comments explicitly say replacement must have no matched anomaly. MOCOM old416 and2020 tally613 data are real but excluded by the QA replacement decision; do not backfill."
+    },
+    {
+      "cell": "R29",
+      "row": 29,
+      "item": 335,
+      "field": "Orientation (hh:mm)",
+      "current_value": 0.26319444444444445,
+      "qa_cell": "AV29",
+      "qa_value": "-",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BX29",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "2020_tally",
+        "sheet": "Pipe Tally",
+        "row": 613,
+        "field": "L",
+        "value": 0.26319444444444445,
+        "applicability": "excluded by reviewer replacement decision"
+      },
+      "MOCOM_record": 471,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "ExistingX29 andQA BB29 mark replacement section. Kristin Q/R/U header comments explicitly say replacement must have no matched anomaly. MOCOM old416 and2020 tally613 data are real but excluded by the QA replacement decision; do not backfill."
+    },
+    {
+      "cell": "U29",
+      "row": 29,
+      "item": 335,
+      "field": "Surface Location",
+      "current_value": "External",
+      "qa_cell": "AY29",
+      "qa_value": "-",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "CA29",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "2020_tally",
+        "sheet": "Pipe Tally",
+        "row": 613,
+        "field": "O",
+        "value": "external",
+        "applicability": "excluded by reviewer replacement decision"
+      },
+      "MOCOM_record": 471,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "ExistingX29 andQA BB29 mark replacement section. Kristin Q/R/U header comments explicitly say replacement must have no matched anomaly. MOCOM old416 and2020 tally613 data are real but excluded by the QA replacement decision; do not backfill."
+    },
+    {
+      "cell": "N30",
+      "row": 30,
+      "item": 375,
+      "field": "Log Distance\n(ft)",
+      "current_value": 1933.230809,
+      "qa_cell": "AR30",
+      "qa_value": 1933.231,
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BT30",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "MOCOM",
+        "csv_record_with_header": 544,
+        "field": "ol_dist",
+        "value": "1933.230809"
+      },
+      "MOCOM_record": 544,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "Same MOCOM equivalent historical distance, rounded to QA3 decimals. Difference below0.0005ft; no association change. Retain raw source value in this audit."
+    },
+    {
+      "cell": "O30",
+      "row": 30,
+      "item": 375,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS30",
+      "qa_value": "-",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU30",
+      "preserve_existing_format": true,
+      "primary_source": null,
+      "MOCOM_record": 544,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA has no applicable old matched anomaly. Equivalent historical distance does not establish a matched event. For replaced rows, explicit reviewer exclusion governs despite a raw MOCOM match."
+    },
+    {
+      "cell": "N31",
+      "row": 31,
+      "item": 382,
+      "field": "Log Distance\n(ft)",
+      "current_value": 1957.8584399999997,
+      "qa_cell": "AR31",
+      "qa_value": 1957.858,
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BT31",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "MOCOM",
+        "csv_record_with_header": 547,
+        "field": "ol_dist",
+        "value": "1957.85844"
+      },
+      "MOCOM_record": 547,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "Same MOCOM equivalent historical distance, rounded to QA3 decimals. Difference below0.0005ft; no association change. Retain raw source value in this audit."
+    },
+    {
+      "cell": "O31",
+      "row": 31,
+      "item": 382,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS31",
+      "qa_value": "-",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU31",
+      "preserve_existing_format": true,
+      "primary_source": null,
+      "MOCOM_record": 547,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA has no applicable old matched anomaly. Equivalent historical distance does not establish a matched event. For replaced rows, explicit reviewer exclusion governs despite a raw MOCOM match."
+    },
+    {
+      "cell": "R32",
+      "row": 32,
+      "item": 427,
+      "field": "Orientation (hh:mm)",
+      "current_value": 0.5375,
+      "qa_cell": "AV32",
+      "qa_value": 0.0375,
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BX32",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "2020_tally",
+        "sheet": "Pipe Tally",
+        "row": 793,
+        "cell": "L793",
+        "value": 0.5375
+      },
+      "MOCOM_record": 579,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA normalizes historical pipeline clock modulo12hours; original tally retains a +12hour time serial. Same physical clock. Preserve hh:mm format; does not validate physical association."
+    },
+    {
+      "cell": "O33",
+      "row": 33,
+      "item": 449,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS33",
+      "qa_value": "-",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU33",
+      "preserve_existing_format": true,
+      "primary_source": null,
+      "MOCOM_record": 588,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA has no applicable old matched anomaly. Equivalent historical distance does not establish a matched event. For replaced rows, explicit reviewer exclusion governs despite a raw MOCOM match."
+    },
+    {
+      "cell": "O34",
+      "row": 34,
+      "item": 452,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS34",
+      "qa_value": "Metal loss - non-corrosion anomaly",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU34",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "2020_tally",
+        "sheet": "Pipe Tally",
+        "row": 820,
+        "cell": "I820",
+        "value": "Metal loss - non-corrosion anomaly"
+      },
+      "MOCOM_record": 589,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA event agrees with exact associated2020 pipe tally event and MOCOM old type; current historical event label is incorrect."
+    },
+    {
+      "cell": "R34",
+      "row": 34,
+      "item": 452,
+      "field": "Orientation (hh:mm)",
+      "current_value": 0.5201388888888888,
+      "qa_cell": "AV34",
+      "qa_value": 0.02013888888888889,
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BX34",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "2020_tally",
+        "sheet": "Pipe Tally",
+        "row": 820,
+        "cell": "L820",
+        "value": 0.5201388888888888
+      },
+      "MOCOM_record": 589,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA normalizes historical pipeline clock modulo12hours; original tally retains a +12hour time serial. Same physical clock. Preserve hh:mm format; does not validate physical association."
+    },
+    {
+      "cell": "O36",
+      "row": 36,
+      "item": 500,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS36",
+      "qa_value": "-",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU36",
+      "preserve_existing_format": true,
+      "primary_source": null,
+      "MOCOM_record": 602,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA has no applicable old matched anomaly. Equivalent historical distance does not establish a matched event. For replaced rows, explicit reviewer exclusion governs despite a raw MOCOM match."
+    },
+    {
+      "cell": "O37",
+      "row": 37,
+      "item": 968,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS37",
+      "qa_value": "Metal loss - non-corrosion anomaly",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU37",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "2020_tally",
+        "sheet": "Pipe Tally",
+        "row": 1103,
+        "cell": "I1103",
+        "value": "Metal loss - non-corrosion anomaly"
+      },
+      "MOCOM_record": 966,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA event agrees with exact associated2020 pipe tally event and MOCOM old type; current historical event label is incorrect."
+    },
+    {
+      "cell": "O38",
+      "row": 38,
+      "item": 2663,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS38",
+      "qa_value": "-",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU38",
+      "preserve_existing_format": true,
+      "primary_source": null,
+      "MOCOM_record": 2599,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA has no applicable old matched anomaly. Equivalent historical distance does not establish a matched event. For replaced rows, explicit reviewer exclusion governs despite a raw MOCOM match."
+    },
+    {
+      "cell": "O39",
+      "row": 39,
+      "item": 2665,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS39",
+      "qa_value": "-",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU39",
+      "preserve_existing_format": true,
+      "primary_source": null,
+      "MOCOM_record": 2600,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA has no applicable old matched anomaly. Equivalent historical distance does not establish a matched event. For replaced rows, explicit reviewer exclusion governs despite a raw MOCOM match."
+    },
+    {
+      "cell": "O40",
+      "row": 40,
+      "item": 2666,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS40",
+      "qa_value": "-",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU40",
+      "preserve_existing_format": true,
+      "primary_source": null,
+      "MOCOM_record": 2601,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA has no applicable old matched anomaly. Equivalent historical distance does not establish a matched event. For replaced rows, explicit reviewer exclusion governs despite a raw MOCOM match."
+    },
+    {
+      "cell": "O41",
+      "row": 41,
+      "item": 3015,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS41",
+      "qa_value": "-",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU41",
+      "preserve_existing_format": true,
+      "primary_source": null,
+      "MOCOM_record": 2910,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA has no applicable old matched anomaly. Equivalent historical distance does not establish a matched event. For replaced rows, explicit reviewer exclusion governs despite a raw MOCOM match."
+    },
+    {
+      "cell": "O42",
+      "row": 42,
+      "item": 5099,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS42",
+      "qa_value": "Metal loss - non-corrosion anomaly",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU42",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "2020_tally",
+        "sheet": "Pipe Tally",
+        "row": 3320,
+        "cell": "I3320",
+        "value": "Metal loss - non-corrosion anomaly"
+      },
+      "MOCOM_record": 4915,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA event agrees with exact associated2020 pipe tally event and MOCOM old type; current historical event label is incorrect."
+    },
+    {
+      "cell": "N43",
+      "row": 43,
+      "item": 6464,
+      "field": "Log Distance\n(ft)",
+      "current_value": 5422.223439,
+      "qa_cell": "AR43",
+      "qa_value": 5422.223,
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BT43",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "MOCOM",
+        "csv_record_with_header": 6158,
+        "field": "ol_dist",
+        "value": "5422.223439"
+      },
+      "MOCOM_record": 6158,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "Same MOCOM equivalent historical distance, rounded to QA3 decimals. Difference below0.0005ft; no association change. Retain raw source value in this audit."
+    },
+    {
+      "cell": "O43",
+      "row": 43,
+      "item": 6464,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS43",
+      "qa_value": "-",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU43",
+      "preserve_existing_format": true,
+      "primary_source": null,
+      "MOCOM_record": 6158,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA has no applicable old matched anomaly. Equivalent historical distance does not establish a matched event. For replaced rows, explicit reviewer exclusion governs despite a raw MOCOM match."
+    },
+    {
+      "cell": "N44",
+      "row": 44,
+      "item": 6466,
+      "field": "Log Distance\n(ft)",
+      "current_value": 5422.597124,
+      "qa_cell": "AR44",
+      "qa_value": 5422.597,
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BT44",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "MOCOM",
+        "csv_record_with_header": 6160,
+        "field": "ol_dist",
+        "value": "5422.597124"
+      },
+      "MOCOM_record": 6160,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "Same MOCOM equivalent historical distance, rounded to QA3 decimals. Difference below0.0005ft; no association change. Retain raw source value in this audit."
+    },
+    {
+      "cell": "O44",
+      "row": 44,
+      "item": 6466,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS44",
+      "qa_value": "-",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU44",
+      "preserve_existing_format": true,
+      "primary_source": null,
+      "MOCOM_record": 6160,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA has no applicable old matched anomaly. Equivalent historical distance does not establish a matched event. For replaced rows, explicit reviewer exclusion governs despite a raw MOCOM match."
+    },
+    {
+      "cell": "O45",
+      "row": 45,
+      "item": 6468,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS45",
+      "qa_value": "Metal loss - non-corrosion anomaly",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU45",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "2020_tally",
+        "sheet": "Pipe Tally",
+        "row": 4098,
+        "cell": "I4098",
+        "value": "Metal loss - non-corrosion anomaly"
+      },
+      "MOCOM_record": 6162,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA event agrees with exact associated2020 pipe tally event and MOCOM old type; current historical event label is incorrect."
+    },
+    {
+      "cell": "O46",
+      "row": 46,
+      "item": 6470,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS46",
+      "qa_value": "Metal loss - non-corrosion anomaly",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU46",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "2020_tally",
+        "sheet": "Pipe Tally",
+        "row": 4099,
+        "cell": "I4099",
+        "value": "Metal loss - non-corrosion anomaly"
+      },
+      "MOCOM_record": 6163,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA event agrees with exact associated2020 pipe tally event and MOCOM old type; current historical event label is incorrect."
+    },
+    {
+      "cell": "O47",
+      "row": 47,
+      "item": 6471,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS47",
+      "qa_value": "Metal loss - non-corrosion anomaly",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU47",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "2020_tally",
+        "sheet": "Pipe Tally",
+        "row": 4100,
+        "cell": "I4100",
+        "value": "Metal loss - non-corrosion anomaly"
+      },
+      "MOCOM_record": 6164,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA event agrees with exact associated2020 pipe tally event and MOCOM old type; current historical event label is incorrect."
+    },
+    {
+      "cell": "O48",
+      "row": 48,
+      "item": 6472,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS48",
+      "qa_value": "Metal loss - non-corrosion anomaly",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU48",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "2020_tally",
+        "sheet": "Pipe Tally",
+        "row": 4101,
+        "cell": "I4101",
+        "value": "Metal loss - non-corrosion anomaly"
+      },
+      "MOCOM_record": 6165,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA event agrees with exact associated2020 pipe tally event and MOCOM old type; current historical event label is incorrect."
+    },
+    {
+      "cell": "N49",
+      "row": 49,
+      "item": 6473,
+      "field": "Log Distance\n(ft)",
+      "current_value": 5425.397849,
+      "qa_cell": "AR49",
+      "qa_value": 5425.398,
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BT49",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "MOCOM",
+        "csv_record_with_header": 6166,
+        "field": "ol_dist",
+        "value": "5425.397849"
+      },
+      "MOCOM_record": 6166,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "Same MOCOM equivalent historical distance, rounded to QA3 decimals. Difference below0.0005ft; no association change. Retain raw source value in this audit."
+    },
+    {
+      "cell": "O49",
+      "row": 49,
+      "item": 6473,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS49",
+      "qa_value": "-",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU49",
+      "preserve_existing_format": true,
+      "primary_source": null,
+      "MOCOM_record": 6166,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA has no applicable old matched anomaly. Equivalent historical distance does not establish a matched event. For replaced rows, explicit reviewer exclusion governs despite a raw MOCOM match."
+    },
+    {
+      "cell": "O50",
+      "row": 50,
+      "item": 6497,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS50",
+      "qa_value": "Metal loss - non-corrosion anomaly",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU50",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "2020_tally",
+        "sheet": "Pipe Tally",
+        "row": 4118,
+        "cell": "I4118",
+        "value": "Metal loss - non-corrosion anomaly"
+      },
+      "MOCOM_record": 6187,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA event agrees with exact associated2020 pipe tally event and MOCOM old type; current historical event label is incorrect."
+    },
+    {
+      "cell": "O51",
+      "row": 51,
+      "item": 6537,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS51",
+      "qa_value": "Metal loss - non-corrosion anomaly",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU51",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "2020_tally",
+        "sheet": "Pipe Tally",
+        "row": 4144,
+        "cell": "I4144",
+        "value": "Metal loss - non-corrosion anomaly"
+      },
+      "MOCOM_record": 6218,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA event agrees with exact associated2020 pipe tally event and MOCOM old type; current historical event label is incorrect."
+    },
+    {
+      "cell": "O53",
+      "row": 53,
+      "item": 6875,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS53",
+      "qa_value": "-",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU53",
+      "preserve_existing_format": true,
+      "primary_source": null,
+      "MOCOM_record": 6489,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA has no applicable old matched anomaly. Equivalent historical distance does not establish a matched event. For replaced rows, explicit reviewer exclusion governs despite a raw MOCOM match."
+    },
+    {
+      "cell": "O55",
+      "row": 55,
+      "item": 6997,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS55",
+      "qa_value": "Metal loss - non-corrosion anomaly",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU55",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "2020_tally",
+        "sheet": "Pipe Tally",
+        "row": 4427,
+        "cell": "I4427",
+        "value": "Metal loss - non-corrosion anomaly"
+      },
+      "MOCOM_record": 6577,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA event agrees with exact associated2020 pipe tally event and MOCOM old type; current historical event label is incorrect."
+    },
+    {
+      "cell": "O56",
+      "row": 56,
+      "item": 7016,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS56",
+      "qa_value": "Metal loss - non-corrosion anomaly",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU56",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "2020_tally",
+        "sheet": "Pipe Tally",
+        "row": 4441,
+        "cell": "I4441",
+        "value": "Metal loss - non-corrosion anomaly"
+      },
+      "MOCOM_record": 6591,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA event agrees with exact associated2020 pipe tally event and MOCOM old type; current historical event label is incorrect."
+    },
+    {
+      "cell": "O57",
+      "row": 57,
+      "item": 7017,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS57",
+      "qa_value": "-",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU57",
+      "preserve_existing_format": true,
+      "primary_source": null,
+      "MOCOM_record": 6592,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA has no applicable old matched anomaly. Equivalent historical distance does not establish a matched event. For replaced rows, explicit reviewer exclusion governs despite a raw MOCOM match."
+    },
+    {
+      "cell": "O59",
+      "row": 59,
+      "item": 7064,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS59",
+      "qa_value": "-",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU59",
+      "preserve_existing_format": true,
+      "primary_source": null,
+      "MOCOM_record": 6630,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA has no applicable old matched anomaly. Equivalent historical distance does not establish a matched event. For replaced rows, explicit reviewer exclusion governs despite a raw MOCOM match."
+    },
+    {
+      "cell": "O60",
+      "row": 60,
+      "item": 7065,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS60",
+      "qa_value": "-",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU60",
+      "preserve_existing_format": true,
+      "primary_source": null,
+      "MOCOM_record": 6631,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA has no applicable old matched anomaly. Equivalent historical distance does not establish a matched event. For replaced rows, explicit reviewer exclusion governs despite a raw MOCOM match."
+    },
+    {
+      "cell": "O61",
+      "row": 61,
+      "item": 7076,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS61",
+      "qa_value": "Metal loss - non-corrosion anomaly",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU61",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "2020_tally",
+        "sheet": "Pipe Tally",
+        "row": 4487,
+        "cell": "I4487",
+        "value": "Metal loss - non-corrosion anomaly"
+      },
+      "MOCOM_record": 6645,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA event agrees with exact associated2020 pipe tally event and MOCOM old type; current historical event label is incorrect."
+    },
+    {
+      "cell": "O62",
+      "row": 62,
+      "item": 7693,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS62",
+      "qa_value": "Metal loss - non-corrosion anomaly",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU62",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "2020_tally",
+        "sheet": "Pipe Tally",
+        "row": 4955,
+        "cell": "I4955",
+        "value": "Metal loss - non-corrosion anomaly"
+      },
+      "MOCOM_record": 7137,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA event agrees with exact associated2020 pipe tally event and MOCOM old type; current historical event label is incorrect."
+    },
+    {
+      "cell": "O63",
+      "row": 63,
+      "item": 7694,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS63",
+      "qa_value": "Metal loss - non-corrosion anomaly",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU63",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "2020_tally",
+        "sheet": "Pipe Tally",
+        "row": 4957,
+        "cell": "I4957",
+        "value": "Metal loss - non-corrosion anomaly"
+      },
+      "MOCOM_record": 7138,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA event agrees with exact associated2020 pipe tally event and MOCOM old type; current historical event label is incorrect."
+    },
+    {
+      "cell": "R63",
+      "row": 63,
+      "item": 7694,
+      "field": "Orientation (hh:mm)",
+      "current_value": 0.5006944444444444,
+      "qa_cell": "AV63",
+      "qa_value": 0.0006944444444444445,
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BX63",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "2020_tally",
+        "sheet": "Pipe Tally",
+        "row": 4957,
+        "cell": "L4957",
+        "value": 0.5006944444444444
+      },
+      "MOCOM_record": 7138,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA normalizes historical pipeline clock modulo12hours; original tally retains a +12hour time serial. Same physical clock. Preserve hh:mm format; does not validate physical association."
+    },
+    {
+      "cell": "R64",
+      "row": 64,
+      "item": 7711,
+      "field": "Orientation (hh:mm)",
+      "current_value": "-",
+      "qa_cell": "AV64",
+      "qa_value": 0.21736111111111112,
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BX64",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "2020_tally",
+        "sheet": "Pipe Tally",
+        "row": 4972,
+        "cell": "L4972",
+        "value": 0.21736111111111112
+      },
+      "MOCOM_record": 7150,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "Fill missing historical center-clock using2020 tally columnL, matching QA AV. Do not use MOCOM ol_orient, which is the start-edge clock."
+    },
+    {
+      "cell": "O65",
+      "row": 65,
+      "item": 7716,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS65",
+      "qa_value": "Metal loss - non-corrosion anomaly",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU65",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "2020_tally",
+        "sheet": "Pipe Tally",
+        "row": 4976,
+        "cell": "I4976",
+        "value": "Metal loss - non-corrosion anomaly"
+      },
+      "MOCOM_record": 7152,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA event agrees with exact associated2020 pipe tally event and MOCOM old type; current historical event label is incorrect."
+    },
+    {
+      "cell": "R65",
+      "row": 65,
+      "item": 7716,
+      "field": "Orientation (hh:mm)",
+      "current_value": "-",
+      "qa_cell": "AV65",
+      "qa_value": 0.28055555555555556,
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BX65",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "2020_tally",
+        "sheet": "Pipe Tally",
+        "row": 4976,
+        "cell": "L4976",
+        "value": 0.28055555555555556
+      },
+      "MOCOM_record": 7152,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "Fill missing historical center-clock using2020 tally columnL, matching QA AV. Do not use MOCOM ol_orient, which is the start-edge clock."
+    },
+    {
+      "cell": "O66",
+      "row": 66,
+      "item": 7718,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS66",
+      "qa_value": "Metal loss - non-corrosion anomaly",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU66",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "2020_tally",
+        "sheet": "Pipe Tally",
+        "row": 4978,
+        "cell": "I4978",
+        "value": "Metal loss - non-corrosion anomaly"
+      },
+      "MOCOM_record": 7153,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA event agrees with exact associated2020 pipe tally event and MOCOM old type; current historical event label is incorrect."
+    },
+    {
+      "cell": "R66",
+      "row": 66,
+      "item": 7718,
+      "field": "Orientation (hh:mm)",
+      "current_value": "-",
+      "qa_cell": "AV66",
+      "qa_value": 0.3277777777777778,
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BX66",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "2020_tally",
+        "sheet": "Pipe Tally",
+        "row": 4978,
+        "cell": "L4978",
+        "value": 0.3277777777777778
+      },
+      "MOCOM_record": 7153,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "Fill missing historical center-clock using2020 tally columnL, matching QA AV. Do not use MOCOM ol_orient, which is the start-edge clock."
+    },
+    {
+      "cell": "O67",
+      "row": 67,
+      "item": 9055,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS67",
+      "qa_value": "Metal loss - non-corrosion anomaly",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU67",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "2020_tally",
+        "sheet": "Pipe Tally",
+        "row": 5705,
+        "cell": "I5705",
+        "value": "Metal loss - non-corrosion anomaly"
+      },
+      "MOCOM_record": 8345,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA event agrees with exact associated2020 pipe tally event and MOCOM old type; current historical event label is incorrect."
+    },
+    {
+      "cell": "R67",
+      "row": 67,
+      "item": 9055,
+      "field": "Orientation (hh:mm)",
+      "current_value": 0.5368055555555555,
+      "qa_cell": "AV67",
+      "qa_value": 0.03680555555555556,
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BX67",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "2020_tally",
+        "sheet": "Pipe Tally",
+        "row": 5705,
+        "cell": "L5705",
+        "value": 0.5368055555555555
+      },
+      "MOCOM_record": 8345,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA normalizes historical pipeline clock modulo12hours; original tally retains a +12hour time serial. Same physical clock. Preserve hh:mm format; does not validate physical association."
+    },
+    {
+      "cell": "O68",
+      "row": 68,
+      "item": 9063,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS68",
+      "qa_value": "Metal loss - non-corrosion anomaly",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU68",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "2020_tally",
+        "sheet": "Pipe Tally",
+        "row": 5710,
+        "cell": "I5710",
+        "value": "Metal loss - non-corrosion anomaly"
+      },
+      "MOCOM_record": 8352,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA event agrees with exact associated2020 pipe tally event and MOCOM old type; current historical event label is incorrect."
+    },
+    {
+      "cell": "R68",
+      "row": 68,
+      "item": 9063,
+      "field": "Orientation (hh:mm)",
+      "current_value": 0.5361111111111111,
+      "qa_cell": "AV68",
+      "qa_value": 0.03611111111111111,
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BX68",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "2020_tally",
+        "sheet": "Pipe Tally",
+        "row": 5710,
+        "cell": "L5710",
+        "value": 0.5361111111111111
+      },
+      "MOCOM_record": 8352,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA normalizes historical pipeline clock modulo12hours; original tally retains a +12hour time serial. Same physical clock. Preserve hh:mm format; does not validate physical association."
+    },
+    {
+      "cell": "O69",
+      "row": 69,
+      "item": 9085,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS69",
+      "qa_value": "Metal loss - non-corrosion anomaly",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU69",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "2020_tally",
+        "sheet": "Pipe Tally",
+        "row": 5723,
+        "cell": "I5723",
+        "value": "Metal loss - non-corrosion anomaly"
+      },
+      "MOCOM_record": 8372,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA event agrees with exact associated2020 pipe tally event and MOCOM old type; current historical event label is incorrect."
+    },
+    {
+      "cell": "R69",
+      "row": 69,
+      "item": 9085,
+      "field": "Orientation (hh:mm)",
+      "current_value": 0.5319444444444444,
+      "qa_cell": "AV69",
+      "qa_value": 0.03194444444444444,
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BX69",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "2020_tally",
+        "sheet": "Pipe Tally",
+        "row": 5723,
+        "cell": "L5723",
+        "value": 0.5319444444444444
+      },
+      "MOCOM_record": 8372,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA normalizes historical pipeline clock modulo12hours; original tally retains a +12hour time serial. Same physical clock. Preserve hh:mm format; does not validate physical association."
+    },
+    {
+      "cell": "O70",
+      "row": 70,
+      "item": 9424,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS70",
+      "qa_value": "-",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU70",
+      "preserve_existing_format": true,
+      "primary_source": null,
+      "MOCOM_record": 8691,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA has no applicable old matched anomaly. Equivalent historical distance does not establish a matched event. For replaced rows, explicit reviewer exclusion governs despite a raw MOCOM match."
+    },
+    {
+      "cell": "N71",
+      "row": 71,
+      "item": 9532,
+      "field": "Log Distance\n(ft)",
+      "current_value": 8617.714863,
+      "qa_cell": "AR71",
+      "qa_value": 8617.715,
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BT71",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "MOCOM",
+        "csv_record_with_header": 8761,
+        "field": "ol_dist",
+        "value": "8617.714863"
+      },
+      "MOCOM_record": 8761,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "Same MOCOM equivalent historical distance, rounded to QA3 decimals. Difference below0.0005ft; no association change. Retain raw source value in this audit."
+    },
+    {
+      "cell": "O71",
+      "row": 71,
+      "item": 9532,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS71",
+      "qa_value": "-",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU71",
+      "preserve_existing_format": true,
+      "primary_source": null,
+      "MOCOM_record": 8761,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA has no applicable old matched anomaly. Equivalent historical distance does not establish a matched event. For replaced rows, explicit reviewer exclusion governs despite a raw MOCOM match."
+    },
+    {
+      "cell": "O72",
+      "row": 72,
+      "item": 9535,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS72",
+      "qa_value": "Metal loss - non-corrosion anomaly",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU72",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "2020_tally",
+        "sheet": "Pipe Tally",
+        "row": 5997,
+        "cell": "I5997",
+        "value": "Metal loss - non-corrosion anomaly"
+      },
+      "MOCOM_record": 8762,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA event agrees with exact associated2020 pipe tally event and MOCOM old type; current historical event label is incorrect."
+    },
+    {
+      "cell": "O73",
+      "row": 73,
+      "item": 9638,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS73",
+      "qa_value": "Metal loss - non-corrosion anomaly",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU73",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "2020_tally",
+        "sheet": "Pipe Tally",
+        "row": 6060,
+        "cell": "I6060",
+        "value": "Metal loss - non-corrosion anomaly"
+      },
+      "MOCOM_record": 8837,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA event agrees with exact associated2020 pipe tally event and MOCOM old type; current historical event label is incorrect."
+    },
+    {
+      "cell": "O77",
+      "row": 77,
+      "item": 9784,
+      "field": "Event",
+      "current_value": "Metal loss - non-corrosion anomaly",
+      "qa_cell": "AS77",
+      "qa_value": "-",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU77",
+      "preserve_existing_format": true,
+      "primary_source": null,
+      "MOCOM_record": 8947,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA has no applicable old matched anomaly. Equivalent historical distance does not establish a matched event. For replaced rows, explicit reviewer exclusion governs despite a raw MOCOM match."
+    },
+    {
+      "cell": "X78",
+      "row": 78,
+      "item": 9787,
+      "field": "Repair Information",
+      "current_value": "Pipeline is replaced",
+      "qa_cell": "BB78",
+      "qa_value": "-",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "CD78",
+      "preserve_existing_format": true,
+      "primary_source": null,
+      "MOCOM_record": 8948,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "Kristin X17 explicitly says red is not replacement. QA BB78 is dash. MOCOM association5041 and2020 tally6137 are retained and current/old surfaces are both External. Main Y78=QA BC78=1 already coherent."
+    }
+  ],
+  "notes": [
+    {
+      "cell": "N58",
+      "note": "2020 pipe tally E4466 / MOCOM old 3682: 6091.353 ft. QA AR58 instead uses 6096.179 ft from tally E4472 / old 3686. This is a different historical feature association. Held for reviewer decision.",
+      "cellStyles": {
+        "backgroundColor": "#FFFF00"
+      }
+    },
+    {
+      "cell": "O58",
+      "note": "2020 tally I4466 / old 3682: corrosion anomaly. QA AS58 / tally I4472 / old 3686: non-corrosion anomaly. The historical association is unresolved; no forced event change.",
+      "cellStyles": {
+        "backgroundColor": "#FFFF00"
+      }
+    },
+    {
+      "cell": "P58",
+      "note": "2020 tally P4466 / old 3682 is blank. QA AT58 / tally P4472 / old 3686 says 'wall thinning on bend'. The difference comes from selecting different historical features.",
+      "cellStyles": {
+        "backgroundColor": "#FFFF00"
+      }
+    },
+    {
+      "cell": "Q58",
+      "note": "2020 tally J4466 / old 3682 gives 19% wt. QA AU58 / tally J4472 / old 3686 gives 20% wt. Historical association remains unresolved.",
+      "cellStyles": {
+        "backgroundColor": "#FFFF00"
+      }
+    },
+    {
+      "cell": "R58",
+      "note": "2020 tally L4466 / old 3682 center clock is 04:29. QA AV58 / tally L4472 / old 3686 center clock is 06:59. Different historical features; do not replace center clock with the MOCOM start-edge clock.",
+      "cellStyles": {
+        "backgroundColor": "#FFFF00"
+      }
+    },
+    {
+      "cell": "S58",
+      "note": "Current and QA length is 45.25 in, matching 2020 tally M4472 / old 3686. Current N58/Q58 instead select old 3682, whose tally M4466 length is 41.75 in. The row currently mixes two historical records; held for reviewer decision.",
+      "cellStyles": {
+        "backgroundColor": "#FFFF00"
+      }
+    },
+    {
+      "cell": "T58",
+      "note": "Current and QA width is 13.41 in, matching 2020 tally N4472 / old 3686. Current N58/Q58 instead select old 3682, whose tally N4466 width is 23.62 in. The row currently mixes two historical records; held for reviewer decision.",
+      "cellStyles": {
+        "backgroundColor": "#FFFF00"
+      }
+    },
+    {
+      "cell": "W58",
+      "note": "Current MOCOM association 7060 to old 3682 has no unused-recent flag. QA BA58 says 'This is an unused matched Recent record.' and uses old 3686, also associated with deeper recent item 7067. Physical rematch and unused status are not independently verified.",
+      "cellStyles": {
+        "backgroundColor": "#FFFF00"
+      }
+    },
+    {
+      "cell": "Y58",
+      "note": "Current depth change 5% wt = 24 - 19. QA BC58 gives 4% wt = 24 - 20. Both calculations depend on the unresolved previous-feature choice; no forced reconciliation.",
+      "cellStyles": {
+        "backgroundColor": "#FFFF00"
+      }
+    },
+    {
+      "cell": "X32",
+      "note": "Current repair text: 'Pipeline is replaced'. QA BB32 is dash; Kristin's X17 comment says red is not replacement. QA BC32 still leaves depth change dashed although 19 - 32 = -13% wt. Recent surface is Internal while the historical feature is External. Repair applicability and physical matching need review before changing this field.",
+      "cellStyles": {
+        "backgroundColor": "#FFFF00"
+      }
+    },
+    {
+      "cell": "Y32",
+      "note": "Main and QA BC32 are both dash. Current 19% minus previous 32% gives -13% wt, but the QA repair wording and cross-surface association are unresolved. No calculated value or replacement assumption has been imposed.",
+      "cellStyles": {
+        "backgroundColor": "#FFFF00"
+      }
+    },
+    {
+      "cell": "U32",
+      "note": "Current 2026 tally surface is Internal; 2020 tally row 793 for the stored prior association is External. Main U32 and QA AY32 retain External for the historical feature. This cross-surface association needs physical-match confirmation, not automatic label replacement.",
+      "cellStyles": {
+        "backgroundColor": "#FFFF00"
+      }
+    },
+    {
+      "cell": "U35",
+      "note": "Current 2026 tally surface is Internal; 2020 tally row 827 for the stored prior association is External. Main U35 and QA AY35 retain External for the historical feature. This cross-surface association needs physical-match confirmation, not automatic label replacement.",
+      "cellStyles": {
+        "backgroundColor": "#FFFF00"
+      }
+    }
+  ],
+  "log_writes": [
+    {
+      "cell": "B12",
+      "value": "PARTLY RESOLVED: Non-corrosion historical exclusions reconciled; item 7060 association remains open."
+    },
+    {
+      "cell": "C12",
+      "value": "Items 36 and 335 intentionally suppress historical matches under QA uncomparable/replacement rules, despite raw MOCOM associations. Item 7060 still has QA prior ID 3686 versus original MOCOM prior ID 3682."
+    },
+    {
+      "cell": "D12",
+      "value": "QA exclusions are not proof that no historical source record existed. Retain item 7060's conflicting observations and resolve the physical association before changing dependent fields."
+    },
+    {
+      "cell": "B18",
+      "value": "RESOLVED: Non-corrosion signal conclusions for items 6466 and 9532 follow the user's QA decision."
+    },
+    {
+      "cell": "C18",
+      "value": "AA44 and AA71 now state 'Signal comparison shows no clear change between inspections'. AB44 is 0% wt; AB71 was already 0% wt. Values match retained and original QA."
+    },
+    {
+      "cell": "D18",
+      "value": "The user selected QA. Signal descriptions and post-comparison depth changes agree; no claim of independently reinterpreting the original physical signal images."
+    },
+    {
+      "cell": "B19",
+      "value": "OPEN: Non-corrosion item 7060 has two different historical associations and mixed working geometry."
+    },
+    {
+      "cell": "C19",
+      "value": "MOCOM old 3682 / 2020 tally row 4466: 6091.353 ft, 19%, 04:29, 41.75 x 23.62 in. QA old 3686 / tally row 4472: 6096.179 ft, 20%, 06:59, 45.25 x 13.41 in. Working distance/depth and length/width currently come from different records."
+    },
+    {
+      "cell": "D19",
+      "value": "Seven main-vs-QA differences remain in N/O/P/Q/R/W/Y58. Held values unchanged, with yellow source-versus-QA notes; S/T58 also flagged as mixed-source. Confirm the physical prior feature and unused-match status before reconciling."
+    },
+    {
+      "cell": "B20",
+      "value": "PARTLY RESOLVED: Item 9787 repair wording follows QA; item 427 repair/depth logic remains open."
+    },
+    {
+      "cell": "C20",
+      "value": "X78 is now dash, following QA and Kristin's explicit comment that red rows are not replacement. X32 remains 'Pipeline is replaced' versus QA dash; Y32 and QA BC32 are both dash although 19 - 32 = -13% wt."
+    },
+    {
+      "cell": "D20",
+      "value": "Item 427 also associates current Internal and historical External features. Hold X32/Y32 pending review of repair applicability and physical matching; no automatic numeric growth or zero has been imposed."
+    },
+    {
+      "cell": "B153",
+      "value": "RESOLVED: Non-corrosion item 36 historical data are intentionally excluded by QA."
+    },
+    {
+      "cell": "C153",
+      "value": "Main X18 and QA BB18 identify an uncomparable area between the inspections. QA suppresses historical feature ID and geometry despite raw MOCOM association 36 to old 53."
+    },
+    {
+      "cell": "D153",
+      "value": "Preserve the QA uncomparable exclusion. This is not a claim that the raw historical source feature never existed."
+    },
+    {
+      "cell": "B154",
+      "value": "RESOLVED: Non-corrosion item 335 historical data are excluded as a replacement section."
+    },
+    {
+      "cell": "C154",
+      "value": "QA and main repair text identify replacement between inspections. Raw MOCOM old 416 / 2020 tally row 613 has 72% depth, 06:19 orientation and External surface, but QA excludes it as inapplicable. O/Q/R/U29 now follow QA dashes."
+    },
+    {
+      "cell": "D154",
+      "value": "Preserved main/QA depth-change dashes and original reviewer comments. Do not use this excluded raw historical record to calculate growth across the replacement."
+    },
+    {
+      "cell": "B155",
+      "value": "OPEN: Non-corrosion item 7060 physical historical match needs reviewer selection."
+    },
+    {
+      "cell": "C155",
+      "value": "QA AQ58 selects old 3686 / tally row 4472. MOCOM associates recent 7060 with old 3682 / tally row 4466. Both are real, distinct source records; see issue row 19 and yellow notes on the main sheet."
+    },
+    {
+      "cell": "D155",
+      "value": "Do not choose the nearest distance or dimensions opportunistically. Preserve QA and source evidence until the physical association and unused-match designation are confirmed."
+    },
+    {
+      "cell": "A280",
+      "value": "NC-SURFACE"
+    },
+    {
+      "cell": "B280",
+      "value": "OPEN: Non-corrosion items 427 and 460 have cross-surface historical associations."
+    },
+    {
+      "cell": "C280",
+      "value": "The 2026 tallies classify both current features as Internal. Their stored 2020 matches, tally rows 793 and 827, are External. Current/QA historical surface fields agree with the old tally."
+    },
+    {
+      "cell": "D280",
+      "value": "Preserved both measured surfaces and QA associations; U32/U35 are highlighted with source notes. Confirm physical matching rather than changing source surface labels merely to force consistency."
+    },
+    {
+      "cell": "A281",
+      "value": "NC-WORDING"
+    },
+    {
+      "cell": "B281",
+      "value": "OPEN WORDING: Replacement-section note says zero, while main and QA display dashes."
+    },
+    {
+      "cell": "C281",
+      "value": "Non-Corrosion Metal Loss A13 says replaced-section depth change is set to zero. The replacement rows 28\u201331 actually show dashes in both Y and QA BC."
+    },
+    {
+      "cell": "D281",
+      "value": "Preserved the original note and the QA-aligned dashes. No numeric zero was invented; clarify the wording separately if required."
+    }
+  ],
+  "formatting": "13 noted NC cells receive yellow fill only; new issue rows280:281 copy A279:D279 formatting. No existing comment/thread metadata altered.",
+  "held": [
+    {
+      "cell": "X32",
+      "row": 32,
+      "item": 427,
+      "field": "Repair Information",
+      "current_value": "Pipeline is replaced",
+      "qa_cell": "BB32",
+      "qa_value": "-",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "CD32",
+      "preserve_existing_format": true,
+      "primary_source": null,
+      "MOCOM_record": 579,
+      "decision": "HOLD_REPAIR_DEPTH_DEPENDENCY",
+      "reason": "QA X/BB says not replaced, but mainY32 andQA BC32 both remain dash despite19-32=-13. Current Internal versus historical External adds unresolved association concern."
+    },
+    {
+      "cell": "N58",
+      "row": 58,
+      "item": 7060,
+      "field": "Log Distance\n(ft)",
+      "current_value": 6091.353,
+      "qa_cell": "AR58",
+      "qa_value": 6096.179,
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BT58",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "2020_tally",
+        "sheet": "Pipe Tally",
+        "row": 4472,
+        "cell": "E4472",
+        "value": 6096.179
+      },
+      "MOCOM_record": 6627,
+      "decision": "HOLD_MAJOR_ASSOCIATION_CONFLICT",
+      "reason": "QA associates old3686 but MOCOM associates old3682. Current historical fields mix both records. Do not force agreement or change source mapping without explicit resolution."
+    },
+    {
+      "cell": "O58",
+      "row": 58,
+      "item": 7060,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS58",
+      "qa_value": "Metal loss - non-corrosion anomaly",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU58",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "2020_tally",
+        "sheet": "Pipe Tally",
+        "row": 4472,
+        "cell": "I4472",
+        "value": "Metal loss - non-corrosion anomaly"
+      },
+      "MOCOM_record": 6627,
+      "decision": "HOLD_MAJOR_ASSOCIATION_CONFLICT",
+      "reason": "QA associates old3686 but MOCOM associates old3682. Current historical fields mix both records. Do not force agreement or change source mapping without explicit resolution."
+    },
+    {
+      "cell": "P58",
+      "row": 58,
+      "item": 7060,
+      "field": "Comment",
+      "current_value": "-",
+      "qa_cell": "AT58",
+      "qa_value": "wall thinning on bend",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BV58",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "2020_tally",
+        "sheet": "Pipe Tally",
+        "row": 4472,
+        "cell": "P4472",
+        "value": "wall thinning on bend"
+      },
+      "MOCOM_record": 6627,
+      "decision": "HOLD_MAJOR_ASSOCIATION_CONFLICT",
+      "reason": "QA associates old3686 but MOCOM associates old3682. Current historical fields mix both records. Do not force agreement or change source mapping without explicit resolution."
+    },
+    {
+      "cell": "Q58",
+      "row": 58,
+      "item": 7060,
+      "field": "Depth\n(%wt)",
+      "current_value": 19.0,
+      "qa_cell": "AU58",
+      "qa_value": 20.0,
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BW58",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "2020_tally",
+        "sheet": "Pipe Tally",
+        "row": 4472,
+        "cell": "J4472",
+        "value": 20.0
+      },
+      "MOCOM_record": 6627,
+      "decision": "HOLD_MAJOR_ASSOCIATION_CONFLICT",
+      "reason": "QA associates old3686 but MOCOM associates old3682. Current historical fields mix both records. Do not force agreement or change source mapping without explicit resolution."
+    },
+    {
+      "cell": "R58",
+      "row": 58,
+      "item": 7060,
+      "field": "Orientation (hh:mm)",
+      "current_value": 0.18680555555555556,
+      "qa_cell": "AV58",
+      "qa_value": 0.29097222222222224,
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BX58",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "2020_tally",
+        "sheet": "Pipe Tally",
+        "row": 4472,
+        "cell": "L4472",
+        "value": 0.29097222222222224
+      },
+      "MOCOM_record": 6627,
+      "decision": "HOLD_MAJOR_ASSOCIATION_CONFLICT",
+      "reason": "QA associates old3686 but MOCOM associates old3682. Current historical fields mix both records. Do not force agreement or change source mapping without explicit resolution."
+    },
+    {
+      "cell": "W58",
+      "row": 58,
+      "item": 7060,
+      "field": "Notes",
+      "current_value": "-",
+      "qa_cell": "BA58",
+      "qa_value": "This is an unused matched Recent record.",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "CC58",
+      "preserve_existing_format": true,
+      "primary_source": null,
+      "MOCOM_record": 6627,
+      "decision": "HOLD_MAJOR_ASSOCIATION_CONFLICT",
+      "reason": "QA associates old3686 but MOCOM associates old3682. Current historical fields mix both records. Do not force agreement or change source mapping without explicit resolution."
+    },
+    {
+      "cell": "Y58",
+      "row": 58,
+      "item": 7060,
+      "field": "Depth Change \n(% wt)",
+      "current_value": 5.0,
+      "qa_cell": "BC58",
+      "qa_value": 4.0,
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "CE58",
+      "preserve_existing_format": true,
+      "primary_source": null,
+      "MOCOM_record": 6627,
+      "decision": "HOLD_MAJOR_ASSOCIATION_CONFLICT",
+      "reason": "QA associates old3686 but MOCOM associates old3682. Current historical fields mix both records. Do not force agreement or change source mapping without explicit resolution."
+    }
+  ],
+  "saved_sha256": "62b1d6c1b046dd1d6ee14405e55a9c089ce3f6c7c786036b253737411b013d44",
+  "new_issue_row_height": 64,
+  "post_log_repair_checkpoint": "C:\\Users\\razza\\house_inspection_record\\24BUNKER\\backups\\24BUNKER_Rev0-4_before_Deformation_QA_review_v2_20261111.xlsx",
+  "post_log_repair_sha256": "8b0cc17a26f2c6ab96d3aa34fdd656356ec3b8c7bf7716f5ec2c3272d59899f3",
+  "concurrent_edits_preserved": "Unexplained Deformations row12 text clearing, C8:D8 merge, row11/12 heights and NC columnC width/printscale changes retained as instructed. These are separate from the scoped QA correction changes."
+}

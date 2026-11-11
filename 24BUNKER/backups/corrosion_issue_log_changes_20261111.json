@@ -1,0 +1,2541 @@
+{
+  "sheet": "Unresolved Issues",
+  "changes": [
+    {
+      "cell": "B4",
+      "value": "Original QA comments, authors, replies and raw QA values are preserved. For 751 absent box matches, CM, CS, CT and CV formulas now prevent absent history or CGR from being treated as zero.",
+      "old": "Existing QA comments, author metadata, replies, and right-side QA evidence have not been edited."
+    },
+    {
+      "cell": "B8",
+      "value": "OPEN: Confirm the inspection dates and CGR day-count convention.",
+      "old": "\u2022 Confirm the inspection interval for CGR calculations."
+    },
+    {
+      "cell": "C8",
+      "value": "2020 primary Pipe Tally!B3 confirms 8 October 2020. QA uses 2052 days; MOCOM records 2051 days and is alignment-only.",
+      "old": "QA helper CT uses 2052/365=5.62191780821918 years; MOCOM cg_int is 2051/365=5.619178082. MOCOM is alignment-only."
+    },
+    {
+      "cell": "D8",
+      "value": "352 supported rate corrections and three manual resizings round identically under both intervals. Rows 823, 4026, 6449 remain day-count-sensitive.",
+      "old": "Verify inspection dates/day-count convention from primary records. The 12 narrow WT corrections round identically at 1 dp under both intervals."
+    },
+    {
+      "cell": "B9",
+      "value": "RESOLVED: The primary 2020 pipe tally is available and verified.",
+      "old": "\u2022 Supply or identify the primary 2020 inspection tally before resolving historical geometry and event conflicts."
+    },
+    {
+      "cell": "C9",
+      "value": "NPS24_Refinery_to_Dock_#1_Bunker_Final_Report_Listing_2020_Pipetally.xlsx, Pipe Tally rows 11:6156. Distance E is ft; depth J is %wt; M/N are inches.",
+      "old": "Only the 2026 working pipe tally is available in the specified folder. Listing contains references to a 2020 report file that is not present."
+    },
+    {
+      "cell": "D9",
+      "value": "All 7,580 stored prior IDs map uniquely using recorded QA AU, MOCOM old-ID alignment and primary distance/rectangle orientation. No nearest-value selection.",
+      "old": "Keep historical QA and MOCOM differences visible; do not choose values merely to clear FALSE flags."
+    },
+    {
+      "cell": "B10",
+      "value": "RESOLVED: 111 recorded QA historical rematches verified against the 2020 tally.",
+      "old": "\u2022 Review 111 corrosion historical feature-ID alignment conflicts."
+    },
+    {
+      "cell": "C10",
+      "value": "All 7,580 stored AU IDs resolve uniquely to Pipe Tally E/Z (distance and rectangle-start clock), including 196 distance-only ambiguities.",
+      "old": "Corrosion Anomalies!AU contains stored MOCOM Feature ID. Compare against MOCOM ol_ID. AG is a separate QA lookup ID, not the alignment key."
+    },
+    {
+      "cell": "D10",
+      "value": "Recorded QA associations and one-to-many groups retained. Source measurements verified; physical signal interpretation was not repeated.",
+      "old": "Resolve each identity against original 2020 records / approved signal review before changing historical geometry."
+    },
+    {
+      "cell": "B11",
+      "value": "RESOLVED: Nine stale historical distances corrected after QA rematching.",
+      "old": "\u2022 Review 101 corrosion historical log-distance disagreements with MOCOM."
+    },
+    {
+      "cell": "C11",
+      "value": "Main N rows 5435, 5437, 5438, 5440, 5445, 5448, 5449, 6278, 6280 now equal the unique 2020 source E values. Historical geometry matches those same source rows.",
+      "old": "Current Listing N differs from the MOCOM alignment distance by more than 0.00101 ft for 101 rows; QA N16 also flags orange distance associations."
+    },
+    {
+      "cell": "D11",
+      "value": "58 remaining N/AV flags are precision differences below 0.000000495 ft. ID 426 has no reported box match; its alignment coordinate is not a historical anomaly measurement.",
+      "old": "Confirm each matched anomaly identity. Do not use nearest values or MOCOM as replacement primary data."
+    },
+    {
+      "cell": "B13",
+      "value": "RESOLVED: Corrosion ID 6237 now has a consistent positive box CGR.",
+      "old": "\u2022 Resolve corrosion ID 6237's positive depth change and negative CGR."
+    },
+    {
+      "cell": "C13",
+      "value": "Corrosion row 5435: primary-backed I=17%, Q=13%, V=0.327 in, Y=+4%; N=5258.903 ft from 2020 row 3991; Z=+2.3 mils/year.",
+      "old": "Corrosion Anomalies row 5435: I=17%, Q=13%, Y=+4%, but Z=-2.9 mils/year. MOCOM uses previous depth22%, yielding a negative change."
+    },
+    {
+      "cell": "D13",
+      "value": "QA rematch AU3329 verified uniquely. W is no longer unused; both candidate inspection intervals give +2.3 at one decimal.",
+      "old": "Confirm historical depth and matching identity before updating the dependent CGR."
+    },
+    {
+      "cell": "B14",
+      "value": "PARTLY RESOLVED: Source-supported CGR corrections applied; exclusion rules remain open.",
+      "old": "\u2022 Review broader CGR differences, rather than blanket-recalculating every row."
+    },
+    {
+      "cell": "C14",
+      "value": "352 additional Z corrections use primary-backed I,Q,V and Y=I-Q, no repair/unused exclusion, QA agreement, and identical one-decimal results for both intervals.",
+      "old": "Baseline 2,929 Z values differ from ROUND(Y*V*10/(2052/365),1). This includes repair exclusions, unused matches and signal judgments."
+    },
+    {
+      "cell": "D14",
+      "value": "2,906 Z/BH flags remain, including 751 deliberate blanks. Of 1,467 repair-label flags, 972 are equivalent pre-2020 wording; 495 require timing/record review. Confirm repair/unused rules and three day-count-sensitive records.",
+      "old": "Apply approved repair, unused-match and signal rules first. Only the 12 source-supported WT rows were narrowly recalculated."
+    },
+    {
+      "cell": "B15",
+      "value": "PARTLY RESOLVED: 15 of 17 unexplained zero-rate records resolved.",
+      "old": "\u2022 Confirm why 17 rows with no repair note have zero CGR despite nonzero depth change."
+    },
+    {
+      "cell": "C15",
+      "value": "Five valid matched rates corrected: rows 127, 129, 131, 136, 137. Ten records have no reported prior box match and now have blank Y/Z. Rows128/132 remain excluded as unused.",
+      "old": "Baseline has 1,068 zero Z with nonzero Y: 868 pre-2020 sleeve, 183 pre-2026 sleeve, and 17 without a repair note."
+    },
+    {
+      "cell": "D15",
+      "value": "Do not replace missing history with zero depth. Confirm unused-match and sleeve exclusion rules before changing remaining zero rates.",
+      "old": "Review the 17 unexplained zeros and confirm exclusion rules for the sleeve populations."
+    },
+    {
+      "cell": "B16",
+      "value": "RESOLVED: Documented manual resizing comments and rates aligned.",
+      "old": "\u2022 Confirm manually resized historical signal results for IDs 2701,7719,9754."
+    },
+    {
+      "cell": "C16",
+      "value": "IDs 2701, 7719, 9754 retain signal numbers 16, 23, 30. Existing QA BJ documents previous depths 24%, 20%, 12%; working AB follows that wording and AC is 2.1, 4.2, 14.3 mils/year.",
+      "old": "Corrosion rows 2156,6585,8334 have QA BJ statements of manual resizing to 24%,20%,12%; working AC and QA BK differ materially."
+    },
+    {
+      "cell": "D16",
+      "value": "Rates independently reproduced from primary current depth/WT and recorded signal-review depths under both intervals. These are signal-derived results, not reported 2020 box matches.",
+      "old": "Verify signal-review approval and primary 2020 evidence before replacing the working signal CGR."
+    },
+    {
+      "cell": "B17",
+      "value": "OPEN: Confirm the source signal interpretation for corrosion ID 6995.",
+      "old": "\u2022 Confirm the signal interpretation for corrosion ID 6995."
+    },
+    {
+      "cell": "C17",
+      "value": "Row6038, signal 21: working AB='Possible Growth', AC=16.5; QA BJ says no clear change and BK=0. No reported prior box match; Y/Z are blank.",
+      "old": "Corrosion row 6038: working AB='Possible Growth', AC=16.5; QA BJ='no clear change', BK=0."
+    },
+    {
+      "cell": "D17",
+      "value": "Signal evidence is needed to choose between the two conclusions. Conflicting AB/AC remain yellow; original QA wording and rates are preserved.",
+      "old": "Review the source signal comparison before changing the conclusion."
+    },
+    {
+      "cell": "B24",
+      "value": "PARTLY RESOLVED: No-signal rates and five usage notes corrected.",
+      "old": "\u2022 Confirm no-signal exclusions and unused recent-match changes identified by QA."
+    },
+    {
+      "cell": "C24",
+      "value": "20 unsupported red AC values changed to dash per AC16. W476/W500/W5435 cleared; W5448/W6278 marked unused after QA and matched-group checks.",
+      "old": "Corrosion AC16 flags red values with no signals; W16 replies identify3 records no longer unused; AD/AE comments question outliers and sleeve rates."
+    },
+    {
+      "cell": "D24",
+      "value": "ID 2359 row 1858 remains a repair-dependent usage decision: depth 42 repaired versus depth 41 unrepaired in the same prior group. Do not infer the governing repair/outlier rule.",
+      "old": "Identify the highlighted records and approve the applicable rule before changing classifications or recommended rates."
+    },
+    {
+      "cell": "B25",
+      "value": "OPEN: Confirm final EC1 section, applied CGR and outlier treatment.",
+      "old": "\u2022 Confirm the final EC1 recommended CGR and outlier treatment."
+    },
+    {
+      "cell": "C25",
+      "value": "Section flags: 1,142 EC1/dash, 77 Outlier/EC1, 20 Outlier/dash. Applied-rate flags: 7,165 at 15 versus 14.9; 1,162 at 15 versus dash. AE20 outlier is corrected to 19.9; applied/default rates remain separate from calculated growth.",
+      "old": "Contents L31 and working AE generally use15; QA BM commonly14.9. Baseline CQ has 1,239 differences, CR8,328."
+    },
+    {
+      "cell": "D25",
+      "value": "Engineering decision required for segmentation, sleeve/outlier treatment and governing rate. Yellow flags include genuine choices, source-supported QA conflicts and deliberate missing-data differences.",
+      "old": "Do not infer a governing rate or outlier rule from a matching total. Record engineering decision."
+    },
+    {
+      "cell": "B42",
+      "value": "RESOLVED: Corrosion item 67, row 22: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 67, row 22: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D42",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B43",
+      "value": "RESOLVED: Corrosion item 919, row 477: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 919, row 477: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D43",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B44",
+      "value": "RESOLVED: Corrosion item 954, row 506: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 954, row 506: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D44",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B45",
+      "value": "RESOLVED: Corrosion item 1124, row 644: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 1124, row 644: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D45",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B46",
+      "value": "RESOLVED: Corrosion item 1125, row 645: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 1125, row 645: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D46",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B47",
+      "value": "RESOLVED: Corrosion item 1126, row 646: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 1126, row 646: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D47",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B48",
+      "value": "RESOLVED: Corrosion item 1127, row 647: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 1127, row 647: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D48",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B49",
+      "value": "RESOLVED: Corrosion item 1128, row 648: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 1128, row 648: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D49",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B50",
+      "value": "RESOLVED: Corrosion item 1129, row 649: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 1129, row 649: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D50",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B51",
+      "value": "RESOLVED: Corrosion item 1130, row 650: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 1130, row 650: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D51",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B52",
+      "value": "RESOLVED: Corrosion item 1131, row 651: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 1131, row 651: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D52",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B53",
+      "value": "RESOLVED: Corrosion item 1132, row 652: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 1132, row 652: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D53",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B54",
+      "value": "RESOLVED: Corrosion item 1133, row 653: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 1133, row 653: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D54",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B55",
+      "value": "RESOLVED: Corrosion item 1134, row 654: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 1134, row 654: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D55",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B56",
+      "value": "RESOLVED: Corrosion item 1135, row 655: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 1135, row 655: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D56",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B57",
+      "value": "RESOLVED: Corrosion item 1136, row 656: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 1136, row 656: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D57",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B58",
+      "value": "RESOLVED: Corrosion item 1137, row 657: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 1137, row 657: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D58",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B59",
+      "value": "RESOLVED: Corrosion item 1138, row 658: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 1138, row 658: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D59",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B60",
+      "value": "RESOLVED: Corrosion item 1139, row 659: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 1139, row 659: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D60",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B61",
+      "value": "RESOLVED: Corrosion item 1140, row 660: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 1140, row 660: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D61",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B62",
+      "value": "RESOLVED: Corrosion item 1141, row 661: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 1141, row 661: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D62",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B63",
+      "value": "RESOLVED: Corrosion item 1142, row 662: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 1142, row 662: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D63",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B64",
+      "value": "RESOLVED: Corrosion item 1143, row 663: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 1143, row 663: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D64",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B65",
+      "value": "RESOLVED: Corrosion item 1144, row 664: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 1144, row 664: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D65",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B66",
+      "value": "RESOLVED: Corrosion item 1145, row 665: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 1145, row 665: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D66",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B67",
+      "value": "RESOLVED: Corrosion item 1146, row 666: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 1146, row 666: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D67",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B68",
+      "value": "RESOLVED: Corrosion item 1147, row 667: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 1147, row 667: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D68",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B69",
+      "value": "RESOLVED: Corrosion item 1148, row 668: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 1148, row 668: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D69",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B70",
+      "value": "RESOLVED: Corrosion item 1149, row 669: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 1149, row 669: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D70",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B71",
+      "value": "RESOLVED: Corrosion item 1150, row 670: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 1150, row 670: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D71",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B72",
+      "value": "RESOLVED: Corrosion item 1151, row 671: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 1151, row 671: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D72",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B73",
+      "value": "RESOLVED: Corrosion item 1152, row 672: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 1152, row 672: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D73",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B74",
+      "value": "RESOLVED: Corrosion item 1153, row 673: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 1153, row 673: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D74",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B75",
+      "value": "RESOLVED: Corrosion item 1154, row 674: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 1154, row 674: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D75",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B76",
+      "value": "RESOLVED: Corrosion item 1155, row 675: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 1155, row 675: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D76",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B77",
+      "value": "RESOLVED: Corrosion item 1156, row 676: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 1156, row 676: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D77",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B78",
+      "value": "RESOLVED: Corrosion item 1157, row 677: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 1157, row 677: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D78",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B79",
+      "value": "RESOLVED: Corrosion item 1158, row 678: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 1158, row 678: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D79",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B80",
+      "value": "RESOLVED: Corrosion item 1159, row 679: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 1159, row 679: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D80",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B81",
+      "value": "RESOLVED: Corrosion item 1160, row 680: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 1160, row 680: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D81",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B82",
+      "value": "RESOLVED: Corrosion item 1161, row 681: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 1161, row 681: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D82",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B83",
+      "value": "RESOLVED: Corrosion item 1162, row 682: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 1162, row 682: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D83",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B84",
+      "value": "RESOLVED: Corrosion item 1163, row 683: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 1163, row 683: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D84",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B85",
+      "value": "RESOLVED: Corrosion item 1164, row 684: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 1164, row 684: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D85",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B86",
+      "value": "RESOLVED: Corrosion item 1165, row 685: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 1165, row 685: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D86",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B87",
+      "value": "RESOLVED: Corrosion item 1166, row 686: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 1166, row 686: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D87",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B88",
+      "value": "RESOLVED: Corrosion item 1167, row 687: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 1167, row 687: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D88",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B89",
+      "value": "RESOLVED: Corrosion item 1168, row 688: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 1168, row 688: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D89",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B90",
+      "value": "RESOLVED: Corrosion item 1169, row 689: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 1169, row 689: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D90",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B91",
+      "value": "RESOLVED: Corrosion item 1170, row 690: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 1170, row 690: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D91",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B92",
+      "value": "RESOLVED: Corrosion item 1171, row 691: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 1171, row 691: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D92",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B93",
+      "value": "RESOLVED: Corrosion item 1172, row 692: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 1172, row 692: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D93",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B94",
+      "value": "RESOLVED: Corrosion item 1173, row 693: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 1173, row 693: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D94",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B95",
+      "value": "RESOLVED: Corrosion item 2353, row 1853: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 2353, row 1853: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D95",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B96",
+      "value": "RESOLVED: Corrosion item 4192, row 3553: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 4192, row 3553: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D96",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B97",
+      "value": "RESOLVED: Corrosion item 5451, row 4718: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 5451, row 4718: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D97",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B98",
+      "value": "RESOLVED: Corrosion item 5721, row 4966: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 5721, row 4966: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D98",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B99",
+      "value": "RESOLVED: Corrosion item 5722, row 4967: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 5722, row 4967: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D99",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B100",
+      "value": "RESOLVED: Corrosion item 5723, row 4968: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 5723, row 4968: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D100",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B101",
+      "value": "RESOLVED: Corrosion item 5724, row 4969: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 5724, row 4969: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D101",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B102",
+      "value": "RESOLVED: Corrosion item 5725, row 4970: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 5725, row 4970: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D102",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B103",
+      "value": "RESOLVED: Corrosion item 5726, row 4971: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 5726, row 4971: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D103",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B104",
+      "value": "RESOLVED: Corrosion item 5727, row 4972: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 5727, row 4972: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D104",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B105",
+      "value": "RESOLVED: Corrosion item 5728, row 4973: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 5728, row 4973: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D105",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B106",
+      "value": "RESOLVED: Corrosion item 5729, row 4974: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 5729, row 4974: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D106",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B107",
+      "value": "RESOLVED: Corrosion item 5731, row 4976: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 5731, row 4976: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D107",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B108",
+      "value": "RESOLVED: Corrosion item 5732, row 4977: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 5732, row 4977: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D108",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B109",
+      "value": "RESOLVED: Corrosion item 6237, row 5435: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 6237, row 5435: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D109",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B110",
+      "value": "RESOLVED: Corrosion item 6239, row 5437: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 6239, row 5437: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D110",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B111",
+      "value": "RESOLVED: Corrosion item 6240, row 5438: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 6240, row 5438: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D111",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B112",
+      "value": "RESOLVED: Corrosion item 6241, row 5439: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 6241, row 5439: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D112",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B113",
+      "value": "RESOLVED: Corrosion item 6242, row 5440: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 6242, row 5440: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D113",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B114",
+      "value": "RESOLVED: Corrosion item 6247, row 5445: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 6247, row 5445: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D114",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B115",
+      "value": "RESOLVED: Corrosion item 6250, row 5448: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 6250, row 5448: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D115",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B116",
+      "value": "RESOLVED: Corrosion item 6251, row 5449: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 6251, row 5449: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D116",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B117",
+      "value": "RESOLVED: Corrosion item 7306, row 6277: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 7306, row 6277: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D117",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B118",
+      "value": "RESOLVED: Corrosion item 7307, row 6278: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 7307, row 6278: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D118",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B119",
+      "value": "RESOLVED: Corrosion item 7310, row 6280: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 7310, row 6280: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D119",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B120",
+      "value": "RESOLVED: Corrosion item 7888, row 6689: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 7888, row 6689: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D120",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B121",
+      "value": "RESOLVED: Corrosion item 8423, row 7196: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 8423, row 7196: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D121",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B122",
+      "value": "RESOLVED: Corrosion item 8424, row 7197: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 8424, row 7197: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D122",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B123",
+      "value": "RESOLVED: Corrosion item 8425, row 7198: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 8425, row 7198: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D123",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B124",
+      "value": "RESOLVED: Corrosion item 8426, row 7199: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 8426, row 7199: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D124",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B125",
+      "value": "RESOLVED: Corrosion item 8427, row 7200: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 8427, row 7200: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D125",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B126",
+      "value": "RESOLVED: Corrosion item 8430, row 7203: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 8430, row 7203: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D126",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B127",
+      "value": "RESOLVED: Corrosion item 9026, row 7738: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 9026, row 7738: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D127",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B128",
+      "value": "RESOLVED: Corrosion item 9027, row 7739: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 9027, row 7739: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D128",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B129",
+      "value": "RESOLVED: Corrosion item 9028, row 7740: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 9028, row 7740: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D129",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B130",
+      "value": "RESOLVED: Corrosion item 9030, row 7742: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 9030, row 7742: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D130",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B131",
+      "value": "RESOLVED: Corrosion item 9031, row 7743: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 9031, row 7743: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D131",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B132",
+      "value": "RESOLVED: Corrosion item 9032, row 7744: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 9032, row 7744: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D132",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B133",
+      "value": "RESOLVED: Corrosion item 9033, row 7745: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 9033, row 7745: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D133",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B134",
+      "value": "RESOLVED: Corrosion item 9034, row 7746: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 9034, row 7746: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D134",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B135",
+      "value": "RESOLVED: Corrosion item 9035, row 7747: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 9035, row 7747: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D135",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B136",
+      "value": "RESOLVED: Corrosion item 9036, row 7748: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 9036, row 7748: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D136",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B137",
+      "value": "RESOLVED: Corrosion item 9145, row 7839: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 9145, row 7839: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D137",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B138",
+      "value": "RESOLVED: Corrosion item 9146, row 7840: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 9146, row 7840: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D138",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B139",
+      "value": "RESOLVED: Corrosion item 9147, row 7841: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 9147, row 7841: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D139",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B140",
+      "value": "RESOLVED: Corrosion item 9148, row 7842: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 9148, row 7842: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D140",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B141",
+      "value": "RESOLVED: Corrosion item 9149, row 7843: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 9149, row 7843: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D141",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B142",
+      "value": "RESOLVED: Corrosion item 9150, row 7844: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 9150, row 7844: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D142",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B143",
+      "value": "RESOLVED: Corrosion item 9151, row 7845: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 9151, row 7845: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D143",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B144",
+      "value": "RESOLVED: Corrosion item 9152, row 7846: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 9152, row 7846: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D144",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B145",
+      "value": "RESOLVED: Corrosion item 9154, row 7848: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 9154, row 7848: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D145",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B146",
+      "value": "RESOLVED: Corrosion item 9155, row 7849: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 9155, row 7849: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D146",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B147",
+      "value": "RESOLVED: Corrosion item 9156, row 7850: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 9156, row 7850: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D147",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B148",
+      "value": "RESOLVED: Corrosion item 9158, row 7852: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 9158, row 7852: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D148",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B149",
+      "value": "RESOLVED: Corrosion item 9159, row 7853: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 9159, row 7853: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D149",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B150",
+      "value": "RESOLVED: Corrosion item 9163, row 7857: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 9163, row 7857: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D150",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B151",
+      "value": "RESOLVED: Corrosion item 9164, row 7858: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 9164, row 7858: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D151",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B152",
+      "value": "RESOLVED: Corrosion item 9166, row 7860: recorded QA prior ID verified.",
+      "old": "\u2022 Corrosion Anomalies, item 9166, row 7860: which historical feature ID is correct?"
+    },
+    {
+      "cell": "D152",
+      "value": "Recorded AU maps uniquely through MOCOM old-ID alignment to the 2020 Pipe Tally distance and rectangle clock. Historical measurements agree. Signal interpretation was not repeated.",
+      "old": "Check primary 2020 evidence and approved signal association. MOCOM is alignment-only."
+    },
+    {
+      "cell": "B159",
+      "value": "RESOLVED: Corrosion item 67, row 22: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 67, row 22: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D159",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B160",
+      "value": "RESOLVED: Corrosion item 426, row 139: no reported historical box match.",
+      "old": "\u2022 Corrosion item 426, row 139: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D160",
+      "value": "No stored prior ID, historical depth or signal-comparison evidence. Y/Z are blank; W states no box match. N is retained alignment information, not proof of a historical anomaly.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B161",
+      "value": "RESOLVED: Corrosion item 919, row 477: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 919, row 477: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D161",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B162",
+      "value": "RESOLVED: Corrosion item 954, row 506: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 954, row 506: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D162",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B163",
+      "value": "RESOLVED: Corrosion item 1124, row 644: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 1124, row 644: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D163",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B164",
+      "value": "RESOLVED: Corrosion item 1125, row 645: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 1125, row 645: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D164",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B165",
+      "value": "RESOLVED: Corrosion item 1126, row 646: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 1126, row 646: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D165",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B166",
+      "value": "RESOLVED: Corrosion item 1127, row 647: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 1127, row 647: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D166",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B167",
+      "value": "RESOLVED: Corrosion item 1128, row 648: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 1128, row 648: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D167",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B168",
+      "value": "RESOLVED: Corrosion item 1129, row 649: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 1129, row 649: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D168",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B169",
+      "value": "RESOLVED: Corrosion item 1130, row 650: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 1130, row 650: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D169",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B170",
+      "value": "RESOLVED: Corrosion item 1131, row 651: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 1131, row 651: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D170",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B171",
+      "value": "RESOLVED: Corrosion item 1132, row 652: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 1132, row 652: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D171",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B172",
+      "value": "RESOLVED: Corrosion item 1133, row 653: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 1133, row 653: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D172",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B173",
+      "value": "RESOLVED: Corrosion item 1134, row 654: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 1134, row 654: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D173",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B174",
+      "value": "RESOLVED: Corrosion item 1135, row 655: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 1135, row 655: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D174",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B175",
+      "value": "RESOLVED: Corrosion item 1136, row 656: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 1136, row 656: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D175",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B176",
+      "value": "RESOLVED: Corrosion item 1137, row 657: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 1137, row 657: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D176",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B177",
+      "value": "RESOLVED: Corrosion item 1138, row 658: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 1138, row 658: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D177",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B178",
+      "value": "RESOLVED: Corrosion item 1139, row 659: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 1139, row 659: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D178",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B179",
+      "value": "RESOLVED: Corrosion item 1140, row 660: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 1140, row 660: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D179",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B180",
+      "value": "RESOLVED: Corrosion item 1141, row 661: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 1141, row 661: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D180",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B181",
+      "value": "RESOLVED: Corrosion item 1142, row 662: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 1142, row 662: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D181",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B182",
+      "value": "RESOLVED: Corrosion item 1143, row 663: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 1143, row 663: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D182",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B183",
+      "value": "RESOLVED: Corrosion item 1144, row 664: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 1144, row 664: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D183",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B184",
+      "value": "RESOLVED: Corrosion item 1145, row 665: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 1145, row 665: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D184",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B185",
+      "value": "RESOLVED: Corrosion item 1146, row 666: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 1146, row 666: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D185",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B186",
+      "value": "RESOLVED: Corrosion item 1147, row 667: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 1147, row 667: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D186",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B187",
+      "value": "RESOLVED: Corrosion item 1148, row 668: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 1148, row 668: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D187",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B188",
+      "value": "RESOLVED: Corrosion item 1149, row 669: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 1149, row 669: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D188",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B189",
+      "value": "RESOLVED: Corrosion item 1150, row 670: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 1150, row 670: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D189",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B190",
+      "value": "RESOLVED: Corrosion item 1151, row 671: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 1151, row 671: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D190",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B191",
+      "value": "RESOLVED: Corrosion item 1152, row 672: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 1152, row 672: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D191",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B192",
+      "value": "RESOLVED: Corrosion item 1153, row 673: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 1153, row 673: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D192",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B193",
+      "value": "RESOLVED: Corrosion item 1154, row 674: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 1154, row 674: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D193",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B194",
+      "value": "RESOLVED: Corrosion item 1155, row 675: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 1155, row 675: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D194",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B195",
+      "value": "RESOLVED: Corrosion item 1156, row 676: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 1156, row 676: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D195",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B196",
+      "value": "RESOLVED: Corrosion item 1157, row 677: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 1157, row 677: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D196",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B197",
+      "value": "RESOLVED: Corrosion item 1158, row 678: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 1158, row 678: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D197",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B198",
+      "value": "RESOLVED: Corrosion item 1159, row 679: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 1159, row 679: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D198",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B199",
+      "value": "RESOLVED: Corrosion item 1160, row 680: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 1160, row 680: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D199",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B200",
+      "value": "RESOLVED: Corrosion item 1161, row 681: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 1161, row 681: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D200",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B201",
+      "value": "RESOLVED: Corrosion item 1162, row 682: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 1162, row 682: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D201",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B202",
+      "value": "RESOLVED: Corrosion item 1163, row 683: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 1163, row 683: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D202",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B203",
+      "value": "RESOLVED: Corrosion item 1164, row 684: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 1164, row 684: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D203",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B204",
+      "value": "RESOLVED: Corrosion item 1165, row 685: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 1165, row 685: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D204",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B205",
+      "value": "RESOLVED: Corrosion item 1166, row 686: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 1166, row 686: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D205",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B206",
+      "value": "RESOLVED: Corrosion item 1167, row 687: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 1167, row 687: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D206",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B207",
+      "value": "RESOLVED: Corrosion item 1168, row 688: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 1168, row 688: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D207",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B208",
+      "value": "RESOLVED: Corrosion item 1169, row 689: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 1169, row 689: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D208",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B209",
+      "value": "RESOLVED: Corrosion item 1170, row 690: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 1170, row 690: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D209",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B210",
+      "value": "RESOLVED: Corrosion item 1171, row 691: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 1171, row 691: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D210",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B211",
+      "value": "RESOLVED: Corrosion item 1172, row 692: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 1172, row 692: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D211",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B212",
+      "value": "RESOLVED: Corrosion item 1173, row 693: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 1173, row 693: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D212",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B213",
+      "value": "RESOLVED: Corrosion item 2353, row 1853: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 2353, row 1853: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D213",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B214",
+      "value": "RESOLVED: Corrosion item 4192, row 3553: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 4192, row 3553: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D214",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B215",
+      "value": "RESOLVED: Corrosion item 5451, row 4718: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 5451, row 4718: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D215",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B216",
+      "value": "RESOLVED: Corrosion item 5721, row 4966: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 5721, row 4966: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D216",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B217",
+      "value": "RESOLVED: Corrosion item 5722, row 4967: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 5722, row 4967: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D217",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B218",
+      "value": "RESOLVED: Corrosion item 5723, row 4968: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 5723, row 4968: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D218",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B219",
+      "value": "RESOLVED: Corrosion item 5724, row 4969: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 5724, row 4969: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D219",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B220",
+      "value": "RESOLVED: Corrosion item 5725, row 4970: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 5725, row 4970: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D220",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B221",
+      "value": "RESOLVED: Corrosion item 5726, row 4971: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 5726, row 4971: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D221",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B222",
+      "value": "RESOLVED: Corrosion item 5727, row 4972: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 5727, row 4972: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D222",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B223",
+      "value": "RESOLVED: Corrosion item 5728, row 4973: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 5728, row 4973: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D223",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B224",
+      "value": "RESOLVED: Corrosion item 5729, row 4974: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 5729, row 4974: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D224",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B225",
+      "value": "RESOLVED: Corrosion item 5731, row 4976: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 5731, row 4976: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D225",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B226",
+      "value": "RESOLVED: Corrosion item 5732, row 4977: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 5732, row 4977: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D226",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B227",
+      "value": "RESOLVED: Corrosion item 7888, row 6689: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 7888, row 6689: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D227",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B228",
+      "value": "RESOLVED: Corrosion item 8423, row 7196: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 8423, row 7196: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D228",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B229",
+      "value": "RESOLVED: Corrosion item 8424, row 7197: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 8424, row 7197: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D229",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B230",
+      "value": "RESOLVED: Corrosion item 8425, row 7198: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 8425, row 7198: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D230",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B231",
+      "value": "RESOLVED: Corrosion item 8426, row 7199: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 8426, row 7199: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D231",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B232",
+      "value": "RESOLVED: Corrosion item 8427, row 7200: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 8427, row 7200: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D232",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B233",
+      "value": "RESOLVED: Corrosion item 8430, row 7203: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 8430, row 7203: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D233",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B234",
+      "value": "RESOLVED: Corrosion item 9026, row 7738: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 9026, row 7738: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D234",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B235",
+      "value": "RESOLVED: Corrosion item 9027, row 7739: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 9027, row 7739: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D235",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B236",
+      "value": "RESOLVED: Corrosion item 9028, row 7740: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 9028, row 7740: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D236",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B237",
+      "value": "RESOLVED: Corrosion item 9030, row 7742: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 9030, row 7742: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D237",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B238",
+      "value": "RESOLVED: Corrosion item 9031, row 7743: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 9031, row 7743: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D238",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B239",
+      "value": "RESOLVED: Corrosion item 9032, row 7744: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 9032, row 7744: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D239",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B240",
+      "value": "RESOLVED: Corrosion item 9033, row 7745: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 9033, row 7745: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D240",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B241",
+      "value": "RESOLVED: Corrosion item 9034, row 7746: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 9034, row 7746: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D241",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B242",
+      "value": "RESOLVED: Corrosion item 9035, row 7747: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 9035, row 7747: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D242",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B243",
+      "value": "RESOLVED: Corrosion item 9036, row 7748: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 9036, row 7748: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D243",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B244",
+      "value": "RESOLVED: Corrosion item 9145, row 7839: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 9145, row 7839: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D244",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B245",
+      "value": "RESOLVED: Corrosion item 9146, row 7840: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 9146, row 7840: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D245",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B246",
+      "value": "RESOLVED: Corrosion item 9147, row 7841: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 9147, row 7841: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D246",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B247",
+      "value": "RESOLVED: Corrosion item 9148, row 7842: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 9148, row 7842: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D247",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B248",
+      "value": "RESOLVED: Corrosion item 9149, row 7843: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 9149, row 7843: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D248",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B249",
+      "value": "RESOLVED: Corrosion item 9150, row 7844: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 9150, row 7844: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D249",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B250",
+      "value": "RESOLVED: Corrosion item 9151, row 7845: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 9151, row 7845: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D250",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B251",
+      "value": "RESOLVED: Corrosion item 9152, row 7846: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 9152, row 7846: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D251",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B252",
+      "value": "RESOLVED: Corrosion item 9154, row 7848: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 9154, row 7848: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D252",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B253",
+      "value": "RESOLVED: Corrosion item 9155, row 7849: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 9155, row 7849: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D253",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B254",
+      "value": "RESOLVED: Corrosion item 9156, row 7850: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 9156, row 7850: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D254",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B255",
+      "value": "RESOLVED: Corrosion item 9158, row 7852: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 9158, row 7852: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D255",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B256",
+      "value": "RESOLVED: Corrosion item 9159, row 7853: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 9159, row 7853: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D256",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B257",
+      "value": "RESOLVED: Corrosion item 9163, row 7857: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 9163, row 7857: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D257",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B258",
+      "value": "RESOLVED: Corrosion item 9164, row 7858: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 9164, row 7858: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D258",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B259",
+      "value": "RESOLVED: Corrosion item 9166, row 7860: primary historical distance verified.",
+      "old": "\u2022 Corrosion item 9166, row 7860: confirm prior anomaly distance."
+    },
+    {
+      "cell": "D259",
+      "value": "Recorded QA prior ID uniquely selects the 2020 primary tally record. Current N agrees with primary E; original automatic MOCOM association is superseded by the recorded QA rematch.",
+      "old": "Confirm identity and primary 2020 distance together. Do not choose by numerical proximity."
+    },
+    {
+      "cell": "B263",
+      "value": "RESOLVED: Corrosion item 252, row 127: valid matched box CGR corrected.",
+      "old": "\u2022 Corrosion item 252, row 127: why is CGR zero with nonzero depth change?"
+    },
+    {
+      "cell": "C263",
+      "value": "Z127=3.5 mils/year; Y=5%wt; current local WT=0.398 in. Both primary tallies support the depths.",
+      "old": "Z127=0; depth change=5% wt. Unused recent match: no. No repair note recorded."
+    },
+    {
+      "cell": "D263",
+      "value": "QA BH agrees with the recalculation at one decimal under both 2051- and 2052-day intervals. No repair or unused-match exclusion.",
+      "old": "Confirm exclusion / signal-review basis before changing CGR."
+    },
+    {
+      "cell": "B264",
+      "value": "OPEN: Corrosion item 253, row 128: unused-match zero-rate exclusion.",
+      "old": "\u2022 Corrosion item 253, row 128: why is CGR zero with nonzero depth change?"
+    },
+    {
+      "cell": "D264",
+      "value": "The record is an unused recent match. Confirm the governing exclusion convention before recalculating or suppressing its box rate.",
+      "old": "Confirm exclusion / signal-review basis before changing CGR."
+    },
+    {
+      "cell": "B265",
+      "value": "RESOLVED: Corrosion item 254, row 129: valid matched box CGR corrected.",
+      "old": "\u2022 Corrosion item 254, row 129: why is CGR zero with nonzero depth change?"
+    },
+    {
+      "cell": "C265",
+      "value": "Z129=-0.7 mils/year; Y=-1%wt; current local WT=0.417 in. Both primary tallies support the depths.",
+      "old": "Z129=0; depth change=-1% wt. Unused recent match: no. No repair note recorded."
+    },
+    {
+      "cell": "D265",
+      "value": "QA BH agrees with the recalculation at one decimal under both 2051- and 2052-day intervals. No repair or unused-match exclusion.",
+      "old": "Confirm exclusion / signal-review basis before changing CGR."
+    },
+    {
+      "cell": "B266",
+      "value": "RESOLVED: Corrosion item 410, row 130: no reported historical box match.",
+      "old": "\u2022 Corrosion item 410, row 130: why is CGR zero with nonzero depth change?"
+    },
+    {
+      "cell": "C266",
+      "value": "Y130 and Z130 are blank. W identifies absence of a 2020 box match.",
+      "old": "Z130=0; depth change=20% wt. Unused recent match: no. No repair note recorded."
+    },
+    {
+      "cell": "D266",
+      "value": "No calculated box growth is supported without historical depth. Applied/default rate remains separate; QA raw data is retained.",
+      "old": "Confirm exclusion / signal-review basis before changing CGR."
+    },
+    {
+      "cell": "B267",
+      "value": "RESOLVED: Corrosion item 411, row 131: valid matched box CGR corrected.",
+      "old": "\u2022 Corrosion item 411, row 131: why is CGR zero with nonzero depth change?"
+    },
+    {
+      "cell": "C267",
+      "value": "Z131=-18 mils/year; Y=-26%wt; current local WT=0.39 in. Both primary tallies support the depths.",
+      "old": "Z131=0; depth change=-26% wt. Unused recent match: no. No repair note recorded."
+    },
+    {
+      "cell": "D267",
+      "value": "QA BH agrees with the recalculation at one decimal under both 2051- and 2052-day intervals. No repair or unused-match exclusion.",
+      "old": "Confirm exclusion / signal-review basis before changing CGR."
+    },
+    {
+      "cell": "B268",
+      "value": "OPEN: Corrosion item 413, row 132: unused-match zero-rate exclusion.",
+      "old": "\u2022 Corrosion item 413, row 132: why is CGR zero with nonzero depth change?"
+    },
+    {
+      "cell": "D268",
+      "value": "The record is an unused recent match. Confirm the governing exclusion convention before recalculating or suppressing its box rate.",
+      "old": "Confirm exclusion / signal-review basis before changing CGR."
+    },
+    {
+      "cell": "B269",
+      "value": "RESOLVED: Corrosion item 414, row 133: no reported historical box match.",
+      "old": "\u2022 Corrosion item 414, row 133: why is CGR zero with nonzero depth change?"
+    },
+    {
+      "cell": "C269",
+      "value": "Y133 and Z133 are blank. W identifies absence of a 2020 box match.",
+      "old": "Z133=0; depth change=27% wt. Unused recent match: no. No repair note recorded."
+    },
+    {
+      "cell": "D269",
+      "value": "No calculated box growth is supported without historical depth. Applied/default rate remains separate; QA raw data is retained.",
+      "old": "Confirm exclusion / signal-review basis before changing CGR."
+    },
+    {
+      "cell": "B270",
+      "value": "RESOLVED: Corrosion item 415, row 134: no reported historical box match.",
+      "old": "\u2022 Corrosion item 415, row 134: why is CGR zero with nonzero depth change?"
+    },
+    {
+      "cell": "C270",
+      "value": "Y134 and Z134 are blank. W identifies absence of a 2020 box match.",
+      "old": "Z134=0; depth change=20% wt. Unused recent match: no. No repair note recorded."
+    },
+    {
+      "cell": "D270",
+      "value": "No calculated box growth is supported without historical depth. Applied/default rate remains separate; QA raw data is retained.",
+      "old": "Confirm exclusion / signal-review basis before changing CGR."
+    },
+    {
+      "cell": "B271",
+      "value": "RESOLVED: Corrosion item 416, row 135: no reported historical box match.",
+      "old": "\u2022 Corrosion item 416, row 135: why is CGR zero with nonzero depth change?"
+    },
+    {
+      "cell": "C271",
+      "value": "Y135 and Z135 are blank. W identifies absence of a 2020 box match.",
+      "old": "Z135=0; depth change=26% wt. Unused recent match: no. No repair note recorded."
+    },
+    {
+      "cell": "D271",
+      "value": "No calculated box growth is supported without historical depth. Applied/default rate remains separate; QA raw data is retained.",
+      "old": "Confirm exclusion / signal-review basis before changing CGR."
+    },
+    {
+      "cell": "B272",
+      "value": "RESOLVED: Corrosion item 418, row 136: valid matched box CGR corrected.",
+      "old": "\u2022 Corrosion item 418, row 136: why is CGR zero with nonzero depth change?"
+    },
+    {
+      "cell": "C272",
+      "value": "Z136=13.1 mils/year; Y=23%wt; current local WT=0.319 in. Both primary tallies support the depths.",
+      "old": "Z136=0; depth change=23% wt. Unused recent match: no. No repair note recorded."
+    },
+    {
+      "cell": "D272",
+      "value": "QA BH agrees with the recalculation at one decimal under both 2051- and 2052-day intervals. No repair or unused-match exclusion.",
+      "old": "Confirm exclusion / signal-review basis before changing CGR."
+    },
+    {
+      "cell": "B273",
+      "value": "RESOLVED: Corrosion item 419, row 137: valid matched box CGR corrected.",
+      "old": "\u2022 Corrosion item 419, row 137: why is CGR zero with nonzero depth change?"
+    },
+    {
+      "cell": "C273",
+      "value": "Z137=9.2 mils/year; Y=16%wt; current local WT=0.323 in. Both primary tallies support the depths.",
+      "old": "Z137=0; depth change=16% wt. Unused recent match: no. No repair note recorded."
+    },
+    {
+      "cell": "D273",
+      "value": "QA BH agrees with the recalculation at one decimal under both 2051- and 2052-day intervals. No repair or unused-match exclusion.",
+      "old": "Confirm exclusion / signal-review basis before changing CGR."
+    },
+    {
+      "cell": "B274",
+      "value": "RESOLVED: Corrosion item 424, row 138: no reported historical box match.",
+      "old": "\u2022 Corrosion item 424, row 138: why is CGR zero with nonzero depth change?"
+    },
+    {
+      "cell": "C274",
+      "value": "Y138 and Z138 are blank. W identifies absence of a 2020 box match.",
+      "old": "Z138=0; depth change=23% wt. Unused recent match: no. No repair note recorded."
+    },
+    {
+      "cell": "D274",
+      "value": "No calculated box growth is supported without historical depth. Applied/default rate remains separate; QA raw data is retained.",
+      "old": "Confirm exclusion / signal-review basis before changing CGR."
+    },
+    {
+      "cell": "B275",
+      "value": "RESOLVED: Corrosion item 438, row 140: no reported historical box match.",
+      "old": "\u2022 Corrosion item 438, row 140: why is CGR zero with nonzero depth change?"
+    },
+    {
+      "cell": "C275",
+      "value": "Y140 and Z140 are blank. W identifies absence of a 2020 box match.",
+      "old": "Z140=0; depth change=11% wt. Unused recent match: no. No repair note recorded."
+    },
+    {
+      "cell": "D275",
+      "value": "No calculated box growth is supported without historical depth. Applied/default rate remains separate; QA raw data is retained.",
+      "old": "Confirm exclusion / signal-review basis before changing CGR."
+    },
+    {
+      "cell": "B276",
+      "value": "RESOLVED: Corrosion item 441, row 141: no reported historical box match.",
+      "old": "\u2022 Corrosion item 441, row 141: why is CGR zero with nonzero depth change?"
+    },
+    {
+      "cell": "C276",
+      "value": "Y141 and Z141 are blank. W identifies absence of a 2020 box match.",
+      "old": "Z141=0; depth change=13% wt. Unused recent match: no. No repair note recorded."
+    },
+    {
+      "cell": "D276",
+      "value": "No calculated box growth is supported without historical depth. Applied/default rate remains separate; QA raw data is retained.",
+      "old": "Confirm exclusion / signal-review basis before changing CGR."
+    },
+    {
+      "cell": "B277",
+      "value": "RESOLVED: Corrosion item 442, row 142: no reported historical box match.",
+      "old": "\u2022 Corrosion item 442, row 142: why is CGR zero with nonzero depth change?"
+    },
+    {
+      "cell": "C277",
+      "value": "Y142 and Z142 are blank. W identifies absence of a 2020 box match.",
+      "old": "Z142=0; depth change=14% wt. Unused recent match: no. No repair note recorded."
+    },
+    {
+      "cell": "D277",
+      "value": "No calculated box growth is supported without historical depth. Applied/default rate remains separate; QA raw data is retained.",
+      "old": "Confirm exclusion / signal-review basis before changing CGR."
+    },
+    {
+      "cell": "B278",
+      "value": "RESOLVED: Corrosion item 443, row 143: no reported historical box match.",
+      "old": "\u2022 Corrosion item 443, row 143: why is CGR zero with nonzero depth change?"
+    },
+    {
+      "cell": "C278",
+      "value": "Y143 and Z143 are blank. W identifies absence of a 2020 box match.",
+      "old": "Z143=0; depth change=19% wt. Unused recent match: no. No repair note recorded."
+    },
+    {
+      "cell": "D278",
+      "value": "No calculated box growth is supported without historical depth. Applied/default rate remains separate; QA raw data is retained.",
+      "old": "Confirm exclusion / signal-review basis before changing CGR."
+    },
+    {
+      "cell": "B279",
+      "value": "RESOLVED: Corrosion item 446, row 144: no reported historical box match.",
+      "old": "\u2022 Corrosion item 446, row 144: why is CGR zero with nonzero depth change?"
+    },
+    {
+      "cell": "C279",
+      "value": "Y144 and Z144 are blank. W identifies absence of a 2020 box match.",
+      "old": "Z144=0; depth change=13% wt. Unused recent match: no. No repair note recorded."
+    },
+    {
+      "cell": "D279",
+      "value": "No calculated box growth is supported without historical depth. Applied/default rate remains separate; QA raw data is retained.",
+      "old": "Confirm exclusion / signal-review basis before changing CGR."
+    }
+  ],
+  "preservation": "Only corrosion-related issue statuses changed. Original comments, authors, replies, formatting and other worksheets preserved."
+}

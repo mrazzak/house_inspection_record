@@ -1,0 +1,316 @@
+{
+  "worksheet": "Deformations",
+  "backup": "C:\\Users\\razza\\house_inspection_record\\24BUNKER\\backups\\24BUNKER_Rev0-4_before_Deformation_QA_review_v2_20261111.xlsx",
+  "backup_sha256": "8b0cc17a26f2c6ab96d3aa34fdd656356ec3b8c7bf7716f5ec2c3272d59899f3",
+  "status": "SAVED;34 data cells exact;BI/BP/BQ zero;no formula errors;independent audit pending",
+  "writes": [
+    {
+      "cell": "N18",
+      "old": "Deformation - dent",
+      "value": "-",
+      "qa_cell": "AM18",
+      "basis": "No reported historical feature ID in MOCOM or QA; retained signal-presence assertion is separate."
+    },
+    {
+      "cell": "N29",
+      "old": "Deformation - dent",
+      "value": "-",
+      "qa_cell": "AM29",
+      "basis": "No reported historical feature ID in MOCOM or QA; retained signal-presence assertion is separate."
+    },
+    {
+      "cell": "N34",
+      "old": "Deformation - dent",
+      "value": "-",
+      "qa_cell": "AM34",
+      "basis": "No reported historical feature ID in MOCOM or QA; retained signal-presence assertion is separate."
+    },
+    {
+      "cell": "N46",
+      "old": "Deformation - dent",
+      "value": "-",
+      "qa_cell": "AM46",
+      "basis": "No reported historical feature ID in MOCOM or QA; retained signal-presence assertion is separate."
+    },
+    {
+      "cell": "N69",
+      "old": "Deformation - dent",
+      "value": "-",
+      "qa_cell": "AM69",
+      "basis": "No reported historical feature ID in MOCOM or QA; retained signal-presence assertion is separate."
+    },
+    {
+      "cell": "N117",
+      "old": "Deformation - dent",
+      "value": "-",
+      "qa_cell": "AM117",
+      "basis": "No reported historical feature ID in MOCOM or QA; retained signal-presence assertion is separate."
+    },
+    {
+      "cell": "N118",
+      "old": "Deformation - dent",
+      "value": "-",
+      "qa_cell": "AM118",
+      "basis": "No reported historical feature ID in MOCOM or QA; retained signal-presence assertion is separate."
+    },
+    {
+      "cell": "N119",
+      "old": "Deformation - dent",
+      "value": "-",
+      "qa_cell": "AM119",
+      "basis": "No reported historical feature ID in MOCOM or QA; retained signal-presence assertion is separate."
+    },
+    {
+      "cell": "N126",
+      "old": "Deformation - dent",
+      "value": "-",
+      "qa_cell": "AM126",
+      "basis": "No reported historical feature ID in MOCOM or QA; retained signal-presence assertion is separate."
+    },
+    {
+      "cell": "N166",
+      "old": "Deformation - dent",
+      "value": "-",
+      "qa_cell": "AM166",
+      "basis": "No reported historical feature ID in MOCOM or QA; retained signal-presence assertion is separate."
+    },
+    {
+      "cell": "N177",
+      "old": "Deformation - dent",
+      "value": "-",
+      "qa_cell": "AM177",
+      "basis": "No reported historical feature ID in MOCOM or QA; retained signal-presence assertion is separate."
+    },
+    {
+      "cell": "N183",
+      "old": "Deformation - dent",
+      "value": "-",
+      "qa_cell": "AM183",
+      "basis": "No reported historical feature ID in MOCOM or QA; retained signal-presence assertion is separate."
+    },
+    {
+      "cell": "N184",
+      "old": "Deformation - dent",
+      "value": "-",
+      "qa_cell": "AM184",
+      "basis": "No reported historical feature ID in MOCOM or QA; retained signal-presence assertion is separate."
+    },
+    {
+      "cell": "N191",
+      "old": "Deformation - dent",
+      "value": "-",
+      "qa_cell": "AM191",
+      "basis": "No reported historical feature ID in MOCOM or QA; retained signal-presence assertion is separate."
+    },
+    {
+      "cell": "N207",
+      "old": "Deformation - dent",
+      "value": "-",
+      "qa_cell": "AM207",
+      "basis": "No reported historical feature ID in MOCOM or QA; retained signal-presence assertion is separate."
+    },
+    {
+      "cell": "N212",
+      "old": "Deformation - dent",
+      "value": "-",
+      "qa_cell": "AM212",
+      "basis": "No reported historical feature ID in MOCOM or QA; retained signal-presence assertion is separate."
+    },
+    {
+      "cell": "N159",
+      "old": "Deformation - dent",
+      "value": "Deformation detected with metal loss",
+      "qa_cell": "AM159",
+      "basis": "2020 Pipe Tally I4878, E4878 6829.429 ft; old feature4028, current7588."
+    },
+    {
+      "cell": "N181",
+      "old": "Deformation - dent",
+      "value": "ID anomaly",
+      "qa_cell": "AM181",
+      "basis": "2020 Pipe Tally I5075, E5075 7421.131 ft; old feature4151, current7838. Separate depth field remains held."
+    },
+    {
+      "cell": "U69",
+      "old": "Repaired Using Sleeve Before 2026 ILI",
+      "value": "Repaired using sleeve before 2020 ILI",
+      "qa_cell": "AT69",
+      "basis": "Explicit governing Kristin U15 review and QA AT values. Current source corroborates sleeve presence; before2020 timing is reviewer evidence, not a matched historical record."
+    },
+    {
+      "cell": "U119",
+      "old": "Repaired Using Sleeve Before 2026 ILI",
+      "value": "Repaired using sleeve before 2020 ILI",
+      "qa_cell": "AT119",
+      "basis": "Explicit governing Kristin U15 review and QA AT values. Current source corroborates sleeve presence; before2020 timing is reviewer evidence, not a matched historical record."
+    },
+    {
+      "cell": "U126",
+      "old": "Repaired Using Sleeve Before 2026 ILI",
+      "value": "Repaired using sleeve before 2020 ILI",
+      "qa_cell": "AT126",
+      "basis": "Explicit governing Kristin U15 review and QA AT values. Current source corroborates sleeve presence; before2020 timing is reviewer evidence, not a matched historical record."
+    },
+    {
+      "cell": "V46",
+      "old": "Presence of the dent confirmed in 2020 signal data",
+      "value": "Present in 2020 signal data",
+      "qa_cell": "AU46",
+      "basis": "Equivalent wording from governing QA; preserves existing assertion without claiming a new physical signal review."
+    },
+    {
+      "cell": "V69",
+      "old": "Presence of the dent confirmed in 2020 signal data",
+      "value": "Present in 2020 signal data",
+      "qa_cell": "AU69",
+      "basis": "Equivalent wording from governing QA; preserves existing assertion without claiming a new physical signal review."
+    },
+    {
+      "cell": "V117",
+      "old": "Presence of the dent confirmed in 2020 signal data",
+      "value": "Present in 2020 signal data",
+      "qa_cell": "AU117",
+      "basis": "Equivalent wording from governing QA; preserves existing assertion without claiming a new physical signal review."
+    },
+    {
+      "cell": "V118",
+      "old": "Presence of the dent confirmed in 2020 signal data",
+      "value": "Present in 2020 signal data",
+      "qa_cell": "AU118",
+      "basis": "Equivalent wording from governing QA; preserves existing assertion without claiming a new physical signal review."
+    },
+    {
+      "cell": "V119",
+      "old": "Presence of the dent confirmed in 2020 signal data",
+      "value": "Present in 2020 signal data",
+      "qa_cell": "AU119",
+      "basis": "Equivalent wording from governing QA; preserves existing assertion without claiming a new physical signal review."
+    },
+    {
+      "cell": "V126",
+      "old": "Presence of the dent confirmed in 2020 signal data",
+      "value": "Present in 2020 signal data",
+      "qa_cell": "AU126",
+      "basis": "Equivalent wording from governing QA; preserves existing assertion without claiming a new physical signal review."
+    },
+    {
+      "cell": "V166",
+      "old": "Presence of the dent confirmed in 2020 signal data",
+      "value": "Present in 2020 signal data",
+      "qa_cell": "AU166",
+      "basis": "Equivalent wording from governing QA; preserves existing assertion without claiming a new physical signal review."
+    },
+    {
+      "cell": "V177",
+      "old": "Presence of the dent confirmed in 2020 signal data",
+      "value": "Present in 2020 signal data",
+      "qa_cell": "AU177",
+      "basis": "Equivalent wording from governing QA; preserves existing assertion without claiming a new physical signal review."
+    },
+    {
+      "cell": "V183",
+      "old": "Presence of the dent confirmed in 2020 signal data",
+      "value": "Present in 2020 signal data",
+      "qa_cell": "AU183",
+      "basis": "Equivalent wording from governing QA; preserves existing assertion without claiming a new physical signal review."
+    },
+    {
+      "cell": "V184",
+      "old": "Presence of the dent confirmed in 2020 signal data",
+      "value": "Present in 2020 signal data",
+      "qa_cell": "AU184",
+      "basis": "Equivalent wording from governing QA; preserves existing assertion without claiming a new physical signal review."
+    },
+    {
+      "cell": "V191",
+      "old": "Presence of the dent confirmed in 2020 signal data",
+      "value": "Present in 2020 signal data",
+      "qa_cell": "AU191",
+      "basis": "Equivalent wording from governing QA; preserves existing assertion without claiming a new physical signal review."
+    },
+    {
+      "cell": "V207",
+      "old": "Presence of the dent confirmed in 2020 signal data",
+      "value": "Present in 2020 signal data",
+      "qa_cell": "AU207",
+      "basis": "Equivalent wording from governing QA; preserves existing assertion without claiming a new physical signal review."
+    },
+    {
+      "cell": "V212",
+      "old": "Presence of the dent confirmed in 2020 signal data",
+      "value": "Present in 2020 signal data",
+      "qa_cell": "AU212",
+      "basis": "Equivalent wording from governing QA; preserves existing assertion without claiming a new physical signal review."
+    }
+  ],
+  "held": [
+    "M18",
+    "P181"
+  ],
+  "deferred": [
+    "M126"
+  ],
+  "preserve_threads": [
+    "A12",
+    "U15",
+    "V15",
+    "N16"
+  ],
+  "notes": [
+    {
+      "cell": "M18",
+      "note": "Item 433: governing QA AL18 gives 2,214.077 ft. MOCOM DEFORMATION row 9 ol_dist gives 2,216.085344 ft, a difference of 2.008344 ft. MOCOM ol_ID is blank, so no matched 2020 pipe-tally feature is established. The existing alignment distance is retained pending resolution of this material association discrepancy.",
+      "cellStyles": {
+        "backgroundColor": "#FFFF00"
+      }
+    },
+    {
+      "cell": "P181",
+      "note": "Item 7838 / historical feature 4151: QA AO181 gives 5.6%. The 2020 Pipe Tally K5075 ID Reduction field is blank; P5075 instead says '5.6% possible Ovality / UT: with echo loss', and I5075 is 'ID anomaly'. The 5.6 value is supported as possible ovality in a comment, not as populated historical dent depth. QA value retained and flagged pending review; N181 separately follows the verified event.",
+      "cellStyles": {
+        "backgroundColor": "#FFFF00"
+      }
+    }
+  ],
+  "log_writes": [
+    {
+      "cell": "B21",
+      "value": "QA ALIGNED: Deformation sleeve wording follows the reviewer correction."
+    },
+    {
+      "cell": "C21",
+      "value": "U69/U119/U126 (items 4074/6571/6927) now state 'Repaired using sleeve before 2020 ILI', matching QA AT."
+    },
+    {
+      "cell": "D21",
+      "value": "Current tallies confirm sleeves. Before-2020 timing comes from explicit QA reviewer evidence, not independently matched old features. Original thread preserved."
+    },
+    {
+      "cell": "B22",
+      "value": "PARTLY RESOLVED: Historical event labels match QA; two measurement issues remain flagged."
+    },
+    {
+      "cell": "C22",
+      "value": "18 N events corrected: 16 without reported historical matches now show dashes; items 7588/7838 follow verified 2020 tally classifications. Event differences are zero."
+    },
+    {
+      "cell": "D22",
+      "value": "M18 retains a 2.008344 ft difference from QA. P181 retains QA 5.6%, recorded only as possible ovality in the tally comment, not populated dent depth. Yellow notes explain both."
+    },
+    {
+      "cell": "B23",
+      "value": "QA ALIGNED: Deformation signal-presence note wording matches QA."
+    },
+    {
+      "cell": "C23",
+      "value": "13 existing V notes now state 'Present in 2020 signal data'; V18/V29/V34 already matched. All 16 assertions are retained; no new physical signal review was performed."
+    },
+    {
+      "cell": "D23",
+      "value": "N/U/V comparison differences are zero. Source data, governing QA, original reviewer comments and concurrent layout/header edits are preserved."
+    }
+  ],
+  "saved_sha256": "54dee2dc75c8b92f6af07286a52d1a5decb4b3e178a969bb69e803c6ddd40cfd",
+  "frozen_saved_checkpoint": "C:\\Users\\razza\\house_inspection_record\\24BUNKER\\backups\\24BUNKER_Rev0-4_after_Deformation_QA_checkpoint_20261111.xlsx",
+  "frozen_saved_sha256": "54dee2dc75c8b92f6af07286a52d1a5decb4b3e178a969bb69e803c6ddd40cfd"
+}

@@ -1,0 +1,54 @@
+{
+  "sheet": "Corrosion Anomalies",
+  "comments": [
+    {
+      "cell": "V36",
+      "note": "Source comparison for item 90: 2026 pipe tally, Sheet!BF8096 (Ut Wt Local Ref Wt [in]) = 0.366 in; Sheet!I8096 (Parent Joint WT [in]) = 0.382 in. QA BD36 = 0.382 in, using parent-joint rather than local-reference WT. Working V36 retains 0.366 in for the requested actual-local-WT CGR calculation. Original QA data is preserved."
+    },
+    {
+      "cell": "V49",
+      "note": "Source comparison for item 113: 2026 pipe tally, Sheet!BF8098 (Ut Wt Local Ref Wt [in]) = 0.374 in; Sheet!I8098 (Parent Joint WT [in]) = 0.401 in. QA BD49 = 0.401 in, using parent-joint rather than local-reference WT. Working V49 retains 0.374 in for the requested actual-local-WT CGR calculation. Original QA data is preserved."
+    },
+    {
+      "cell": "V51",
+      "note": "Source comparison for item 115: 2026 pipe tally, Sheet!BF7253 (Ut Wt Local Ref Wt [in]) = 0.370 in; Sheet!I7253 (Parent Joint WT [in]) = 0.401 in. QA BD51 = 0.401 in, using parent-joint rather than local-reference WT. Working V51 retains 0.370 in for the requested actual-local-WT CGR calculation. Original QA data is preserved."
+    },
+    {
+      "cell": "V55",
+      "note": "Source comparison for item 134: 2026 pipe tally, Sheet!BF5346 (Ut Wt Local Ref Wt [in]) = 0.358 in; Sheet!I5346 (Parent Joint WT [in]) = 0.401 in. QA BD55 = 0.401 in, using parent-joint rather than local-reference WT. Working V55 retains 0.358 in for the requested actual-local-WT CGR calculation. Original QA data is preserved."
+    },
+    {
+      "cell": "V56",
+      "note": "Source comparison for item 135: 2026 pipe tally, Sheet!BF5347 (Ut Wt Local Ref Wt [in]) = 0.390 in; Sheet!I5347 (Parent Joint WT [in]) = 0.401 in. QA BD56 = 0.401 in, using parent-joint rather than local-reference WT. Working V56 retains 0.390 in for the requested actual-local-WT CGR calculation. Original QA data is preserved."
+    },
+    {
+      "cell": "V72",
+      "note": "Source comparison for item 159: 2026 pipe tally, Sheet!BF4876 (Ut Wt Local Ref Wt [in]) = 0.366 in; Sheet!I4876 (Parent Joint WT [in]) = 0.401 in. QA BD72 = 0.401 in, using parent-joint rather than local-reference WT. Working V72 retains 0.366 in for the requested actual-local-WT CGR calculation. Original QA data is preserved."
+    },
+    {
+      "cell": "V75",
+      "note": "Source comparison for item 162: 2026 pipe tally, Sheet!BF8801 (Ut Wt Local Ref Wt [in]) = 0.390 in; Sheet!I8801 (Parent Joint WT [in]) = 0.401 in. QA BD75 = 0.401 in, using parent-joint rather than local-reference WT. Working V75 retains 0.390 in for the requested actual-local-WT CGR calculation. Original QA data is preserved."
+    },
+    {
+      "cell": "V77",
+      "note": "Source comparison for item 164: 2026 pipe tally, Sheet!BF4485 (Ut Wt Local Ref Wt [in]) = 0.378 in; Sheet!I4485 (Parent Joint WT [in]) = 0.401 in. QA BD77 = 0.401 in, using parent-joint rather than local-reference WT. Working V77 retains 0.378 in for the requested actual-local-WT CGR calculation. Original QA data is preserved."
+    },
+    {
+      "cell": "V5582",
+      "note": "Source comparison for item 6395: 2026 pipe tally, Sheet!BF9538 (Ut Wt Local Ref Wt [in]) = 0.319 in; Sheet!I9538 (Parent Joint WT [in]) = 0.321 in. QA BD5582 = 0.321 in, using parent-joint rather than local-reference WT. Working V5582 retains 0.319 in for the requested actual-local-WT CGR calculation. Original QA data is preserved."
+    },
+    {
+      "cell": "V5657",
+      "note": "Source comparison for item 6498: 2026 pipe tally, Sheet!BF5189 (Ut Wt Local Ref Wt [in]) = 0.433 in; Sheet!I5189 (Parent Joint WT [in]) = 0.382 in. QA BD5657 = 0.382 in, using parent-joint rather than local-reference WT. Working V5657 retains 0.433 in for the requested actual-local-WT CGR calculation. Original QA data is preserved."
+    },
+    {
+      "cell": "V6091",
+      "note": "Source comparison for item 7070: 2026 pipe tally, Sheet!BF9569 (Ut Wt Local Ref Wt [in]) = 0.319 in; Sheet!I9569 (Parent Joint WT [in]) = 0.321 in. QA BD6091 = 0.321 in, using parent-joint rather than local-reference WT. Working V6091 retains 0.319 in for the requested actual-local-WT CGR calculation. Original QA data is preserved."
+    },
+    {
+      "cell": "V8135",
+      "note": "Source comparison for item 9464: 2026 pipe tally, Sheet!BF3720 (Ut Wt Local Ref Wt [in]) = 0.264 in; Sheet!I3720 (Parent Joint WT [in]) = 0.368 in. QA BD8135 = 0.368 in, using parent-joint rather than local-reference WT. Working V8135 retains 0.264 in for the requested actual-local-WT CGR calculation. Original QA data is preserved."
+    }
+  ],
+  "backup": "24BUNKER_Rev0-4_before_QA_conflict_comments_20261111.xlsx"
+}

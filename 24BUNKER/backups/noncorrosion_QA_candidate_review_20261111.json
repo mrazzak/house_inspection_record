@@ -1,0 +1,5270 @@
+{
+  "created_utc": "2026-11-11T20:40:54.144811+00:00",
+  "purpose": "Read-only source review and proposed native Excel edits; this file does not edit or certify the workbook.",
+  "worksheet": "Non-Corrosion Metal Loss",
+  "sheet_id": 20,
+  "sources": {
+    "main": {
+      "path": "C:\\Users\\razza\\house_inspection_record\\24BUNKER\\NPS 24 Refinery to Dock #1 Bunker Pipeline (24BUNKER)_CGApro_BM_Listing_Rev0-4.xlsx",
+      "sha256": "3d320ad5fd1fb8187acdda594c0d40673771274efacfda0259a23888fc242321"
+    },
+    "QA_original": {
+      "path": "C:\\Users\\razza\\house_inspection_record\\24BUNKER\\NPS 24 Refinery to Dock #1 Bunker Pipeline (24BUNKER)_CGApro_BM_Listing_Rev0-3QA.xlsx",
+      "sha256": "24b559fa296a00d67f8bdc86a17454cef9a101d3fdc68f964ea3ad45b8c571e5"
+    },
+    "2026_tally": {
+      "path": "C:\\Users\\razza\\house_inspection_record\\24BUNKER\\NPS24RefinerytoDock1BunkerPipeline_Pipe Tally_working.xlsx",
+      "sha256": "057f5939ea01d5033a8b129bc8704ccaa80995ce711333b6ad08cd37b2697c6e"
+    },
+    "2020_tally": {
+      "path": "C:\\Users\\razza\\house_inspection_record\\24BUNKER\\NPS24_Refinery_to_Dock_#1_Bunker_Final_Report_Listing_2020_Pipetally.xlsx",
+      "sha256": "c1d658bc2a6c14ce787389ad7f300097e0103d74114d877ca3827f9ea22ef69c"
+    },
+    "MOCOM": {
+      "path": "C:\\Users\\razza\\house_inspection_record\\24BUNKER\\Output_Deepest_All_Features_131026_1344_MELO.csv",
+      "sha256": "2974beb15d5b3a420fbb58e1df7202dea220523d678b877c4559163ba25effae"
+    }
+  },
+  "governing_direction": "QA governs ordinary differences. Major mismatches are held and documented with source/QA values. Preserve original Kristin comments.",
+  "column_mapping": {
+    "A": "AD",
+    "B": "AE",
+    "C": "AF",
+    "D": "AG",
+    "E": "AH",
+    "F": "AI",
+    "G": "AJ",
+    "H": "AK",
+    "I": "AL",
+    "J": "AM",
+    "K": "AN",
+    "L": "AO",
+    "M": "AP",
+    "N": "AR",
+    "O": "AS",
+    "P": "AT",
+    "Q": "AU",
+    "R": "AV",
+    "S": "AW",
+    "T": "AX",
+    "U": "AY",
+    "V": "AZ",
+    "W": "BA",
+    "X": "BB",
+    "Y": "BC",
+    "Z": "BD",
+    "AA": "BE",
+    "AB": "BF"
+  },
+  "comparison_check_mapping": {
+    "A": "BG",
+    "B": "BH",
+    "C": "BI",
+    "D": "BJ",
+    "E": "BK",
+    "F": "BL",
+    "G": "BM",
+    "H": "BN",
+    "I": "BO",
+    "J": "BP",
+    "K": "BQ",
+    "L": "BR",
+    "M": "BS",
+    "N": "BT",
+    "O": "BU",
+    "P": "BV",
+    "Q": "BW",
+    "R": "BX",
+    "S": "BY",
+    "T": "BZ",
+    "U": "CA",
+    "V": "CB",
+    "W": "CC",
+    "X": "CD",
+    "Y": "CE",
+    "Z": "CF",
+    "AA": "CG",
+    "AB": "CH"
+  },
+  "snapshot_counts": {
+    "records": 61,
+    "remaining_QA_cell_differences": 78,
+    "safe_candidate_cells": 70,
+    "held_cells": 8,
+    "safe_by_column": {
+      "O": 49,
+      "N": 8,
+      "Q": 1,
+      "R": 10,
+      "U": 1,
+      "X": 1
+    },
+    "held_by_column": {
+      "X": 1,
+      "N": 1,
+      "O": 1,
+      "P": 1,
+      "Q": 1,
+      "R": 1,
+      "W": 1,
+      "Y": 1
+    }
+  },
+  "write_candidates": [
+    {
+      "cell": "O20",
+      "row": 20,
+      "item": 77,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS20",
+      "qa_value": "-",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU20",
+      "preserve_existing_format": true,
+      "primary_source": null,
+      "MOCOM_record": 104,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA has no applicable old matched anomaly. Equivalent historical distance does not establish a matched event. For replaced rows, explicit reviewer exclusion governs despite a raw MOCOM match."
+    },
+    {
+      "cell": "N21",
+      "row": 21,
+      "item": 94,
+      "field": "Log Distance\n(ft)",
+      "current_value": 361.0406245,
+      "qa_cell": "AR21",
+      "qa_value": 361.041,
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BT21",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "MOCOM",
+        "csv_record_with_header": 115,
+        "field": "ol_dist",
+        "value": "361.0406245"
+      },
+      "MOCOM_record": 115,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "Same MOCOM equivalent historical distance, rounded to QA3 decimals. Difference below0.0005ft; no association change. Retain raw source value in this audit."
+    },
+    {
+      "cell": "O21",
+      "row": 21,
+      "item": 94,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS21",
+      "qa_value": "-",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU21",
+      "preserve_existing_format": true,
+      "primary_source": null,
+      "MOCOM_record": 115,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA has no applicable old matched anomaly. Equivalent historical distance does not establish a matched event. For replaced rows, explicit reviewer exclusion governs despite a raw MOCOM match."
+    },
+    {
+      "cell": "O22",
+      "row": 22,
+      "item": 167,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS22",
+      "qa_value": "Metal loss - non-corrosion anomaly",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU22",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "2020_tally",
+        "sheet": "Pipe Tally",
+        "row": 224,
+        "cell": "I224",
+        "value": "Metal loss - non-corrosion anomaly"
+      },
+      "MOCOM_record": 155,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA event agrees with exact associated2020 pipe tally event and MOCOM old type; current historical event label is incorrect."
+    },
+    {
+      "cell": "O23",
+      "row": 23,
+      "item": 168,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS23",
+      "qa_value": "Metal loss - non-corrosion anomaly",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU23",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "2020_tally",
+        "sheet": "Pipe Tally",
+        "row": 225,
+        "cell": "I225",
+        "value": "Metal loss - non-corrosion anomaly"
+      },
+      "MOCOM_record": 156,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA event agrees with exact associated2020 pipe tally event and MOCOM old type; current historical event label is incorrect."
+    },
+    {
+      "cell": "O24",
+      "row": 24,
+      "item": 176,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS24",
+      "qa_value": "Metal loss - non-corrosion anomaly",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU24",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "2020_tally",
+        "sheet": "Pipe Tally",
+        "row": 231,
+        "cell": "I231",
+        "value": "Metal loss - non-corrosion anomaly"
+      },
+      "MOCOM_record": 164,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA event agrees with exact associated2020 pipe tally event and MOCOM old type; current historical event label is incorrect."
+    },
+    {
+      "cell": "O25",
+      "row": 25,
+      "item": 190,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS25",
+      "qa_value": "Metal loss - non-corrosion anomaly",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU25",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "2020_tally",
+        "sheet": "Pipe Tally",
+        "row": 242,
+        "cell": "I242",
+        "value": "Metal loss - non-corrosion anomaly"
+      },
+      "MOCOM_record": 175,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA event agrees with exact associated2020 pipe tally event and MOCOM old type; current historical event label is incorrect."
+    },
+    {
+      "cell": "O26",
+      "row": 26,
+      "item": 228,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS26",
+      "qa_value": "Metal loss - non-corrosion anomaly",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU26",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "2020_tally",
+        "sheet": "Pipe Tally",
+        "row": 273,
+        "cell": "I273",
+        "value": "Metal loss - non-corrosion anomaly"
+      },
+      "MOCOM_record": 198,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA event agrees with exact associated2020 pipe tally event and MOCOM old type; current historical event label is incorrect."
+    },
+    {
+      "cell": "O27",
+      "row": 27,
+      "item": 235,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS27",
+      "qa_value": "Metal loss - non-corrosion anomaly",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU27",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "2020_tally",
+        "sheet": "Pipe Tally",
+        "row": 278,
+        "cell": "I278",
+        "value": "Metal loss - non-corrosion anomaly"
+      },
+      "MOCOM_record": 202,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA event agrees with exact associated2020 pipe tally event and MOCOM old type; current historical event label is incorrect."
+    },
+    {
+      "cell": "N28",
+      "row": 28,
+      "item": 328,
+      "field": "Log Distance\n(ft)",
+      "current_value": 1433.459776,
+      "qa_cell": "AR28",
+      "qa_value": 1433.46,
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BT28",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "MOCOM",
+        "csv_record_with_header": 456,
+        "field": "ol_dist",
+        "value": "1433.459776"
+      },
+      "MOCOM_record": 456,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "Same MOCOM equivalent historical distance, rounded to QA3 decimals. Difference below0.0005ft; no association change. Retain raw source value in this audit."
+    },
+    {
+      "cell": "O28",
+      "row": 28,
+      "item": 328,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS28",
+      "qa_value": "-",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU28",
+      "preserve_existing_format": true,
+      "primary_source": null,
+      "MOCOM_record": 456,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA has no applicable old matched anomaly. Equivalent historical distance does not establish a matched event. For replaced rows, explicit reviewer exclusion governs despite a raw MOCOM match."
+    },
+    {
+      "cell": "O29",
+      "row": 29,
+      "item": 335,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS29",
+      "qa_value": "-",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU29",
+      "preserve_existing_format": true,
+      "primary_source": null,
+      "MOCOM_record": 471,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA has no applicable old matched anomaly. Equivalent historical distance does not establish a matched event. For replaced rows, explicit reviewer exclusion governs despite a raw MOCOM match."
+    },
+    {
+      "cell": "Q29",
+      "row": 29,
+      "item": 335,
+      "field": "Depth\n(%wt)",
+      "current_value": 72.0,
+      "qa_cell": "AU29",
+      "qa_value": "-",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BW29",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "2020_tally",
+        "sheet": "Pipe Tally",
+        "row": 613,
+        "field": "J",
+        "value": 72.0,
+        "applicability": "excluded by reviewer replacement decision"
+      },
+      "MOCOM_record": 471,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "ExistingX29 andQA BB29 mark replacement section. Kristin Q/R/U header comments explicitly say replacement must have no matched anomaly. MOCOM old416 and2020 tally613 data are real but excluded by the QA replacement decision; do not backfill."
+    },
+    {
+      "cell": "R29",
+      "row": 29,
+      "item": 335,
+      "field": "Orientation (hh:mm)",
+      "current_value": 0.26319444444444445,
+      "qa_cell": "AV29",
+      "qa_value": "-",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BX29",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "2020_tally",
+        "sheet": "Pipe Tally",
+        "row": 613,
+        "field": "L",
+        "value": 0.26319444444444445,
+        "applicability": "excluded by reviewer replacement decision"
+      },
+      "MOCOM_record": 471,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "ExistingX29 andQA BB29 mark replacement section. Kristin Q/R/U header comments explicitly say replacement must have no matched anomaly. MOCOM old416 and2020 tally613 data are real but excluded by the QA replacement decision; do not backfill."
+    },
+    {
+      "cell": "U29",
+      "row": 29,
+      "item": 335,
+      "field": "Surface Location",
+      "current_value": "External",
+      "qa_cell": "AY29",
+      "qa_value": "-",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "CA29",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "2020_tally",
+        "sheet": "Pipe Tally",
+        "row": 613,
+        "field": "O",
+        "value": "external",
+        "applicability": "excluded by reviewer replacement decision"
+      },
+      "MOCOM_record": 471,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "ExistingX29 andQA BB29 mark replacement section. Kristin Q/R/U header comments explicitly say replacement must have no matched anomaly. MOCOM old416 and2020 tally613 data are real but excluded by the QA replacement decision; do not backfill."
+    },
+    {
+      "cell": "N30",
+      "row": 30,
+      "item": 375,
+      "field": "Log Distance\n(ft)",
+      "current_value": 1933.230809,
+      "qa_cell": "AR30",
+      "qa_value": 1933.231,
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BT30",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "MOCOM",
+        "csv_record_with_header": 544,
+        "field": "ol_dist",
+        "value": "1933.230809"
+      },
+      "MOCOM_record": 544,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "Same MOCOM equivalent historical distance, rounded to QA3 decimals. Difference below0.0005ft; no association change. Retain raw source value in this audit."
+    },
+    {
+      "cell": "O30",
+      "row": 30,
+      "item": 375,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS30",
+      "qa_value": "-",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU30",
+      "preserve_existing_format": true,
+      "primary_source": null,
+      "MOCOM_record": 544,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA has no applicable old matched anomaly. Equivalent historical distance does not establish a matched event. For replaced rows, explicit reviewer exclusion governs despite a raw MOCOM match."
+    },
+    {
+      "cell": "N31",
+      "row": 31,
+      "item": 382,
+      "field": "Log Distance\n(ft)",
+      "current_value": 1957.8584399999997,
+      "qa_cell": "AR31",
+      "qa_value": 1957.858,
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BT31",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "MOCOM",
+        "csv_record_with_header": 547,
+        "field": "ol_dist",
+        "value": "1957.85844"
+      },
+      "MOCOM_record": 547,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "Same MOCOM equivalent historical distance, rounded to QA3 decimals. Difference below0.0005ft; no association change. Retain raw source value in this audit."
+    },
+    {
+      "cell": "O31",
+      "row": 31,
+      "item": 382,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS31",
+      "qa_value": "-",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU31",
+      "preserve_existing_format": true,
+      "primary_source": null,
+      "MOCOM_record": 547,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA has no applicable old matched anomaly. Equivalent historical distance does not establish a matched event. For replaced rows, explicit reviewer exclusion governs despite a raw MOCOM match."
+    },
+    {
+      "cell": "R32",
+      "row": 32,
+      "item": 427,
+      "field": "Orientation (hh:mm)",
+      "current_value": 0.5375,
+      "qa_cell": "AV32",
+      "qa_value": 0.0375,
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BX32",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "2020_tally",
+        "sheet": "Pipe Tally",
+        "row": 793,
+        "cell": "L793",
+        "value": 0.5375
+      },
+      "MOCOM_record": 579,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA normalizes historical pipeline clock modulo12hours; original tally retains a +12hour time serial. Same physical clock. Preserve hh:mm format; does not validate physical association."
+    },
+    {
+      "cell": "O33",
+      "row": 33,
+      "item": 449,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS33",
+      "qa_value": "-",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU33",
+      "preserve_existing_format": true,
+      "primary_source": null,
+      "MOCOM_record": 588,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA has no applicable old matched anomaly. Equivalent historical distance does not establish a matched event. For replaced rows, explicit reviewer exclusion governs despite a raw MOCOM match."
+    },
+    {
+      "cell": "O34",
+      "row": 34,
+      "item": 452,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS34",
+      "qa_value": "Metal loss - non-corrosion anomaly",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU34",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "2020_tally",
+        "sheet": "Pipe Tally",
+        "row": 820,
+        "cell": "I820",
+        "value": "Metal loss - non-corrosion anomaly"
+      },
+      "MOCOM_record": 589,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA event agrees with exact associated2020 pipe tally event and MOCOM old type; current historical event label is incorrect."
+    },
+    {
+      "cell": "R34",
+      "row": 34,
+      "item": 452,
+      "field": "Orientation (hh:mm)",
+      "current_value": 0.5201388888888888,
+      "qa_cell": "AV34",
+      "qa_value": 0.02013888888888889,
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BX34",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "2020_tally",
+        "sheet": "Pipe Tally",
+        "row": 820,
+        "cell": "L820",
+        "value": 0.5201388888888888
+      },
+      "MOCOM_record": 589,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA normalizes historical pipeline clock modulo12hours; original tally retains a +12hour time serial. Same physical clock. Preserve hh:mm format; does not validate physical association."
+    },
+    {
+      "cell": "O36",
+      "row": 36,
+      "item": 500,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS36",
+      "qa_value": "-",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU36",
+      "preserve_existing_format": true,
+      "primary_source": null,
+      "MOCOM_record": 602,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA has no applicable old matched anomaly. Equivalent historical distance does not establish a matched event. For replaced rows, explicit reviewer exclusion governs despite a raw MOCOM match."
+    },
+    {
+      "cell": "O37",
+      "row": 37,
+      "item": 968,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS37",
+      "qa_value": "Metal loss - non-corrosion anomaly",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU37",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "2020_tally",
+        "sheet": "Pipe Tally",
+        "row": 1103,
+        "cell": "I1103",
+        "value": "Metal loss - non-corrosion anomaly"
+      },
+      "MOCOM_record": 966,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA event agrees with exact associated2020 pipe tally event and MOCOM old type; current historical event label is incorrect."
+    },
+    {
+      "cell": "O38",
+      "row": 38,
+      "item": 2663,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS38",
+      "qa_value": "-",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU38",
+      "preserve_existing_format": true,
+      "primary_source": null,
+      "MOCOM_record": 2599,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA has no applicable old matched anomaly. Equivalent historical distance does not establish a matched event. For replaced rows, explicit reviewer exclusion governs despite a raw MOCOM match."
+    },
+    {
+      "cell": "O39",
+      "row": 39,
+      "item": 2665,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS39",
+      "qa_value": "-",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU39",
+      "preserve_existing_format": true,
+      "primary_source": null,
+      "MOCOM_record": 2600,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA has no applicable old matched anomaly. Equivalent historical distance does not establish a matched event. For replaced rows, explicit reviewer exclusion governs despite a raw MOCOM match."
+    },
+    {
+      "cell": "O40",
+      "row": 40,
+      "item": 2666,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS40",
+      "qa_value": "-",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU40",
+      "preserve_existing_format": true,
+      "primary_source": null,
+      "MOCOM_record": 2601,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA has no applicable old matched anomaly. Equivalent historical distance does not establish a matched event. For replaced rows, explicit reviewer exclusion governs despite a raw MOCOM match."
+    },
+    {
+      "cell": "O41",
+      "row": 41,
+      "item": 3015,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS41",
+      "qa_value": "-",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU41",
+      "preserve_existing_format": true,
+      "primary_source": null,
+      "MOCOM_record": 2910,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA has no applicable old matched anomaly. Equivalent historical distance does not establish a matched event. For replaced rows, explicit reviewer exclusion governs despite a raw MOCOM match."
+    },
+    {
+      "cell": "O42",
+      "row": 42,
+      "item": 5099,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS42",
+      "qa_value": "Metal loss - non-corrosion anomaly",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU42",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "2020_tally",
+        "sheet": "Pipe Tally",
+        "row": 3320,
+        "cell": "I3320",
+        "value": "Metal loss - non-corrosion anomaly"
+      },
+      "MOCOM_record": 4915,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA event agrees with exact associated2020 pipe tally event and MOCOM old type; current historical event label is incorrect."
+    },
+    {
+      "cell": "N43",
+      "row": 43,
+      "item": 6464,
+      "field": "Log Distance\n(ft)",
+      "current_value": 5422.223439,
+      "qa_cell": "AR43",
+      "qa_value": 5422.223,
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BT43",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "MOCOM",
+        "csv_record_with_header": 6158,
+        "field": "ol_dist",
+        "value": "5422.223439"
+      },
+      "MOCOM_record": 6158,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "Same MOCOM equivalent historical distance, rounded to QA3 decimals. Difference below0.0005ft; no association change. Retain raw source value in this audit."
+    },
+    {
+      "cell": "O43",
+      "row": 43,
+      "item": 6464,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS43",
+      "qa_value": "-",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU43",
+      "preserve_existing_format": true,
+      "primary_source": null,
+      "MOCOM_record": 6158,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA has no applicable old matched anomaly. Equivalent historical distance does not establish a matched event. For replaced rows, explicit reviewer exclusion governs despite a raw MOCOM match."
+    },
+    {
+      "cell": "N44",
+      "row": 44,
+      "item": 6466,
+      "field": "Log Distance\n(ft)",
+      "current_value": 5422.597124,
+      "qa_cell": "AR44",
+      "qa_value": 5422.597,
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BT44",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "MOCOM",
+        "csv_record_with_header": 6160,
+        "field": "ol_dist",
+        "value": "5422.597124"
+      },
+      "MOCOM_record": 6160,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "Same MOCOM equivalent historical distance, rounded to QA3 decimals. Difference below0.0005ft; no association change. Retain raw source value in this audit."
+    },
+    {
+      "cell": "O44",
+      "row": 44,
+      "item": 6466,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS44",
+      "qa_value": "-",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU44",
+      "preserve_existing_format": true,
+      "primary_source": null,
+      "MOCOM_record": 6160,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA has no applicable old matched anomaly. Equivalent historical distance does not establish a matched event. For replaced rows, explicit reviewer exclusion governs despite a raw MOCOM match."
+    },
+    {
+      "cell": "O45",
+      "row": 45,
+      "item": 6468,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS45",
+      "qa_value": "Metal loss - non-corrosion anomaly",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU45",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "2020_tally",
+        "sheet": "Pipe Tally",
+        "row": 4098,
+        "cell": "I4098",
+        "value": "Metal loss - non-corrosion anomaly"
+      },
+      "MOCOM_record": 6162,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA event agrees with exact associated2020 pipe tally event and MOCOM old type; current historical event label is incorrect."
+    },
+    {
+      "cell": "O46",
+      "row": 46,
+      "item": 6470,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS46",
+      "qa_value": "Metal loss - non-corrosion anomaly",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU46",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "2020_tally",
+        "sheet": "Pipe Tally",
+        "row": 4099,
+        "cell": "I4099",
+        "value": "Metal loss - non-corrosion anomaly"
+      },
+      "MOCOM_record": 6163,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA event agrees with exact associated2020 pipe tally event and MOCOM old type; current historical event label is incorrect."
+    },
+    {
+      "cell": "O47",
+      "row": 47,
+      "item": 6471,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS47",
+      "qa_value": "Metal loss - non-corrosion anomaly",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU47",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "2020_tally",
+        "sheet": "Pipe Tally",
+        "row": 4100,
+        "cell": "I4100",
+        "value": "Metal loss - non-corrosion anomaly"
+      },
+      "MOCOM_record": 6164,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA event agrees with exact associated2020 pipe tally event and MOCOM old type; current historical event label is incorrect."
+    },
+    {
+      "cell": "O48",
+      "row": 48,
+      "item": 6472,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS48",
+      "qa_value": "Metal loss - non-corrosion anomaly",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU48",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "2020_tally",
+        "sheet": "Pipe Tally",
+        "row": 4101,
+        "cell": "I4101",
+        "value": "Metal loss - non-corrosion anomaly"
+      },
+      "MOCOM_record": 6165,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA event agrees with exact associated2020 pipe tally event and MOCOM old type; current historical event label is incorrect."
+    },
+    {
+      "cell": "N49",
+      "row": 49,
+      "item": 6473,
+      "field": "Log Distance\n(ft)",
+      "current_value": 5425.397849,
+      "qa_cell": "AR49",
+      "qa_value": 5425.398,
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BT49",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "MOCOM",
+        "csv_record_with_header": 6166,
+        "field": "ol_dist",
+        "value": "5425.397849"
+      },
+      "MOCOM_record": 6166,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "Same MOCOM equivalent historical distance, rounded to QA3 decimals. Difference below0.0005ft; no association change. Retain raw source value in this audit."
+    },
+    {
+      "cell": "O49",
+      "row": 49,
+      "item": 6473,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS49",
+      "qa_value": "-",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU49",
+      "preserve_existing_format": true,
+      "primary_source": null,
+      "MOCOM_record": 6166,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA has no applicable old matched anomaly. Equivalent historical distance does not establish a matched event. For replaced rows, explicit reviewer exclusion governs despite a raw MOCOM match."
+    },
+    {
+      "cell": "O50",
+      "row": 50,
+      "item": 6497,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS50",
+      "qa_value": "Metal loss - non-corrosion anomaly",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU50",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "2020_tally",
+        "sheet": "Pipe Tally",
+        "row": 4118,
+        "cell": "I4118",
+        "value": "Metal loss - non-corrosion anomaly"
+      },
+      "MOCOM_record": 6187,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA event agrees with exact associated2020 pipe tally event and MOCOM old type; current historical event label is incorrect."
+    },
+    {
+      "cell": "O51",
+      "row": 51,
+      "item": 6537,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS51",
+      "qa_value": "Metal loss - non-corrosion anomaly",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU51",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "2020_tally",
+        "sheet": "Pipe Tally",
+        "row": 4144,
+        "cell": "I4144",
+        "value": "Metal loss - non-corrosion anomaly"
+      },
+      "MOCOM_record": 6218,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA event agrees with exact associated2020 pipe tally event and MOCOM old type; current historical event label is incorrect."
+    },
+    {
+      "cell": "O53",
+      "row": 53,
+      "item": 6875,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS53",
+      "qa_value": "-",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU53",
+      "preserve_existing_format": true,
+      "primary_source": null,
+      "MOCOM_record": 6489,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA has no applicable old matched anomaly. Equivalent historical distance does not establish a matched event. For replaced rows, explicit reviewer exclusion governs despite a raw MOCOM match."
+    },
+    {
+      "cell": "O55",
+      "row": 55,
+      "item": 6997,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS55",
+      "qa_value": "Metal loss - non-corrosion anomaly",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU55",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "2020_tally",
+        "sheet": "Pipe Tally",
+        "row": 4427,
+        "cell": "I4427",
+        "value": "Metal loss - non-corrosion anomaly"
+      },
+      "MOCOM_record": 6577,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA event agrees with exact associated2020 pipe tally event and MOCOM old type; current historical event label is incorrect."
+    },
+    {
+      "cell": "O56",
+      "row": 56,
+      "item": 7016,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS56",
+      "qa_value": "Metal loss - non-corrosion anomaly",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU56",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "2020_tally",
+        "sheet": "Pipe Tally",
+        "row": 4441,
+        "cell": "I4441",
+        "value": "Metal loss - non-corrosion anomaly"
+      },
+      "MOCOM_record": 6591,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA event agrees with exact associated2020 pipe tally event and MOCOM old type; current historical event label is incorrect."
+    },
+    {
+      "cell": "O57",
+      "row": 57,
+      "item": 7017,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS57",
+      "qa_value": "-",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU57",
+      "preserve_existing_format": true,
+      "primary_source": null,
+      "MOCOM_record": 6592,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA has no applicable old matched anomaly. Equivalent historical distance does not establish a matched event. For replaced rows, explicit reviewer exclusion governs despite a raw MOCOM match."
+    },
+    {
+      "cell": "O59",
+      "row": 59,
+      "item": 7064,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS59",
+      "qa_value": "-",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU59",
+      "preserve_existing_format": true,
+      "primary_source": null,
+      "MOCOM_record": 6630,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA has no applicable old matched anomaly. Equivalent historical distance does not establish a matched event. For replaced rows, explicit reviewer exclusion governs despite a raw MOCOM match."
+    },
+    {
+      "cell": "O60",
+      "row": 60,
+      "item": 7065,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS60",
+      "qa_value": "-",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU60",
+      "preserve_existing_format": true,
+      "primary_source": null,
+      "MOCOM_record": 6631,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA has no applicable old matched anomaly. Equivalent historical distance does not establish a matched event. For replaced rows, explicit reviewer exclusion governs despite a raw MOCOM match."
+    },
+    {
+      "cell": "O61",
+      "row": 61,
+      "item": 7076,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS61",
+      "qa_value": "Metal loss - non-corrosion anomaly",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU61",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "2020_tally",
+        "sheet": "Pipe Tally",
+        "row": 4487,
+        "cell": "I4487",
+        "value": "Metal loss - non-corrosion anomaly"
+      },
+      "MOCOM_record": 6645,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA event agrees with exact associated2020 pipe tally event and MOCOM old type; current historical event label is incorrect."
+    },
+    {
+      "cell": "O62",
+      "row": 62,
+      "item": 7693,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS62",
+      "qa_value": "Metal loss - non-corrosion anomaly",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU62",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "2020_tally",
+        "sheet": "Pipe Tally",
+        "row": 4955,
+        "cell": "I4955",
+        "value": "Metal loss - non-corrosion anomaly"
+      },
+      "MOCOM_record": 7137,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA event agrees with exact associated2020 pipe tally event and MOCOM old type; current historical event label is incorrect."
+    },
+    {
+      "cell": "O63",
+      "row": 63,
+      "item": 7694,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS63",
+      "qa_value": "Metal loss - non-corrosion anomaly",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU63",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "2020_tally",
+        "sheet": "Pipe Tally",
+        "row": 4957,
+        "cell": "I4957",
+        "value": "Metal loss - non-corrosion anomaly"
+      },
+      "MOCOM_record": 7138,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA event agrees with exact associated2020 pipe tally event and MOCOM old type; current historical event label is incorrect."
+    },
+    {
+      "cell": "R63",
+      "row": 63,
+      "item": 7694,
+      "field": "Orientation (hh:mm)",
+      "current_value": 0.5006944444444444,
+      "qa_cell": "AV63",
+      "qa_value": 0.0006944444444444445,
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BX63",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "2020_tally",
+        "sheet": "Pipe Tally",
+        "row": 4957,
+        "cell": "L4957",
+        "value": 0.5006944444444444
+      },
+      "MOCOM_record": 7138,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA normalizes historical pipeline clock modulo12hours; original tally retains a +12hour time serial. Same physical clock. Preserve hh:mm format; does not validate physical association."
+    },
+    {
+      "cell": "R64",
+      "row": 64,
+      "item": 7711,
+      "field": "Orientation (hh:mm)",
+      "current_value": "-",
+      "qa_cell": "AV64",
+      "qa_value": 0.21736111111111112,
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BX64",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "2020_tally",
+        "sheet": "Pipe Tally",
+        "row": 4972,
+        "cell": "L4972",
+        "value": 0.21736111111111112
+      },
+      "MOCOM_record": 7150,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "Fill missing historical center-clock using2020 tally columnL, matching QA AV. Do not use MOCOM ol_orient, which is the start-edge clock."
+    },
+    {
+      "cell": "O65",
+      "row": 65,
+      "item": 7716,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS65",
+      "qa_value": "Metal loss - non-corrosion anomaly",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU65",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "2020_tally",
+        "sheet": "Pipe Tally",
+        "row": 4976,
+        "cell": "I4976",
+        "value": "Metal loss - non-corrosion anomaly"
+      },
+      "MOCOM_record": 7152,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA event agrees with exact associated2020 pipe tally event and MOCOM old type; current historical event label is incorrect."
+    },
+    {
+      "cell": "R65",
+      "row": 65,
+      "item": 7716,
+      "field": "Orientation (hh:mm)",
+      "current_value": "-",
+      "qa_cell": "AV65",
+      "qa_value": 0.28055555555555556,
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BX65",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "2020_tally",
+        "sheet": "Pipe Tally",
+        "row": 4976,
+        "cell": "L4976",
+        "value": 0.28055555555555556
+      },
+      "MOCOM_record": 7152,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "Fill missing historical center-clock using2020 tally columnL, matching QA AV. Do not use MOCOM ol_orient, which is the start-edge clock."
+    },
+    {
+      "cell": "O66",
+      "row": 66,
+      "item": 7718,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS66",
+      "qa_value": "Metal loss - non-corrosion anomaly",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU66",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "2020_tally",
+        "sheet": "Pipe Tally",
+        "row": 4978,
+        "cell": "I4978",
+        "value": "Metal loss - non-corrosion anomaly"
+      },
+      "MOCOM_record": 7153,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA event agrees with exact associated2020 pipe tally event and MOCOM old type; current historical event label is incorrect."
+    },
+    {
+      "cell": "R66",
+      "row": 66,
+      "item": 7718,
+      "field": "Orientation (hh:mm)",
+      "current_value": "-",
+      "qa_cell": "AV66",
+      "qa_value": 0.3277777777777778,
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BX66",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "2020_tally",
+        "sheet": "Pipe Tally",
+        "row": 4978,
+        "cell": "L4978",
+        "value": 0.3277777777777778
+      },
+      "MOCOM_record": 7153,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "Fill missing historical center-clock using2020 tally columnL, matching QA AV. Do not use MOCOM ol_orient, which is the start-edge clock."
+    },
+    {
+      "cell": "O67",
+      "row": 67,
+      "item": 9055,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS67",
+      "qa_value": "Metal loss - non-corrosion anomaly",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU67",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "2020_tally",
+        "sheet": "Pipe Tally",
+        "row": 5705,
+        "cell": "I5705",
+        "value": "Metal loss - non-corrosion anomaly"
+      },
+      "MOCOM_record": 8345,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA event agrees with exact associated2020 pipe tally event and MOCOM old type; current historical event label is incorrect."
+    },
+    {
+      "cell": "R67",
+      "row": 67,
+      "item": 9055,
+      "field": "Orientation (hh:mm)",
+      "current_value": 0.5368055555555555,
+      "qa_cell": "AV67",
+      "qa_value": 0.03680555555555556,
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BX67",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "2020_tally",
+        "sheet": "Pipe Tally",
+        "row": 5705,
+        "cell": "L5705",
+        "value": 0.5368055555555555
+      },
+      "MOCOM_record": 8345,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA normalizes historical pipeline clock modulo12hours; original tally retains a +12hour time serial. Same physical clock. Preserve hh:mm format; does not validate physical association."
+    },
+    {
+      "cell": "O68",
+      "row": 68,
+      "item": 9063,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS68",
+      "qa_value": "Metal loss - non-corrosion anomaly",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU68",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "2020_tally",
+        "sheet": "Pipe Tally",
+        "row": 5710,
+        "cell": "I5710",
+        "value": "Metal loss - non-corrosion anomaly"
+      },
+      "MOCOM_record": 8352,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA event agrees with exact associated2020 pipe tally event and MOCOM old type; current historical event label is incorrect."
+    },
+    {
+      "cell": "R68",
+      "row": 68,
+      "item": 9063,
+      "field": "Orientation (hh:mm)",
+      "current_value": 0.5361111111111111,
+      "qa_cell": "AV68",
+      "qa_value": 0.03611111111111111,
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BX68",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "2020_tally",
+        "sheet": "Pipe Tally",
+        "row": 5710,
+        "cell": "L5710",
+        "value": 0.5361111111111111
+      },
+      "MOCOM_record": 8352,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA normalizes historical pipeline clock modulo12hours; original tally retains a +12hour time serial. Same physical clock. Preserve hh:mm format; does not validate physical association."
+    },
+    {
+      "cell": "O69",
+      "row": 69,
+      "item": 9085,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS69",
+      "qa_value": "Metal loss - non-corrosion anomaly",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU69",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "2020_tally",
+        "sheet": "Pipe Tally",
+        "row": 5723,
+        "cell": "I5723",
+        "value": "Metal loss - non-corrosion anomaly"
+      },
+      "MOCOM_record": 8372,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA event agrees with exact associated2020 pipe tally event and MOCOM old type; current historical event label is incorrect."
+    },
+    {
+      "cell": "R69",
+      "row": 69,
+      "item": 9085,
+      "field": "Orientation (hh:mm)",
+      "current_value": 0.5319444444444444,
+      "qa_cell": "AV69",
+      "qa_value": 0.03194444444444444,
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BX69",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "2020_tally",
+        "sheet": "Pipe Tally",
+        "row": 5723,
+        "cell": "L5723",
+        "value": 0.5319444444444444
+      },
+      "MOCOM_record": 8372,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA normalizes historical pipeline clock modulo12hours; original tally retains a +12hour time serial. Same physical clock. Preserve hh:mm format; does not validate physical association."
+    },
+    {
+      "cell": "O70",
+      "row": 70,
+      "item": 9424,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS70",
+      "qa_value": "-",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU70",
+      "preserve_existing_format": true,
+      "primary_source": null,
+      "MOCOM_record": 8691,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA has no applicable old matched anomaly. Equivalent historical distance does not establish a matched event. For replaced rows, explicit reviewer exclusion governs despite a raw MOCOM match."
+    },
+    {
+      "cell": "N71",
+      "row": 71,
+      "item": 9532,
+      "field": "Log Distance\n(ft)",
+      "current_value": 8617.714863,
+      "qa_cell": "AR71",
+      "qa_value": 8617.715,
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BT71",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "MOCOM",
+        "csv_record_with_header": 8761,
+        "field": "ol_dist",
+        "value": "8617.714863"
+      },
+      "MOCOM_record": 8761,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "Same MOCOM equivalent historical distance, rounded to QA3 decimals. Difference below0.0005ft; no association change. Retain raw source value in this audit."
+    },
+    {
+      "cell": "O71",
+      "row": 71,
+      "item": 9532,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS71",
+      "qa_value": "-",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU71",
+      "preserve_existing_format": true,
+      "primary_source": null,
+      "MOCOM_record": 8761,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA has no applicable old matched anomaly. Equivalent historical distance does not establish a matched event. For replaced rows, explicit reviewer exclusion governs despite a raw MOCOM match."
+    },
+    {
+      "cell": "O72",
+      "row": 72,
+      "item": 9535,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS72",
+      "qa_value": "Metal loss - non-corrosion anomaly",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU72",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "2020_tally",
+        "sheet": "Pipe Tally",
+        "row": 5997,
+        "cell": "I5997",
+        "value": "Metal loss - non-corrosion anomaly"
+      },
+      "MOCOM_record": 8762,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA event agrees with exact associated2020 pipe tally event and MOCOM old type; current historical event label is incorrect."
+    },
+    {
+      "cell": "O73",
+      "row": 73,
+      "item": 9638,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS73",
+      "qa_value": "Metal loss - non-corrosion anomaly",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU73",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "2020_tally",
+        "sheet": "Pipe Tally",
+        "row": 6060,
+        "cell": "I6060",
+        "value": "Metal loss - non-corrosion anomaly"
+      },
+      "MOCOM_record": 8837,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA event agrees with exact associated2020 pipe tally event and MOCOM old type; current historical event label is incorrect."
+    },
+    {
+      "cell": "O77",
+      "row": 77,
+      "item": 9784,
+      "field": "Event",
+      "current_value": "Metal loss - non-corrosion anomaly",
+      "qa_cell": "AS77",
+      "qa_value": "-",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU77",
+      "preserve_existing_format": true,
+      "primary_source": null,
+      "MOCOM_record": 8947,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "QA has no applicable old matched anomaly. Equivalent historical distance does not establish a matched event. For replaced rows, explicit reviewer exclusion governs despite a raw MOCOM match."
+    },
+    {
+      "cell": "X78",
+      "row": 78,
+      "item": 9787,
+      "field": "Repair Information",
+      "current_value": "Pipeline is replaced",
+      "qa_cell": "BB78",
+      "qa_value": "-",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "CD78",
+      "preserve_existing_format": true,
+      "primary_source": null,
+      "MOCOM_record": 8948,
+      "decision": "SAFE_QA_ALIGNMENT",
+      "reason": "Kristin X17 explicitly says red is not replacement. QA BB78 is dash. MOCOM association5041 and2020 tally6137 are retained and current/old surfaces are both External. Main Y78=QA BC78=1 already coherent."
+    }
+  ],
+  "held_candidates": [
+    {
+      "cell": "X32",
+      "row": 32,
+      "item": 427,
+      "field": "Repair Information",
+      "current_value": "Pipeline is replaced",
+      "qa_cell": "BB32",
+      "qa_value": "-",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "CD32",
+      "preserve_existing_format": true,
+      "primary_source": null,
+      "MOCOM_record": 579,
+      "decision": "HOLD_REPAIR_DEPTH_DEPENDENCY",
+      "reason": "QA X/BB says not replaced, but mainY32 andQA BC32 both remain dash despite19-32=-13. Current Internal versus historical External adds unresolved association concern."
+    },
+    {
+      "cell": "N58",
+      "row": 58,
+      "item": 7060,
+      "field": "Log Distance\n(ft)",
+      "current_value": 6091.353,
+      "qa_cell": "AR58",
+      "qa_value": 6096.179,
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BT58",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "2020_tally",
+        "sheet": "Pipe Tally",
+        "row": 4472,
+        "cell": "E4472",
+        "value": 6096.179
+      },
+      "MOCOM_record": 6627,
+      "decision": "HOLD_MAJOR_ASSOCIATION_CONFLICT",
+      "reason": "QA associates old3686 but MOCOM associates old3682. Current historical fields mix both records. Do not force agreement or change source mapping without explicit resolution."
+    },
+    {
+      "cell": "O58",
+      "row": 58,
+      "item": 7060,
+      "field": "Event",
+      "current_value": "Metal loss - corrosion anomaly",
+      "qa_cell": "AS58",
+      "qa_value": "Metal loss - non-corrosion anomaly",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BU58",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "2020_tally",
+        "sheet": "Pipe Tally",
+        "row": 4472,
+        "cell": "I4472",
+        "value": "Metal loss - non-corrosion anomaly"
+      },
+      "MOCOM_record": 6627,
+      "decision": "HOLD_MAJOR_ASSOCIATION_CONFLICT",
+      "reason": "QA associates old3686 but MOCOM associates old3682. Current historical fields mix both records. Do not force agreement or change source mapping without explicit resolution."
+    },
+    {
+      "cell": "P58",
+      "row": 58,
+      "item": 7060,
+      "field": "Comment",
+      "current_value": "-",
+      "qa_cell": "AT58",
+      "qa_value": "wall thinning on bend",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BV58",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "2020_tally",
+        "sheet": "Pipe Tally",
+        "row": 4472,
+        "cell": "P4472",
+        "value": "wall thinning on bend"
+      },
+      "MOCOM_record": 6627,
+      "decision": "HOLD_MAJOR_ASSOCIATION_CONFLICT",
+      "reason": "QA associates old3686 but MOCOM associates old3682. Current historical fields mix both records. Do not force agreement or change source mapping without explicit resolution."
+    },
+    {
+      "cell": "Q58",
+      "row": 58,
+      "item": 7060,
+      "field": "Depth\n(%wt)",
+      "current_value": 19.0,
+      "qa_cell": "AU58",
+      "qa_value": 20.0,
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BW58",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "2020_tally",
+        "sheet": "Pipe Tally",
+        "row": 4472,
+        "cell": "J4472",
+        "value": 20.0
+      },
+      "MOCOM_record": 6627,
+      "decision": "HOLD_MAJOR_ASSOCIATION_CONFLICT",
+      "reason": "QA associates old3686 but MOCOM associates old3682. Current historical fields mix both records. Do not force agreement or change source mapping without explicit resolution."
+    },
+    {
+      "cell": "R58",
+      "row": 58,
+      "item": 7060,
+      "field": "Orientation (hh:mm)",
+      "current_value": 0.18680555555555556,
+      "qa_cell": "AV58",
+      "qa_value": 0.29097222222222224,
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "BX58",
+      "preserve_existing_format": true,
+      "primary_source": {
+        "file": "2020_tally",
+        "sheet": "Pipe Tally",
+        "row": 4472,
+        "cell": "L4472",
+        "value": 0.29097222222222224
+      },
+      "MOCOM_record": 6627,
+      "decision": "HOLD_MAJOR_ASSOCIATION_CONFLICT",
+      "reason": "QA associates old3686 but MOCOM associates old3682. Current historical fields mix both records. Do not force agreement or change source mapping without explicit resolution."
+    },
+    {
+      "cell": "W58",
+      "row": 58,
+      "item": 7060,
+      "field": "Notes",
+      "current_value": "-",
+      "qa_cell": "BA58",
+      "qa_value": "This is an unused matched Recent record.",
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "CC58",
+      "preserve_existing_format": true,
+      "primary_source": null,
+      "MOCOM_record": 6627,
+      "decision": "HOLD_MAJOR_ASSOCIATION_CONFLICT",
+      "reason": "QA associates old3686 but MOCOM associates old3682. Current historical fields mix both records. Do not force agreement or change source mapping without explicit resolution."
+    },
+    {
+      "cell": "Y58",
+      "row": 58,
+      "item": 7060,
+      "field": "Depth Change \n(% wt)",
+      "current_value": 5.0,
+      "qa_cell": "BC58",
+      "qa_value": 4.0,
+      "qa_source": "main retained QA block; confirmed against original Rev0-3QA",
+      "check_cell": "CE58",
+      "preserve_existing_format": true,
+      "primary_source": null,
+      "MOCOM_record": 6627,
+      "decision": "HOLD_MAJOR_ASSOCIATION_CONFLICT",
+      "reason": "QA associates old3686 but MOCOM associates old3682. Current historical fields mix both records. Do not force agreement or change source mapping without explicit resolution."
+    }
+  ],
+  "all_record_source_mapping": [
+    {
+      "row": 18,
+      "item": 36,
+      "current_tally_rows": [
+        5882
+      ],
+      "main_old_key_AC": "-",
+      "QA_old_key_AQ": "-",
+      "QA_historical_tally_rows": [],
+      "MOCOM": [
+        {
+          "csv_record_with_header": 52,
+          "data": {
+            "ID": "36",
+            "distance": "122.555",
+            "rel dist": "-0.178",
+            "type": "Metal Loss-Manufacturing Anomaly",
+            "comment": "",
+            "wl": "15",
+            "orient": "6:32",
+            "len": "3.827",
+            "wid": "1.508",
+            "internal": "Ext",
+            "ol_ID": "53",
+            "ol_dist": "119.244",
+            "ol_type": "MELO-CORR",
+            "ol_comment": "",
+            "ol_wl": "22",
+            "ol_orient": "5:54",
+            "ol_len": "9.177",
+            "ol_wid": "6.189",
+            "ol_inter": "ext",
+            "wt": "0.704",
+            "cg_int": "5.619178082",
+            "CGR (Matched)": "-8.76996587",
+            "CGR (UnMatched)": "",
+            "CGR_Combined": "-8.76996587",
+            "Notes": ""
+          }
+        }
+      ]
+    },
+    {
+      "row": 19,
+      "item": 40,
+      "current_tally_rows": [
+        7249
+      ],
+      "main_old_key_AC": "-",
+      "QA_old_key_AQ": 57.0,
+      "QA_historical_tally_rows": [
+        105
+      ],
+      "MOCOM": [
+        {
+          "csv_record_with_header": 54,
+          "data": {
+            "ID": "40",
+            "distance": "128.085",
+            "rel dist": "-0.005",
+            "type": "Metal Loss-Manufacturing Anomaly",
+            "comment": "",
+            "wl": "13",
+            "orient": "5:19",
+            "len": "5.079",
+            "wid": "5.488",
+            "internal": "Ext",
+            "ol_ID": "57",
+            "ol_dist": "125.48",
+            "ol_type": "MELO-CORR",
+            "ol_comment": "",
+            "ol_wl": "17",
+            "ol_orient": "5:13",
+            "ol_len": "30.876",
+            "ol_wid": "18.096",
+            "ol_inter": "ext",
+            "wt": "0.741",
+            "cg_int": "5.619178082",
+            "CGR (Matched)": "-5.274792784",
+            "CGR (UnMatched)": "",
+            "CGR_Combined": "-5.274792784",
+            "Notes": ""
+          }
+        }
+      ]
+    },
+    {
+      "row": 20,
+      "item": 77,
+      "current_tally_rows": [
+        4483
+      ],
+      "main_old_key_AC": "-",
+      "QA_old_key_AQ": "-",
+      "QA_historical_tally_rows": [],
+      "MOCOM": [
+        {
+          "csv_record_with_header": 104,
+          "data": {
+            "ID": "77",
+            "distance": "329.206",
+            "rel dist": "-0.121",
+            "type": "Metal Loss-Manufacturing Anomaly",
+            "comment": "wall thinning at the bend",
+            "wl": "18",
+            "orient": "7:23",
+            "len": "63.845",
+            "wid": "47.484",
+            "internal": "Ext",
+            "ol_ID": "",
+            "ol_dist": "326.004",
+            "ol_type": "<-- Equivalent distance in previous inspection",
+            "ol_comment": "",
+            "ol_wl": "",
+            "ol_orient": "",
+            "ol_len": "",
+            "ol_wid": "",
+            "ol_inter": "",
+            "wt": "0.363",
+            "cg_int": "5.619178082",
+            "CGR (Matched)": "",
+            "CGR (UnMatched)": "11.6280351",
+            "CGR_Combined": "11.6280351",
+            "Notes": ""
+          }
+        }
+      ]
+    },
+    {
+      "row": 21,
+      "item": 94,
+      "current_tally_rows": [
+        8097
+      ],
+      "main_old_key_AC": "-",
+      "QA_old_key_AQ": "-",
+      "QA_historical_tally_rows": [],
+      "MOCOM": [
+        {
+          "csv_record_with_header": 115,
+          "data": {
+            "ID": "94",
+            "distance": "364.36",
+            "rel dist": "0.144",
+            "type": "Metal Loss-Manufacturing Anomaly",
+            "comment": "",
+            "wl": "12",
+            "orient": "11:44",
+            "len": "1.722",
+            "wid": "1.544",
+            "internal": "Ext",
+            "ol_ID": "",
+            "ol_dist": "361.0406245",
+            "ol_type": "<-- Equivalent distance in previous inspection",
+            "ol_comment": "",
+            "ol_wl": "",
+            "ol_orient": "",
+            "ol_len": "",
+            "ol_wid": "",
+            "ol_inter": "",
+            "wt": "0.382",
+            "cg_int": "5.619178082",
+            "CGR (Matched)": "",
+            "CGR (UnMatched)": "8.157776694",
+            "CGR_Combined": "8.157776694",
+            "Notes": ""
+          }
+        }
+      ]
+    },
+    {
+      "row": 22,
+      "item": 167,
+      "current_tally_rows": [
+        8803
+      ],
+      "main_old_key_AC": "-",
+      "QA_old_key_AQ": 121.0,
+      "QA_historical_tally_rows": [
+        224
+      ],
+      "MOCOM": [
+        {
+          "csv_record_with_header": 155,
+          "data": {
+            "ID": "167",
+            "distance": "518.262",
+            "rel dist": "1.807",
+            "type": "Metal Loss-Manufacturing Anomaly",
+            "comment": "",
+            "wl": "11",
+            "orient": "4:37",
+            "len": "2.528",
+            "wid": "5.644",
+            "internal": "Int",
+            "ol_ID": "121",
+            "ol_dist": "515.149",
+            "ol_type": "MELO-ANOM",
+            "ol_comment": "",
+            "ol_wl": "11",
+            "ol_orient": "4:37",
+            "ol_len": "2.919",
+            "ol_wid": "4.558",
+            "ol_inter": "int",
+            "wt": "0.396",
+            "cg_int": "5.619178082",
+            "CGR (Matched)": "0",
+            "CGR (UnMatched)": "",
+            "CGR_Combined": "0",
+            "Notes": ""
+          }
+        }
+      ]
+    },
+    {
+      "row": 23,
+      "item": 168,
+      "current_tally_rows": [
+        8100
+      ],
+      "main_old_key_AC": "-",
+      "QA_old_key_AQ": 122.0,
+      "QA_historical_tally_rows": [
+        225
+      ],
+      "MOCOM": [
+        {
+          "csv_record_with_header": 156,
+          "data": {
+            "ID": "168",
+            "distance": "518.466",
+            "rel dist": "1.603",
+            "type": "Metal Loss-Manufacturing Anomaly",
+            "comment": "",
+            "wl": "12",
+            "orient": "6:28",
+            "len": "1.027",
+            "wid": "0.387",
+            "internal": "Int",
+            "ol_ID": "122",
+            "ol_dist": "515.28",
+            "ol_type": "MELO-ANOM",
+            "ol_comment": "",
+            "ol_wl": "10",
+            "ol_orient": "6:20",
+            "ol_len": "1.343",
+            "ol_wid": "1.087",
+            "ol_inter": "int",
+            "wt": "0.396",
+            "cg_int": "5.619178082",
+            "CGR (Matched)": "1.409458801",
+            "CGR (UnMatched)": "",
+            "CGR_Combined": "1.409458801",
+            "Notes": ""
+          }
+        }
+      ]
+    },
+    {
+      "row": 24,
+      "item": 176,
+      "current_tally_rows": [
+        5887
+      ],
+      "main_old_key_AC": "-",
+      "QA_old_key_AQ": 127.0,
+      "QA_historical_tally_rows": [
+        231
+      ],
+      "MOCOM": [
+        {
+          "csv_record_with_header": 164,
+          "data": {
+            "ID": "176",
+            "distance": "559.543",
+            "rel dist": "1.422",
+            "type": "Metal Loss-Manufacturing Anomaly",
+            "comment": "",
+            "wl": "15",
+            "orient": "7:40",
+            "len": "5.007",
+            "wid": "19.568",
+            "internal": "Int",
+            "ol_ID": "127",
+            "ol_dist": "556.426",
+            "ol_type": "MELO-ANOM",
+            "ol_comment": "",
+            "ol_wl": "15",
+            "ol_orient": "7:35",
+            "ol_len": "5.38",
+            "ol_wid": "19.375",
+            "ol_inter": "int",
+            "wt": "0.391",
+            "cg_int": "5.619178082",
+            "CGR (Matched)": "0",
+            "CGR (UnMatched)": "",
+            "CGR_Combined": "0",
+            "Notes": ""
+          }
+        }
+      ]
+    },
+    {
+      "row": 25,
+      "item": 190,
+      "current_tally_rows": [
+        8807
+      ],
+      "main_old_key_AC": "-",
+      "QA_old_key_AQ": 136.0,
+      "QA_historical_tally_rows": [
+        242
+      ],
+      "MOCOM": [
+        {
+          "csv_record_with_header": 175,
+          "data": {
+            "ID": "190",
+            "distance": "599.145",
+            "rel dist": "3.719",
+            "type": "Metal Loss-Manufacturing Anomaly",
+            "comment": "",
+            "wl": "11",
+            "orient": "4:48",
+            "len": "2.535",
+            "wid": "10.977",
+            "internal": "Int",
+            "ol_ID": "136",
+            "ol_dist": "595.757",
+            "ol_type": "MELO-ANOM",
+            "ol_comment": "",
+            "ol_wl": "12",
+            "ol_orient": "5:10",
+            "ol_len": "3.641",
+            "ol_wid": "8.504",
+            "ol_inter": "int",
+            "wt": "0.391",
+            "cg_int": "5.619178082",
+            "CGR (Matched)": "-0.695831302",
+            "CGR (UnMatched)": "",
+            "CGR_Combined": "-0.695831302",
+            "Notes": ""
+          }
+        }
+      ]
+    },
+    {
+      "row": 26,
+      "item": 228,
+      "current_tally_rows": [
+        7255
+      ],
+      "main_old_key_AC": "-",
+      "QA_old_key_AQ": 150.0,
+      "QA_historical_tally_rows": [
+        273
+      ],
+      "MOCOM": [
+        {
+          "csv_record_with_header": 198,
+          "data": {
+            "ID": "228",
+            "distance": "715.001",
+            "rel dist": "-2.052",
+            "type": "Metal Loss-Manufacturing Anomaly",
+            "comment": "",
+            "wl": "13",
+            "orient": "11:24",
+            "len": "1.179",
+            "wid": "0.579",
+            "internal": "Int",
+            "ol_ID": "150",
+            "ol_dist": "711.89",
+            "ol_type": "MELO-ANOM",
+            "ol_comment": "",
+            "ol_wl": "13",
+            "ol_orient": "11:20",
+            "ol_len": "1.568",
+            "ol_wid": "0.771",
+            "ol_inter": "int",
+            "wt": "0.396",
+            "cg_int": "5.619178082",
+            "CGR (Matched)": "0",
+            "CGR (UnMatched)": "",
+            "CGR_Combined": "0",
+            "Notes": ""
+          }
+        }
+      ]
+    },
+    {
+      "row": 27,
+      "item": 235,
+      "current_tally_rows": [
+        9296
+      ],
+      "main_old_key_AC": "-",
+      "QA_old_key_AQ": 153.0,
+      "QA_historical_tally_rows": [
+        278
+      ],
+      "MOCOM": [
+        {
+          "csv_record_with_header": 202,
+          "data": {
+            "ID": "235",
+            "distance": "794.447",
+            "rel dist": "1.176",
+            "type": "Metal Loss-Manufacturing Anomaly",
+            "comment": "",
+            "wl": "10",
+            "orient": "4:34",
+            "len": "1.798",
+            "wid": "2.245",
+            "internal": "Int",
+            "ol_ID": "153",
+            "ol_dist": "791.364",
+            "ol_type": "MELO-ANOM",
+            "ol_comment": "",
+            "ol_wl": "11",
+            "ol_orient": "4:33",
+            "ol_len": "2.104",
+            "ol_wid": "3.21",
+            "ol_inter": "int",
+            "wt": "0.396",
+            "cg_int": "5.619178082",
+            "CGR (Matched)": "-0.7047294",
+            "CGR (UnMatched)": "",
+            "CGR_Combined": "-0.7047294",
+            "Notes": ""
+          }
+        }
+      ]
+    },
+    {
+      "row": 28,
+      "item": 328,
+      "current_tally_rows": [
+        9297
+      ],
+      "main_old_key_AC": "-",
+      "QA_old_key_AQ": "-",
+      "QA_historical_tally_rows": [],
+      "MOCOM": [
+        {
+          "csv_record_with_header": 456,
+          "data": {
+            "ID": "328",
+            "distance": "1389.299",
+            "rel dist": "-2.382",
+            "type": "Metal Loss-Manufacturing Anomaly",
+            "comment": "",
+            "wl": "10",
+            "orient": "9:02",
+            "len": "4.975",
+            "wid": "1.158",
+            "internal": "Ext",
+            "ol_ID": "",
+            "ol_dist": "1433.459776",
+            "ol_type": "<-- Equivalent distance in previous inspection",
+            "ol_comment": "",
+            "ol_wl": "",
+            "ol_orient": "",
+            "ol_len": "",
+            "ol_wid": "",
+            "ol_inter": "",
+            "wt": "0.694",
+            "cg_int": "5.619178082",
+            "CGR (Matched)": "",
+            "CGR (UnMatched)": "12.3505607",
+            "CGR_Combined": "12.3505607",
+            "Notes": ""
+          }
+        }
+      ]
+    },
+    {
+      "row": 29,
+      "item": 335,
+      "current_tally_rows": [
+        8818
+      ],
+      "main_old_key_AC": "-",
+      "QA_old_key_AQ": "-",
+      "QA_historical_tally_rows": [],
+      "MOCOM": [
+        {
+          "csv_record_with_header": 471,
+          "data": {
+            "ID": "335",
+            "distance": "1466.1",
+            "rel dist": "-7.145",
+            "type": "Metal Loss-Manufacturing Anomaly",
+            "comment": "",
+            "wl": "11",
+            "orient": "5:49",
+            "len": "5.574",
+            "wid": "2.509",
+            "internal": "Ext",
+            "ol_ID": "416",
+            "ol_dist": "1517.838",
+            "ol_type": "MELO-CORR",
+            "ol_comment": "",
+            "ol_wl": "72",
+            "ol_orient": "4:36",
+            "ol_len": "75.251",
+            "ol_wid": "16.937",
+            "ol_inter": "ext",
+            "wt": "0.697",
+            "cg_int": "5.619178082",
+            "CGR (Matched)": "-75.66409069",
+            "CGR (UnMatched)": "",
+            "CGR_Combined": "-75.66409069",
+            "Notes": ""
+          }
+        }
+      ]
+    },
+    {
+      "row": 30,
+      "item": 375,
+      "current_tally_rows": [
+        7257
+      ],
+      "main_old_key_AC": "-",
+      "QA_old_key_AQ": "-",
+      "QA_historical_tally_rows": [],
+      "MOCOM": [
+        {
+          "csv_record_with_header": 544,
+          "data": {
+            "ID": "375",
+            "distance": "1846.807",
+            "rel dist": "8.555",
+            "type": "Metal Loss-Manufacturing Anomaly",
+            "comment": "",
+            "wl": "13",
+            "orient": "3:42",
+            "len": "1.498",
+            "wid": "1.156",
+            "internal": "Ext",
+            "ol_ID": "",
+            "ol_dist": "1933.230809",
+            "ol_type": "<-- Equivalent distance in previous inspection",
+            "ol_comment": "",
+            "ol_wl": "",
+            "ol_orient": "",
+            "ol_len": "",
+            "ol_wid": "",
+            "ol_inter": "",
+            "wt": "0.699",
+            "cg_int": "5.619178082",
+            "CGR (Matched)": "",
+            "CGR (UnMatched)": "16.17140419",
+            "CGR_Combined": "16.17140419",
+            "Notes": ""
+          }
+        }
+      ]
+    },
+    {
+      "row": 31,
+      "item": 382,
+      "current_tally_rows": [
+        5894
+      ],
+      "main_old_key_AC": "-",
+      "QA_old_key_AQ": "-",
+      "QA_historical_tally_rows": [],
+      "MOCOM": [
+        {
+          "csv_record_with_header": 547,
+          "data": {
+            "ID": "382",
+            "distance": "1869.352",
+            "rel dist": "4.732",
+            "type": "Metal Loss-Manufacturing Anomaly",
+            "comment": "",
+            "wl": "15",
+            "orient": "8:09",
+            "len": "16.286",
+            "wid": "6.032",
+            "internal": "Ext",
+            "ol_ID": "",
+            "ol_dist": "1957.85844",
+            "ol_type": "<-- Equivalent distance in previous inspection",
+            "ol_comment": "",
+            "ol_wl": "",
+            "ol_orient": "",
+            "ol_len": "",
+            "ol_wid": "",
+            "ol_inter": "",
+            "wt": "0.694",
+            "cg_int": "5.619178082",
+            "CGR (Matched)": "",
+            "CGR (UnMatched)": "18.52584105",
+            "CGR_Combined": "18.52584105",
+            "Notes": ""
+          }
+        }
+      ]
+    },
+    {
+      "row": 32,
+      "item": 427,
+      "current_tally_rows": [
+        4074
+      ],
+      "main_old_key_AC": 506.0,
+      "QA_old_key_AQ": 517.0,
+      "QA_historical_tally_rows": [
+        793
+      ],
+      "MOCOM": [
+        {
+          "csv_record_with_header": 579,
+          "data": {
+            "ID": "427",
+            "distance": "2047.12",
+            "rel dist": "-13.248",
+            "type": "Metal Loss-Manufacturing Anomaly",
+            "comment": "",
+            "wl": "19",
+            "orient": "1:39",
+            "len": "10.117",
+            "wid": "3.596",
+            "internal": "Int",
+            "ol_ID": "517",
+            "ol_dist": "2148.925",
+            "ol_type": "MELO-CORR",
+            "ol_comment": "poss. around and under heat tracing tube connection",
+            "ol_wl": "32",
+            "ol_orient": "11:59",
+            "ol_len": "39.308",
+            "ol_wid": "12.378",
+            "ol_inter": "ext",
+            "wt": "0.326",
+            "cg_int": "5.619178082",
+            "CGR (Matched)": "-7.542028279",
+            "CGR (UnMatched)": "",
+            "CGR_Combined": "-7.542028279",
+            "Notes": ""
+          }
+        }
+      ]
+    },
+    {
+      "row": 33,
+      "item": 449,
+      "current_tally_rows": [
+        4077
+      ],
+      "main_old_key_AC": "-",
+      "QA_old_key_AQ": "-",
+      "QA_historical_tally_rows": [],
+      "MOCOM": [
+        {
+          "csv_record_with_header": 588,
+          "data": {
+            "ID": "449",
+            "distance": "2132.643",
+            "rel dist": "-0.188",
+            "type": "Metal Loss-Manufacturing Anomaly",
+            "comment": "wall thinning at the bend",
+            "wl": "19",
+            "orient": "0:23",
+            "len": "48.175",
+            "wid": "15.272",
+            "internal": "Ext",
+            "ol_ID": "",
+            "ol_dist": "2245.454",
+            "ol_type": "<-- Equivalent distance in previous inspection",
+            "ol_comment": "",
+            "ol_wl": "",
+            "ol_orient": "",
+            "ol_len": "",
+            "ol_wid": "",
+            "ol_inter": "",
+            "wt": "0.41",
+            "cg_int": "5.619178082",
+            "CGR (Matched)": "",
+            "CGR (UnMatched)": "13.86323745",
+            "CGR_Combined": "13.86323745",
+            "Notes": ""
+          }
+        }
+      ]
+    },
+    {
+      "row": 34,
+      "item": 452,
+      "current_tally_rows": [
+        8103
+      ],
+      "main_old_key_AC": "-",
+      "QA_old_key_AQ": 526.0,
+      "QA_historical_tally_rows": [
+        820
+      ],
+      "MOCOM": [
+        {
+          "csv_record_with_header": 589,
+          "data": {
+            "ID": "452",
+            "distance": "2139.335",
+            "rel dist": "-2.389",
+            "type": "Metal Loss-Manufacturing Anomaly",
+            "comment": "",
+            "wl": "12",
+            "orient": "0:27",
+            "len": "0.467",
+            "wid": "0.386",
+            "internal": "Int",
+            "ol_ID": "526",
+            "ol_dist": "2252.096",
+            "ol_type": "MELO-ANOM",
+            "ol_comment": "",
+            "ol_wl": "11",
+            "ol_orient": "0:25",
+            "ol_len": "0.393",
+            "ol_wid": "0.578",
+            "ol_inter": "int",
+            "wt": "0.369",
+            "cg_int": "5.619178082",
+            "CGR (Matched)": "0.656679668",
+            "CGR (UnMatched)": "",
+            "CGR_Combined": "0.656679668",
+            "Notes": ""
+          }
+        }
+      ]
+    },
+    {
+      "row": 35,
+      "item": 460,
+      "current_tally_rows": [
+        8820
+      ],
+      "main_old_key_AC": "-",
+      "QA_old_key_AQ": 528.0,
+      "QA_historical_tally_rows": [
+        827
+      ],
+      "MOCOM": [
+        {
+          "csv_record_with_header": 591,
+          "data": {
+            "ID": "460",
+            "distance": "2176.542",
+            "rel dist": "-0.173",
+            "type": "Metal Loss-Manufacturing Anomaly",
+            "comment": "",
+            "wl": "11",
+            "orient": "2:22",
+            "len": "3.037",
+            "wid": "3.016",
+            "internal": "Int",
+            "ol_ID": "528",
+            "ol_dist": "2289.435",
+            "ol_type": "MELO-CORR",
+            "ol_comment": "",
+            "ol_wl": "12",
+            "ol_orient": "2:24",
+            "ol_len": "2.516",
+            "ol_wid": "2.438",
+            "ol_inter": "ext",
+            "wt": "0.369",
+            "cg_int": "5.619178082",
+            "CGR (Matched)": "-0.656679668",
+            "CGR (UnMatched)": "",
+            "CGR_Combined": "-0.656679668",
+            "Notes": ""
+          }
+        }
+      ]
+    },
+    {
+      "row": 36,
+      "item": 500,
+      "current_tally_rows": [
+        9298
+      ],
+      "main_old_key_AC": "-",
+      "QA_old_key_AQ": "-",
+      "QA_historical_tally_rows": [],
+      "MOCOM": [
+        {
+          "csv_record_with_header": 602,
+          "data": {
+            "ID": "500",
+            "distance": "2406.08",
+            "rel dist": "-0.364",
+            "type": "Metal Loss-Manufacturing Anomaly",
+            "comment": "",
+            "wl": "10",
+            "orient": "4:27",
+            "len": "142.174",
+            "wid": "2.63",
+            "internal": "Ext",
+            "ol_ID": "",
+            "ol_dist": "2518.891",
+            "ol_type": "<-- Equivalent distance in previous inspection",
+            "ol_comment": "",
+            "ol_wl": "",
+            "ol_orient": "",
+            "ol_len": "",
+            "ol_wid": "",
+            "ol_inter": "",
+            "wt": "0.368",
+            "cg_int": "5.619178082",
+            "CGR (Matched)": "",
+            "CGR (UnMatched)": "6.549000488",
+            "CGR_Combined": "6.549000488",
+            "Notes": ""
+          }
+        }
+      ]
+    },
+    {
+      "row": 37,
+      "item": 968,
+      "current_tally_rows": [
+        4509
+      ],
+      "main_old_key_AC": "-",
+      "QA_old_key_AQ": 697.0,
+      "QA_historical_tally_rows": [
+        1103
+      ],
+      "MOCOM": [
+        {
+          "csv_record_with_header": 966,
+          "data": {
+            "ID": "968",
+            "distance": "3056.214",
+            "rel dist": "2.35",
+            "type": "Metal Loss-Manufacturing Anomaly",
+            "comment": "wall thinning at the bend",
+            "wl": "18",
+            "orient": "4:17",
+            "len": "13.07",
+            "wid": "6.925",
+            "internal": "Ext",
+            "ol_ID": "697",
+            "ol_dist": "3169.517",
+            "ol_type": "MELO-ANOM",
+            "ol_comment": "wall thinning on bend",
+            "ol_wl": "14",
+            "ol_orient": "4:28",
+            "ol_len": "14.353",
+            "ol_wid": "6.032",
+            "ol_inter": "ext",
+            "wt": "0.396",
+            "cg_int": "5.619178082",
+            "CGR (Matched)": "2.818917601",
+            "CGR (UnMatched)": "",
+            "CGR_Combined": "2.818917601",
+            "Notes": ""
+          }
+        }
+      ]
+    },
+    {
+      "row": 38,
+      "item": 2663,
+      "current_tally_rows": [
+        5475
+      ],
+      "main_old_key_AC": "-",
+      "QA_old_key_AQ": "-",
+      "QA_historical_tally_rows": [],
+      "MOCOM": [
+        {
+          "csv_record_with_header": 2599,
+          "data": {
+            "ID": "2663",
+            "distance": "3449.533",
+            "rel dist": "-0.257",
+            "type": "Metal Loss-Manufacturing Anomaly",
+            "comment": "wall thinning at the bend",
+            "wl": "16",
+            "orient": "7:17",
+            "len": "22.707",
+            "wid": "12.644",
+            "internal": "Ext",
+            "ol_ID": "",
+            "ol_dist": "3562.344",
+            "ol_type": "<-- Equivalent distance in previous inspection",
+            "ol_comment": "",
+            "ol_wl": "",
+            "ol_orient": "",
+            "ol_len": "",
+            "ol_wid": "",
+            "ol_inter": "",
+            "wt": "0.447",
+            "cg_int": "5.619178082",
+            "CGR (Matched)": "",
+            "CGR (UnMatched)": "12.72784008",
+            "CGR_Combined": "12.72784008",
+            "Notes": ""
+          }
+        }
+      ]
+    },
+    {
+      "row": 39,
+      "item": 2665,
+      "current_tally_rows": [
+        4987
+      ],
+      "main_old_key_AC": "-",
+      "QA_old_key_AQ": "-",
+      "QA_historical_tally_rows": [],
+      "MOCOM": [
+        {
+          "csv_record_with_header": 2600,
+          "data": {
+            "ID": "2665",
+            "distance": "3453.123",
+            "rel dist": "1.903",
+            "type": "Metal Loss-Manufacturing Anomaly",
+            "comment": "wall thinning at the bend",
+            "wl": "17",
+            "orient": "7:36",
+            "len": "20.675",
+            "wid": "11.363",
+            "internal": "Ext",
+            "ol_ID": "",
+            "ol_dist": "3565.934",
+            "ol_type": "<-- Equivalent distance in previous inspection",
+            "ol_comment": "",
+            "ol_wl": "",
+            "ol_orient": "",
+            "ol_len": "",
+            "ol_wid": "",
+            "ol_inter": "",
+            "wt": "0.447",
+            "cg_int": "5.619178082",
+            "CGR (Matched)": "",
+            "CGR (UnMatched)": "13.52333008",
+            "CGR_Combined": "13.52333008",
+            "Notes": ""
+          }
+        }
+      ]
+    },
+    {
+      "row": 40,
+      "item": 2666,
+      "current_tally_rows": [
+        6005
+      ],
+      "main_old_key_AC": "-",
+      "QA_old_key_AQ": "-",
+      "QA_historical_tally_rows": [],
+      "MOCOM": [
+        {
+          "csv_record_with_header": 2601,
+          "data": {
+            "ID": "2666",
+            "distance": "3453.755",
+            "rel dist": "1.271",
+            "type": "Metal Loss-Manufacturing Anomaly",
+            "comment": "wall thinning at the bend",
+            "wl": "15",
+            "orient": "3:03",
+            "len": "12.488",
+            "wid": "4.296",
+            "internal": "Ext",
+            "ol_ID": "",
+            "ol_dist": "3566.566",
+            "ol_type": "<-- Equivalent distance in previous inspection",
+            "ol_comment": "",
+            "ol_wl": "",
+            "ol_orient": "",
+            "ol_len": "",
+            "ol_wid": "",
+            "ol_inter": "",
+            "wt": "0.447",
+            "cg_int": "5.619178082",
+            "CGR (Matched)": "",
+            "CGR (UnMatched)": "11.93235007",
+            "CGR_Combined": "11.93235007",
+            "Notes": ""
+          }
+        }
+      ]
+    },
+    {
+      "row": 41,
+      "item": 3015,
+      "current_tally_rows": [
+        7465
+      ],
+      "main_old_key_AC": "-",
+      "QA_old_key_AQ": "-",
+      "QA_historical_tally_rows": [],
+      "MOCOM": [
+        {
+          "csv_record_with_header": 2910,
+          "data": {
+            "ID": "3015",
+            "distance": "3658.689",
+            "rel dist": "-0.023",
+            "type": "Metal Loss-Manufacturing Anomaly",
+            "comment": "",
+            "wl": "13",
+            "orient": "10:05",
+            "len": "0.469",
+            "wid": "35.227",
+            "internal": "Ext",
+            "ol_ID": "",
+            "ol_dist": "3771.5",
+            "ol_type": "<-- Equivalent distance in previous inspection",
+            "ol_comment": "",
+            "ol_wl": "",
+            "ol_orient": "",
+            "ol_len": "",
+            "ol_wid": "",
+            "ol_inter": "",
+            "wt": "0.317",
+            "cg_int": "5.619178082",
+            "CGR (Matched)": "",
+            "CGR (UnMatched)": "7.333812774",
+            "CGR_Combined": "7.333812774",
+            "Notes": ""
+          }
+        }
+      ]
+    },
+    {
+      "row": 42,
+      "item": 5099,
+      "current_tally_rows": [
+        4303
+      ],
+      "main_old_key_AC": "-",
+      "QA_old_key_AQ": 2736.0,
+      "QA_historical_tally_rows": [
+        3320
+      ],
+      "MOCOM": [
+        {
+          "csv_record_with_header": 4915,
+          "data": {
+            "ID": "5099",
+            "distance": "4377.786",
+            "rel dist": "-0.013",
+            "type": "Metal Loss-Manufacturing Anomaly",
+            "comment": "wall thinning at the bend",
+            "wl": "19",
+            "orient": "9:46",
+            "len": "10.66",
+            "wid": "3.21",
+            "internal": "Ext",
+            "ol_ID": "2736",
+            "ol_dist": "4491.259",
+            "ol_type": "MELO-ANOM",
+            "ol_comment": "wall thinning on bend",
+            "ol_wl": "15",
+            "ol_orient": "9:42",
+            "ol_len": "9.75",
+            "ol_wid": "3.016",
+            "ol_inter": "ext",
+            "wt": "0.406",
+            "cg_int": "5.619178082",
+            "CGR (Matched)": "2.890102389",
+            "CGR (UnMatched)": "",
+            "CGR_Combined": "2.890102389",
+            "Notes": ""
+          }
+        }
+      ]
+    },
+    {
+      "row": 43,
+      "item": 6464,
+      "current_tally_rows": [
+        5186
+      ],
+      "main_old_key_AC": "-",
+      "QA_old_key_AQ": "-",
+      "QA_historical_tally_rows": [],
+      "MOCOM": [
+        {
+          "csv_record_with_header": 6158,
+          "data": {
+            "ID": "6464",
+            "distance": "5309.413",
+            "rel dist": "-0.012",
+            "type": "Metal Loss-Manufacturing Anomaly",
+            "comment": "wall thinning at the bend",
+            "wl": "17",
+            "orient": "7:35",
+            "len": "4.448",
+            "wid": "5.646",
+            "internal": "Ext",
+            "ol_ID": "",
+            "ol_dist": "5422.223439",
+            "ol_type": "<-- Equivalent distance in previous inspection",
+            "ol_comment": "",
+            "ol_wl": "",
+            "ol_orient": "",
+            "ol_len": "",
+            "ol_wid": "",
+            "ol_inter": "",
+            "wt": "0.475",
+            "cg_int": "5.619178082",
+            "CGR (Matched)": "",
+            "CGR (UnMatched)": "14.37042906",
+            "CGR_Combined": "14.37042906",
+            "Notes": ""
+          }
+        }
+      ]
+    },
+    {
+      "row": 44,
+      "item": 6466,
+      "current_tally_rows": [
+        3660
+      ],
+      "main_old_key_AC": "-",
+      "QA_old_key_AQ": "-",
+      "QA_historical_tally_rows": [],
+      "MOCOM": [
+        {
+          "csv_record_with_header": 6160,
+          "data": {
+            "ID": "6466",
+            "distance": "5309.805",
+            "rel dist": "-0.404",
+            "type": "Metal Loss-Manufacturing Anomaly",
+            "comment": "wall thinning at the bend; poss. in combination with corrosion",
+            "wl": "21",
+            "orient": "1:17",
+            "len": "9.923",
+            "wid": "6.612",
+            "internal": "Ext",
+            "ol_ID": "",
+            "ol_dist": "5422.597124",
+            "ol_type": "<-- Equivalent distance in previous inspection",
+            "ol_comment": "",
+            "ol_wl": "",
+            "ol_orient": "",
+            "ol_len": "",
+            "ol_wid": "",
+            "ol_inter": "",
+            "wt": "0.475",
+            "cg_int": "5.619178082",
+            "CGR (Matched)": "",
+            "CGR (UnMatched)": "17.75170648",
+            "CGR_Combined": "17.75170648",
+            "Notes": ""
+          }
+        }
+      ]
+    },
+    {
+      "row": 45,
+      "item": 6468,
+      "current_tally_rows": [
+        4361
+      ],
+      "main_old_key_AC": "-",
+      "QA_old_key_AQ": 3420.0,
+      "QA_historical_tally_rows": [
+        4098
+      ],
+      "MOCOM": [
+        {
+          "csv_record_with_header": 6162,
+          "data": {
+            "ID": "6468",
+            "distance": "5311.192",
+            "rel dist": "-1.791",
+            "type": "Metal Loss-Manufacturing Anomaly",
+            "comment": "wall thinning at the bend",
+            "wl": "19",
+            "orient": "9:43",
+            "len": "10.811",
+            "wid": "6.032",
+            "internal": "Ext",
+            "ol_ID": "3420",
+            "ol_dist": "5424.421",
+            "ol_type": "MELO-ANOM",
+            "ol_comment": "wall thinning on bend",
+            "ol_wl": "19",
+            "ol_orient": "9:57",
+            "ol_len": "7.844",
+            "ol_wid": "3.016",
+            "ol_inter": "ext",
+            "wt": "0.475",
+            "cg_int": "5.619178082",
+            "CGR (Matched)": "0",
+            "CGR (UnMatched)": "",
+            "CGR_Combined": "0",
+            "Notes": ""
+          }
+        }
+      ]
+    },
+    {
+      "row": 46,
+      "item": 6470,
+      "current_tally_rows": [
+        2411
+      ],
+      "main_old_key_AC": "-",
+      "QA_old_key_AQ": 3421.0,
+      "QA_historical_tally_rows": [
+        4099
+      ],
+      "MOCOM": [
+        {
+          "csv_record_with_header": 6163,
+          "data": {
+            "ID": "6470",
+            "distance": "5311.894",
+            "rel dist": "1.87",
+            "type": "Metal Loss-Manufacturing Anomaly",
+            "comment": "wall thinning at the bend",
+            "wl": "25",
+            "orient": "3:31",
+            "len": "8.045",
+            "wid": "3.559",
+            "internal": "Ext",
+            "ol_ID": "3421",
+            "ol_dist": "5425.087",
+            "ol_type": "MELO-ANOM",
+            "ol_comment": "wall thinning on bend",
+            "ol_wl": "24",
+            "ol_orient": "3:43",
+            "ol_len": "6.275",
+            "ol_wid": "3.209",
+            "ol_inter": "ext",
+            "wt": "0.475",
+            "cg_int": "5.619178082",
+            "CGR (Matched)": "0.845319356",
+            "CGR (UnMatched)": "",
+            "CGR_Combined": "0.845319356",
+            "Notes": ""
+          }
+        }
+      ]
+    },
+    {
+      "row": 47,
+      "item": 6471,
+      "current_tally_rows": [
+        4362
+      ],
+      "main_old_key_AC": "-",
+      "QA_old_key_AQ": 3422.0,
+      "QA_historical_tally_rows": [
+        4100
+      ],
+      "MOCOM": [
+        {
+          "csv_record_with_header": 6164,
+          "data": {
+            "ID": "6471",
+            "distance": "5312.277",
+            "rel dist": "1.487",
+            "type": "Metal Loss-Manufacturing Anomaly",
+            "comment": "wall thinning at the bend",
+            "wl": "19",
+            "orient": "9:49",
+            "len": "12.344",
+            "wid": "6.032",
+            "internal": "Ext",
+            "ol_ID": "3422",
+            "ol_dist": "5425.767",
+            "ol_type": "MELO-ANOM",
+            "ol_comment": "wall thinning on bend",
+            "ol_wl": "20",
+            "ol_orient": "11:05",
+            "ol_len": "10.51",
+            "ol_wid": "2.965",
+            "ol_inter": "ext",
+            "wt": "0.475",
+            "cg_int": "5.619178082",
+            "CGR (Matched)": "-0.845319356",
+            "CGR (UnMatched)": "",
+            "CGR_Combined": "-0.845319356",
+            "Notes": ""
+          }
+        }
+      ]
+    },
+    {
+      "row": 48,
+      "item": 6472,
+      "current_tally_rows": [
+        3965
+      ],
+      "main_old_key_AC": "-",
+      "QA_old_key_AQ": 3423.0,
+      "QA_historical_tally_rows": [
+        4101
+      ],
+      "MOCOM": [
+        {
+          "csv_record_with_header": 6165,
+          "data": {
+            "ID": "6472",
+            "distance": "5312.728",
+            "rel dist": "1.036",
+            "type": "Metal Loss-Manufacturing Anomaly",
+            "comment": "wall thinning at the bend",
+            "wl": "20",
+            "orient": "1:01",
+            "len": "9.028",
+            "wid": "5.261",
+            "internal": "Ext",
+            "ol_ID": "3423",
+            "ol_dist": "5425.957",
+            "ol_type": "MELO-ANOM",
+            "ol_comment": "wall thinning on bend",
+            "ol_wl": "20",
+            "ol_orient": "2:03",
+            "ol_len": "7.608",
+            "ol_wid": "6.032",
+            "ol_inter": "ext",
+            "wt": "0.475",
+            "cg_int": "5.619178082",
+            "CGR (Matched)": "0",
+            "CGR (UnMatched)": "",
+            "CGR_Combined": "0",
+            "Notes": ""
+          }
+        }
+      ]
+    },
+    {
+      "row": 49,
+      "item": 6473,
+      "current_tally_rows": [
+        3966
+      ],
+      "main_old_key_AC": "-",
+      "QA_old_key_AQ": "-",
+      "QA_historical_tally_rows": [],
+      "MOCOM": [
+        {
+          "csv_record_with_header": 6166,
+          "data": {
+            "ID": "6473",
+            "distance": "5312.743",
+            "rel dist": "1.021",
+            "type": "Metal Loss-Manufacturing Anomaly",
+            "comment": "wall thinning at the bend",
+            "wl": "20",
+            "orient": "6:25",
+            "len": "7.247",
+            "wid": "5.261",
+            "internal": "Ext",
+            "ol_ID": "",
+            "ol_dist": "5425.397849",
+            "ol_type": "<-- Equivalent distance in previous inspection",
+            "ol_comment": "",
+            "ol_wl": "",
+            "ol_orient": "",
+            "ol_len": "",
+            "ol_wid": "",
+            "ol_inter": "",
+            "wt": "0.475",
+            "cg_int": "5.619178082",
+            "CGR (Matched)": "",
+            "CGR (UnMatched)": "16.90638713",
+            "CGR_Combined": "16.90638713",
+            "Notes": ""
+          }
+        }
+      ]
+    },
+    {
+      "row": 50,
+      "item": 6497,
+      "current_tally_rows": [
+        1930
+      ],
+      "main_old_key_AC": "-",
+      "QA_old_key_AQ": 3433.0,
+      "QA_historical_tally_rows": [
+        4118
+      ],
+      "MOCOM": [
+        {
+          "csv_record_with_header": 6187,
+          "data": {
+            "ID": "6497",
+            "distance": "5332.692",
+            "rel dist": "-0.283",
+            "type": "Metal Loss-Manufacturing Anomaly",
+            "comment": "wall thinning at the bend",
+            "wl": "28",
+            "orient": "11:14",
+            "len": "19.944",
+            "wid": "7.119",
+            "internal": "Ext",
+            "ol_ID": "3433",
+            "ol_dist": "5446.588",
+            "ol_type": "MELO-ANOM",
+            "ol_comment": "wall thinning on bend",
+            "ol_wl": "29",
+            "ol_orient": "11:04",
+            "ol_len": "28.857",
+            "ol_wid": "7.697",
+            "ol_inter": "ext",
+            "wt": "0.382",
+            "cg_int": "5.619178082",
+            "CGR (Matched)": "-0.679814725",
+            "CGR (UnMatched)": "",
+            "CGR_Combined": "-0.679814725",
+            "Notes": ""
+          }
+        }
+      ]
+    },
+    {
+      "row": 51,
+      "item": 6537,
+      "current_tally_rows": [
+        4365
+      ],
+      "main_old_key_AC": "-",
+      "QA_old_key_AQ": 3450.0,
+      "QA_historical_tally_rows": [
+        4144
+      ],
+      "MOCOM": [
+        {
+          "csv_record_with_header": 6218,
+          "data": {
+            "ID": "6537",
+            "distance": "5365.468",
+            "rel dist": "-0.054",
+            "type": "Metal Loss-Manufacturing Anomaly",
+            "comment": "wall thinning at the bend",
+            "wl": "19",
+            "orient": "9:38",
+            "len": "60.848",
+            "wid": "24.514",
+            "internal": "Ext",
+            "ol_ID": "3450",
+            "ol_dist": "5480.368",
+            "ol_type": "MELO-ANOM",
+            "ol_comment": "wall thinning on bend",
+            "ol_wl": "20",
+            "ol_orient": "10:11",
+            "ol_len": "59.599",
+            "ol_wid": "20.531",
+            "ol_inter": "ext",
+            "wt": "0.419",
+            "cg_int": "5.619178082",
+            "CGR (Matched)": "-0.745660653",
+            "CGR (UnMatched)": "",
+            "CGR_Combined": "-0.745660653",
+            "Notes": ""
+          }
+        }
+      ]
+    },
+    {
+      "row": 52,
+      "item": 6541,
+      "current_tally_rows": [
+        5191
+      ],
+      "main_old_key_AC": "-",
+      "QA_old_key_AQ": 3451.0,
+      "QA_historical_tally_rows": [
+        4148
+      ],
+      "MOCOM": [
+        {
+          "csv_record_with_header": 6219,
+          "data": {
+            "ID": "6541",
+            "distance": "5371.114",
+            "rel dist": "-0.076",
+            "type": "Metal Loss-Manufacturing Anomaly",
+            "comment": "wall thinning at the bend",
+            "wl": "17",
+            "orient": "8:20",
+            "len": "15.071",
+            "wid": "9.433",
+            "internal": "Ext",
+            "ol_ID": "3451",
+            "ol_dist": "5484.93",
+            "ol_type": "MELO-CORR",
+            "ol_comment": "",
+            "ol_wl": "20",
+            "ol_orient": "8:56",
+            "ol_len": "10.509",
+            "ol_wid": "8.348",
+            "ol_inter": "ext",
+            "wt": "0.406",
+            "cg_int": "5.619178082",
+            "CGR (Matched)": "-2.167576792",
+            "CGR (UnMatched)": "",
+            "CGR_Combined": "-2.167576792",
+            "Notes": ""
+          }
+        }
+      ]
+    },
+    {
+      "row": 53,
+      "item": 6875,
+      "current_tally_rows": [
+        9096
+      ],
+      "main_old_key_AC": "-",
+      "QA_old_key_AQ": "-",
+      "QA_historical_tally_rows": [],
+      "MOCOM": [
+        {
+          "csv_record_with_header": 6489,
+          "data": {
+            "ID": "6875",
+            "distance": "5768.509",
+            "rel dist": "0.977",
+            "type": "Metal Loss-Manufacturing Anomaly",
+            "comment": "",
+            "wl": "11",
+            "orient": "10:06",
+            "len": "0.871",
+            "wid": "0.578",
+            "internal": "Int",
+            "ol_ID": "",
+            "ol_dist": "5881.32",
+            "ol_type": "<-- Equivalent distance in previous inspection",
+            "ol_comment": "",
+            "ol_wl": "",
+            "ol_orient": "",
+            "ol_len": "",
+            "ol_wid": "",
+            "ol_inter": "",
+            "wt": "0.373",
+            "cg_int": "5.619178082",
+            "CGR (Matched)": "",
+            "CGR (UnMatched)": "7.30177962",
+            "CGR_Combined": "7.30177962",
+            "Notes": ""
+          }
+        }
+      ]
+    },
+    {
+      "row": 54,
+      "item": 6993,
+      "current_tally_rows": [
+        6290
+      ],
+      "main_old_key_AC": "-",
+      "QA_old_key_AQ": 3645.0,
+      "QA_historical_tally_rows": [
+        4415
+      ],
+      "MOCOM": [
+        {
+          "csv_record_with_header": 6575,
+          "data": {
+            "ID": "6993",
+            "distance": "5927.457",
+            "rel dist": "-0.304",
+            "type": "Metal Loss-Manufacturing Anomaly",
+            "comment": "",
+            "wl": "15",
+            "orient": "10:17",
+            "len": "12.548",
+            "wid": "2.509",
+            "internal": "Ext",
+            "ol_ID": "3645",
+            "ol_dist": "6039.415",
+            "ol_type": "MELO-CORR",
+            "ol_comment": "",
+            "ol_wl": "22",
+            "ol_orient": "10:14",
+            "ol_len": "7.027",
+            "ol_wid": "7.347",
+            "ol_inter": "ext",
+            "wt": "0.443",
+            "cg_int": "5.619178082",
+            "CGR (Matched)": "-5.518600683",
+            "CGR (UnMatched)": "",
+            "CGR_Combined": "-5.518600683",
+            "Notes": "<--- This is an unused matched Recent record. The matching feature is the previous feature which would have matched assuming no matching limit"
+          }
+        }
+      ]
+    },
+    {
+      "row": 55,
+      "item": 6997,
+      "current_tally_rows": [
+        2632
+      ],
+      "main_old_key_AC": "-",
+      "QA_old_key_AQ": 3654.0,
+      "QA_historical_tally_rows": [
+        4427
+      ],
+      "MOCOM": [
+        {
+          "csv_record_with_header": 6577,
+          "data": {
+            "ID": "6997",
+            "distance": "5932.953",
+            "rel dist": "-0.07",
+            "type": "Metal Loss-Manufacturing Anomaly",
+            "comment": "wall thinning at the bend; poss. in combination with corrosion",
+            "wl": "24",
+            "orient": "8:58",
+            "len": "63.328",
+            "wid": "24.828",
+            "internal": "Ext",
+            "ol_ID": "3654",
+            "ol_dist": "6045.75",
+            "ol_type": "MELO-ANOM",
+            "ol_comment": "wall thinning on bend",
+            "ol_wl": "23",
+            "ol_orient": "7:30",
+            "ol_len": "64.105",
+            "ol_wid": "24.442",
+            "ol_inter": "ext",
+            "wt": "0.387",
+            "cg_int": "5.619178082",
+            "CGR (Matched)": "0.688712823",
+            "CGR (UnMatched)": "",
+            "CGR_Combined": "0.688712823",
+            "Notes": ""
+          }
+        }
+      ]
+    },
+    {
+      "row": 56,
+      "item": 7016,
+      "current_tally_rows": [
+        5731
+      ],
+      "main_old_key_AC": "-",
+      "QA_old_key_AQ": 3663.0,
+      "QA_historical_tally_rows": [
+        4441
+      ],
+      "MOCOM": [
+        {
+          "csv_record_with_header": 6591,
+          "data": {
+            "ID": "7016",
+            "distance": "5953.706",
+            "rel dist": "1.846",
+            "type": "Metal Loss-Manufacturing Anomaly",
+            "comment": "wall thinning at the bend",
+            "wl": "16",
+            "orient": "8:49",
+            "len": "15.277",
+            "wid": "5.525",
+            "internal": "Ext",
+            "ol_ID": "3663",
+            "ol_dist": "6066.957",
+            "ol_type": "MELO-ANOM",
+            "ol_comment": "wall thinning on bend",
+            "ol_wl": "19",
+            "ol_orient": "8:53",
+            "ol_len": "18.988",
+            "ol_wid": "6.225",
+            "ol_inter": "ext",
+            "wt": "0.391",
+            "cg_int": "5.619178082",
+            "CGR (Matched)": "-2.087493905",
+            "CGR (UnMatched)": "",
+            "CGR_Combined": "-2.087493905",
+            "Notes": ""
+          }
+        }
+      ]
+    },
+    {
+      "row": 57,
+      "item": 7017,
+      "current_tally_rows": [
+        5214
+      ],
+      "main_old_key_AC": "-",
+      "QA_old_key_AQ": "-",
+      "QA_historical_tally_rows": [],
+      "MOCOM": [
+        {
+          "csv_record_with_header": 6592,
+          "data": {
+            "ID": "7017",
+            "distance": "5953.751",
+            "rel dist": "1.801",
+            "type": "Metal Loss-Manufacturing Anomaly",
+            "comment": "wall thinning at the bend",
+            "wl": "17",
+            "orient": "3:58",
+            "len": "5.852",
+            "wid": "4.524",
+            "internal": "Ext",
+            "ol_ID": "",
+            "ol_dist": "6066.562",
+            "ol_type": "<-- Equivalent distance in previous inspection",
+            "ol_comment": "",
+            "ol_wl": "",
+            "ol_orient": "",
+            "ol_len": "",
+            "ol_wid": "",
+            "ol_inter": "",
+            "wt": "0.391",
+            "cg_int": "5.619178082",
+            "CGR (Matched)": "",
+            "CGR (UnMatched)": "11.82913213",
+            "CGR_Combined": "11.82913213",
+            "Notes": ""
+          }
+        }
+      ]
+    },
+    {
+      "row": 58,
+      "item": 7060,
+      "current_tally_rows": [
+        2633
+      ],
+      "main_old_key_AC": 3566.0,
+      "QA_old_key_AQ": 3686.0,
+      "QA_historical_tally_rows": [
+        4472
+      ],
+      "MOCOM": [
+        {
+          "csv_record_with_header": 6627,
+          "data": {
+            "ID": "7060",
+            "distance": "5981.517",
+            "rel dist": "-0.167",
+            "type": "Metal Loss-Manufacturing Anomaly",
+            "comment": "wall thinning at the bend",
+            "wl": "24",
+            "orient": "5:06",
+            "len": "58.425",
+            "wid": "21.112",
+            "internal": "Ext",
+            "ol_ID": "3682",
+            "ol_dist": "6091.353",
+            "ol_type": "MELO-CORR",
+            "ol_comment": "",
+            "ol_wl": "19",
+            "ol_orient": "3:16",
+            "ol_len": "41.746",
+            "ol_wid": "23.621",
+            "ol_inter": "ext",
+            "wt": "0.406",
+            "cg_int": "5.619178082",
+            "CGR (Matched)": "3.612627986",
+            "CGR (UnMatched)": "",
+            "CGR_Combined": "3.612627986",
+            "Notes": ""
+          }
+        }
+      ]
+    },
+    {
+      "row": 59,
+      "item": 7064,
+      "current_tally_rows": [
+        8551
+      ],
+      "main_old_key_AC": "-",
+      "QA_old_key_AQ": "-",
+      "QA_historical_tally_rows": [],
+      "MOCOM": [
+        {
+          "csv_record_with_header": 6630,
+          "data": {
+            "ID": "7064",
+            "distance": "5985.278",
+            "rel dist": "1.57",
+            "type": "Metal Loss-Manufacturing Anomaly",
+            "comment": "",
+            "wl": "12",
+            "orient": "0:09",
+            "len": "3.935",
+            "wid": "2.315",
+            "internal": "Ext",
+            "ol_ID": "",
+            "ol_dist": "6098.089",
+            "ol_type": "<-- Equivalent distance in previous inspection",
+            "ol_comment": "",
+            "ol_wl": "",
+            "ol_orient": "",
+            "ol_len": "",
+            "ol_wid": "",
+            "ol_inter": "",
+            "wt": "0.406",
+            "cg_int": "5.619178082",
+            "CGR (Matched)": "",
+            "CGR (UnMatched)": "8.670307167",
+            "CGR_Combined": "8.670307167",
+            "Notes": ""
+          }
+        }
+      ]
+    },
+    {
+      "row": 60,
+      "item": 7065,
+      "current_tally_rows": [
+        6294
+      ],
+      "main_old_key_AC": "-",
+      "QA_old_key_AQ": "-",
+      "QA_historical_tally_rows": [],
+      "MOCOM": [
+        {
+          "csv_record_with_header": 6631,
+          "data": {
+            "ID": "7065",
+            "distance": "5986.422",
+            "rel dist": "0.426",
+            "type": "Metal Loss-Manufacturing Anomaly",
+            "comment": "",
+            "wl": "15",
+            "orient": "1:02",
+            "len": "2.798",
+            "wid": "2.628",
+            "internal": "Ext",
+            "ol_ID": "",
+            "ol_dist": "6099.233",
+            "ol_type": "<-- Equivalent distance in previous inspection",
+            "ol_comment": "",
+            "ol_wl": "",
+            "ol_orient": "",
+            "ol_len": "",
+            "ol_wid": "",
+            "ol_inter": "",
+            "wt": "0.406",
+            "cg_int": "5.619178082",
+            "CGR (Matched)": "",
+            "CGR (UnMatched)": "10.83788396",
+            "CGR_Combined": "10.83788396",
+            "Notes": ""
+          }
+        }
+      ]
+    },
+    {
+      "row": 61,
+      "item": 7076,
+      "current_tally_rows": [
+        2420
+      ],
+      "main_old_key_AC": "-",
+      "QA_old_key_AQ": 3698.0,
+      "QA_historical_tally_rows": [
+        4487
+      ],
+      "MOCOM": [
+        {
+          "csv_record_with_header": 6645,
+          "data": {
+            "ID": "7076",
+            "distance": "5989.666",
+            "rel dist": "-1.266",
+            "type": "Metal Loss-Manufacturing Anomaly",
+            "comment": "wall thinning at the bend",
+            "wl": "25",
+            "orient": "10:31",
+            "len": "27.052",
+            "wid": "8.47",
+            "internal": "Ext",
+            "ol_ID": "3698",
+            "ol_dist": "6103.962",
+            "ol_type": "MELO-ANOM",
+            "ol_comment": "wall thinning on bend",
+            "ol_wl": "23",
+            "ol_orient": "10:11",
+            "ol_len": "34.489",
+            "ol_wid": "11.1",
+            "ol_inter": "ext",
+            "wt": "0.396",
+            "cg_int": "5.619178082",
+            "CGR (Matched)": "1.409458801",
+            "CGR (UnMatched)": "",
+            "CGR_Combined": "1.409458801",
+            "Notes": ""
+          }
+        }
+      ]
+    },
+    {
+      "row": 62,
+      "item": 7693,
+      "current_tally_rows": [
+        3341
+      ],
+      "main_old_key_AC": "-",
+      "QA_old_key_AQ": 4085.0,
+      "QA_historical_tally_rows": [
+        4955
+      ],
+      "MOCOM": [
+        {
+          "csv_record_with_header": 7137,
+          "data": {
+            "ID": "7693",
+            "distance": "6931.032",
+            "rel dist": "-0.064",
+            "type": "Metal Loss-Manufacturing Anomaly",
+            "comment": "wall thinning at the bend",
+            "wl": "22",
+            "orient": "1:57",
+            "len": "38.449",
+            "wid": "12.642",
+            "internal": "Ext",
+            "ol_ID": "4085",
+            "ol_dist": "7044.293",
+            "ol_type": "MELO-ANOM",
+            "ol_comment": "wall thinning on bend",
+            "ol_wl": "22",
+            "ol_orient": "1:58",
+            "ol_len": "36.933",
+            "ol_wid": "12.536",
+            "ol_inter": "ext",
+            "wt": "0.373",
+            "cg_int": "5.619178082",
+            "CGR (Matched)": "0",
+            "CGR (UnMatched)": "",
+            "CGR_Combined": "0",
+            "Notes": ""
+          }
+        }
+      ]
+    },
+    {
+      "row": 63,
+      "item": 7694,
+      "current_tally_rows": [
+        2982
+      ],
+      "main_old_key_AC": "-",
+      "QA_old_key_AQ": 4086.0,
+      "QA_historical_tally_rows": [
+        4957
+      ],
+      "MOCOM": [
+        {
+          "csv_record_with_header": 7138,
+          "data": {
+            "ID": "7694",
+            "distance": "6931.056",
+            "rel dist": "-0.088",
+            "type": "Metal Loss-Manufacturing Anomaly",
+            "comment": "wall thinning at the bend",
+            "wl": "23",
+            "orient": "11:28",
+            "len": "41.571",
+            "wid": "10.398",
+            "internal": "Ext",
+            "ol_ID": "4086",
+            "ol_dist": "7046.953",
+            "ol_type": "MELO-ANOM",
+            "ol_comment": "wall thinning on bend",
+            "ol_wl": "25",
+            "ol_orient": "11:39",
+            "ol_len": "40.191",
+            "ol_wid": "10.363",
+            "ol_inter": "ext",
+            "wt": "0.373",
+            "cg_int": "5.619178082",
+            "CGR (Matched)": "-1.327596294",
+            "CGR (UnMatched)": "",
+            "CGR_Combined": "-1.327596294",
+            "Notes": ""
+          }
+        }
+      ]
+    },
+    {
+      "row": 64,
+      "item": 7711,
+      "current_tally_rows": [
+        1787
+      ],
+      "main_old_key_AC": "-",
+      "QA_old_key_AQ": 4097.0,
+      "QA_historical_tally_rows": [
+        4972
+      ],
+      "MOCOM": [
+        {
+          "csv_record_with_header": 7150,
+          "data": {
+            "ID": "7711",
+            "distance": "6944.924",
+            "rel dist": "-0.018",
+            "type": "Metal Loss-Manufacturing Anomaly",
+            "comment": "wall thinning at the bend",
+            "wl": "29",
+            "orient": "4:20",
+            "len": "13.934",
+            "wid": "8.662",
+            "internal": "Ext",
+            "ol_ID": "4097",
+            "ol_dist": "7057.784",
+            "ol_type": "MELO-CORR",
+            "ol_comment": "",
+            "ol_wl": "26",
+            "ol_orient": "4:43",
+            "ol_len": "4.412",
+            "ol_wid": "5.838",
+            "ol_inter": "ext",
+            "wt": "0.368",
+            "cg_int": "5.619178082",
+            "CGR (Matched)": "1.964700146",
+            "CGR (UnMatched)": "",
+            "CGR_Combined": "1.964700146",
+            "Notes": ""
+          }
+        }
+      ]
+    },
+    {
+      "row": 65,
+      "item": 7716,
+      "current_tally_rows": [
+        4007
+      ],
+      "main_old_key_AC": "-",
+      "QA_old_key_AQ": 4098.0,
+      "QA_historical_tally_rows": [
+        4976
+      ],
+      "MOCOM": [
+        {
+          "csv_record_with_header": 7152,
+          "data": {
+            "ID": "7716",
+            "distance": "6949.334",
+            "rel dist": "-0.111",
+            "type": "Metal Loss-Manufacturing Anomaly",
+            "comment": "wall thinning at the bend",
+            "wl": "20",
+            "orient": "5:31",
+            "len": "16.259",
+            "wid": "11.363",
+            "internal": "Ext",
+            "ol_ID": "4098",
+            "ol_dist": "7062.489",
+            "ol_type": "MELO-ANOM",
+            "ol_comment": "wall thinning on bend",
+            "ol_wl": "20",
+            "ol_orient": "6:32",
+            "ol_len": "10.351",
+            "ol_wid": "6.996",
+            "ol_inter": "ext",
+            "wt": "0.396",
+            "cg_int": "5.619178082",
+            "CGR (Matched)": "0",
+            "CGR (UnMatched)": "",
+            "CGR_Combined": "0",
+            "Notes": ""
+          }
+        }
+      ]
+    },
+    {
+      "row": 66,
+      "item": 7718,
+      "current_tally_rows": [
+        3342
+      ],
+      "main_old_key_AC": "-",
+      "QA_old_key_AQ": 4099.0,
+      "QA_historical_tally_rows": [
+        4978
+      ],
+      "MOCOM": [
+        {
+          "csv_record_with_header": 7153,
+          "data": {
+            "ID": "7718",
+            "distance": "6950.653",
+            "rel dist": "0.86",
+            "type": "Metal Loss-Manufacturing Anomaly",
+            "comment": "wall thinning at the bend",
+            "wl": "22",
+            "orient": "7:22",
+            "len": "6.444",
+            "wid": "4.296",
+            "internal": "Ext",
+            "ol_ID": "4099",
+            "ol_dist": "7063.758",
+            "ol_type": "MELO-ANOM",
+            "ol_comment": "wall thinning on bend",
+            "ol_wl": "22",
+            "ol_orient": "7:38",
+            "ol_len": "5.46",
+            "ol_wid": "3.401",
+            "ol_inter": "ext",
+            "wt": "0.396",
+            "cg_int": "5.619178082",
+            "CGR (Matched)": "0",
+            "CGR (UnMatched)": "",
+            "CGR_Combined": "0",
+            "Notes": ""
+          }
+        }
+      ]
+    },
+    {
+      "row": 67,
+      "item": 9055,
+      "current_tally_rows": [
+        1280
+      ],
+      "main_old_key_AC": "-",
+      "QA_old_key_AQ": 4720.0,
+      "QA_historical_tally_rows": [
+        5705
+      ],
+      "MOCOM": [
+        {
+          "csv_record_with_header": 8345,
+          "data": {
+            "ID": "9055",
+            "distance": "8167.213",
+            "rel dist": "2.565",
+            "type": "Metal Loss-Manufacturing Anomaly",
+            "comment": "",
+            "wl": "34",
+            "orient": "0:35",
+            "len": "3.681",
+            "wid": "3.523",
+            "internal": "Ext",
+            "ol_ID": "4720",
+            "ol_dist": "8280.179",
+            "ol_type": "MELO-ANOM",
+            "ol_comment": "",
+            "ol_wl": "34",
+            "ol_orient": "0:36",
+            "ol_len": "3.841",
+            "ol_wid": "3.559",
+            "ol_inter": "ext",
+            "wt": "0.326",
+            "cg_int": "5.619178082",
+            "CGR (Matched)": "0",
+            "CGR (UnMatched)": "",
+            "CGR_Combined": "0",
+            "Notes": ""
+          }
+        }
+      ]
+    },
+    {
+      "row": 68,
+      "item": 9063,
+      "current_tally_rows": [
+        1964
+      ],
+      "main_old_key_AC": "-",
+      "QA_old_key_AQ": 4724.0,
+      "QA_historical_tally_rows": [
+        5710
+      ],
+      "MOCOM": [
+        {
+          "csv_record_with_header": 8352,
+          "data": {
+            "ID": "9063",
+            "distance": "8171.319",
+            "rel dist": "-1.541",
+            "type": "Metal Loss-Manufacturing Anomaly",
+            "comment": "",
+            "wl": "28",
+            "orient": "0:39",
+            "len": "2.975",
+            "wid": "2.702",
+            "internal": "Ext",
+            "ol_ID": "4724",
+            "ol_dist": "8284.243",
+            "ol_type": "MELO-ANOM",
+            "ol_comment": "",
+            "ol_wl": "28",
+            "ol_orient": "0:40",
+            "ol_len": "2.98",
+            "ol_wid": "2.859",
+            "ol_inter": "ext",
+            "wt": "0.331",
+            "cg_int": "5.619178082",
+            "CGR (Matched)": "0",
+            "CGR (UnMatched)": "",
+            "CGR_Combined": "0",
+            "Notes": ""
+          }
+        }
+      ]
+    },
+    {
+      "row": 69,
+      "item": 9085,
+      "current_tally_rows": [
+        1800
+      ],
+      "main_old_key_AC": "-",
+      "QA_old_key_AQ": 4736.0,
+      "QA_historical_tally_rows": [
+        5723
+      ],
+      "MOCOM": [
+        {
+          "csv_record_with_header": 8372,
+          "data": {
+            "ID": "9085",
+            "distance": "8207.117",
+            "rel dist": "2.651",
+            "type": "Metal Loss-Manufacturing Anomaly",
+            "comment": "",
+            "wl": "29",
+            "orient": "0:33",
+            "len": "3.142",
+            "wid": "2.243",
+            "internal": "Ext",
+            "ol_ID": "4736",
+            "ol_dist": "8320.05",
+            "ol_type": "MELO-ANOM",
+            "ol_comment": "",
+            "ol_wl": "29",
+            "ol_orient": "0:35",
+            "ol_len": "3.216",
+            "ol_wid": "2.243",
+            "ol_inter": "ext",
+            "wt": "0.331",
+            "cg_int": "5.619178082",
+            "CGR (Matched)": "0",
+            "CGR (UnMatched)": "",
+            "CGR_Combined": "0",
+            "Notes": ""
+          }
+        }
+      ]
+    },
+    {
+      "row": 70,
+      "item": 9424,
+      "current_tally_rows": [
+        7224
+      ],
+      "main_old_key_AC": "-",
+      "QA_old_key_AQ": "-",
+      "QA_historical_tally_rows": [],
+      "MOCOM": [
+        {
+          "csv_record_with_header": 8691,
+          "data": {
+            "ID": "9424",
+            "distance": "8369.58",
+            "rel dist": "-0.022",
+            "type": "Metal Loss-Manufacturing Anomaly",
+            "comment": "",
+            "wl": "14",
+            "orient": "3:23",
+            "len": "0.704",
+            "wid": "0.966",
+            "internal": "Ext",
+            "ol_ID": "",
+            "ol_dist": "8482.391",
+            "ol_type": "<-- Equivalent distance in previous inspection",
+            "ol_comment": "",
+            "ol_wl": "",
+            "ol_orient": "",
+            "ol_len": "",
+            "ol_wid": "",
+            "ol_inter": "",
+            "wt": "0.331",
+            "cg_int": "5.619178082",
+            "CGR (Matched)": "",
+            "CGR (UnMatched)": "8.246757679",
+            "CGR_Combined": "8.246757679",
+            "Notes": ""
+          }
+        }
+      ]
+    },
+    {
+      "row": 71,
+      "item": 9532,
+      "current_tally_rows": [
+        2709
+      ],
+      "main_old_key_AC": "-",
+      "QA_old_key_AQ": "-",
+      "QA_historical_tally_rows": [],
+      "MOCOM": [
+        {
+          "csv_record_with_header": 8761,
+          "data": {
+            "ID": "9532",
+            "distance": "8504.913",
+            "rel dist": "-0.23",
+            "type": "Metal Loss-Manufacturing Anomaly",
+            "comment": "wall thinning at the bend",
+            "wl": "24",
+            "orient": "4:10",
+            "len": "3.724",
+            "wid": "5.454",
+            "internal": "Ext",
+            "ol_ID": "",
+            "ol_dist": "8617.714863",
+            "ol_type": "<-- Equivalent distance in previous inspection",
+            "ol_comment": "",
+            "ol_wl": "",
+            "ol_orient": "",
+            "ol_len": "",
+            "ol_wid": "",
+            "ol_inter": "",
+            "wt": "0.373",
+            "cg_int": "5.619178082",
+            "CGR (Matched)": "",
+            "CGR (UnMatched)": "15.93115553",
+            "CGR_Combined": "15.93115553",
+            "Notes": ""
+          }
+        }
+      ]
+    },
+    {
+      "row": 72,
+      "item": 9535,
+      "current_tally_rows": [
+        6444
+      ],
+      "main_old_key_AC": "-",
+      "QA_old_key_AQ": 4959.0,
+      "QA_historical_tally_rows": [
+        5997
+      ],
+      "MOCOM": [
+        {
+          "csv_record_with_header": 8762,
+          "data": {
+            "ID": "9535",
+            "distance": "8505.596",
+            "rel dist": "-0.183",
+            "type": "Metal Loss-Manufacturing Anomaly",
+            "comment": "",
+            "wl": "15",
+            "orient": "3:08",
+            "len": "47.655",
+            "wid": "7.733",
+            "internal": "Int",
+            "ol_ID": "4959",
+            "ol_dist": "8619.969",
+            "ol_type": "MELO-ANOM",
+            "ol_comment": "",
+            "ol_wl": "15",
+            "ol_orient": "3:17",
+            "ol_len": "47.989",
+            "ol_wid": "5.839",
+            "ol_inter": "int",
+            "wt": "0.335",
+            "cg_int": "5.619178082",
+            "CGR (Matched)": "0",
+            "CGR (UnMatched)": "",
+            "CGR_Combined": "0",
+            "Notes": ""
+          }
+        }
+      ]
+    },
+    {
+      "row": 73,
+      "item": 9638,
+      "current_tally_rows": [
+        3725
+      ],
+      "main_old_key_AC": "-",
+      "QA_old_key_AQ": 5004.0,
+      "QA_historical_tally_rows": [
+        6060
+      ],
+      "MOCOM": [
+        {
+          "csv_record_with_header": 8837,
+          "data": {
+            "ID": "9638",
+            "distance": "8741.247",
+            "rel dist": "-0.793",
+            "type": "Metal Loss-Manufacturing Anomaly",
+            "comment": "wall thinning at the bend",
+            "wl": "21",
+            "orient": "1:34",
+            "len": "51.377",
+            "wid": "8.47",
+            "internal": "Ext",
+            "ol_ID": "5004",
+            "ol_dist": "8855.544",
+            "ol_type": "MELO-ANOM",
+            "ol_comment": "wall thinning on bend",
+            "ol_wl": "22",
+            "ol_orient": "1:26",
+            "ol_len": "57.31",
+            "ol_wid": "10.52",
+            "ol_inter": "ext",
+            "wt": "0.387",
+            "cg_int": "5.619178082",
+            "CGR (Matched)": "-0.688712823",
+            "CGR (UnMatched)": "",
+            "CGR_Combined": "-0.688712823",
+            "Notes": ""
+          }
+        }
+      ]
+    },
+    {
+      "row": 74,
+      "item": 9657,
+      "current_tally_rows": [
+        4478
+      ],
+      "main_old_key_AC": "-",
+      "QA_old_key_AQ": 5009.0,
+      "QA_historical_tally_rows": [
+        6078
+      ],
+      "MOCOM": [
+        {
+          "csv_record_with_header": 8842,
+          "data": {
+            "ID": "9657",
+            "distance": "8782.988",
+            "rel dist": "0.419",
+            "type": "Metal Loss-Manufacturing Anomaly",
+            "comment": "",
+            "wl": "19",
+            "orient": "11:34",
+            "len": "2.243",
+            "wid": "1.28",
+            "internal": "Ext",
+            "ol_ID": "5009",
+            "ol_dist": "8896.085",
+            "ol_type": "MELO-CORR",
+            "ol_comment": "",
+            "ol_wl": "17",
+            "ol_orient": "11:28",
+            "ol_len": "3.922",
+            "ol_wid": "2.315",
+            "ol_inter": "ext",
+            "wt": "0.41",
+            "cg_int": "5.619178082",
+            "CGR (Matched)": "1.459288152",
+            "CGR (UnMatched)": "",
+            "CGR_Combined": "1.459288152",
+            "Notes": ""
+          }
+        }
+      ]
+    },
+    {
+      "row": 75,
+      "item": 9669,
+      "current_tally_rows": [
+        2712
+      ],
+      "main_old_key_AC": "-",
+      "QA_old_key_AQ": 5016.0,
+      "QA_historical_tally_rows": [
+        6088
+      ],
+      "MOCOM": [
+        {
+          "csv_record_with_header": 8852,
+          "data": {
+            "ID": "9669",
+            "distance": "8798.897",
+            "rel dist": "2.853",
+            "type": "Metal Loss-Manufacturing Anomaly",
+            "comment": "wall thinning at the bend",
+            "wl": "24",
+            "orient": "10:32",
+            "len": "33.826",
+            "wid": "5.331",
+            "internal": "Ext",
+            "ol_ID": "5016",
+            "ol_dist": "8912.783",
+            "ol_type": "MELO-ANOM",
+            "ol_comment": "wall thinning on bend",
+            "ol_wl": "22",
+            "ol_orient": "10:25",
+            "ol_len": "35.53",
+            "ol_wid": "5.839",
+            "ol_inter": "ext",
+            "wt": "0.42",
+            "cg_int": "5.619178082",
+            "CGR (Matched)": "1.494880546",
+            "CGR (UnMatched)": "",
+            "CGR_Combined": "1.494880546",
+            "Notes": ""
+          }
+        }
+      ]
+    },
+    {
+      "row": 76,
+      "item": 9672,
+      "current_tally_rows": [
+        6449
+      ],
+      "main_old_key_AC": "-",
+      "QA_old_key_AQ": 5017.0,
+      "QA_historical_tally_rows": [
+        6090
+      ],
+      "MOCOM": [
+        {
+          "csv_record_with_header": 8853,
+          "data": {
+            "ID": "9672",
+            "distance": "8801.938",
+            "rel dist": "-0.188",
+            "type": "Metal Loss-Manufacturing Anomaly",
+            "comment": "wall thinning at the bend",
+            "wl": "15",
+            "orient": "8:37",
+            "len": "12.218",
+            "wid": "6.803",
+            "internal": "Ext",
+            "ol_ID": "5017",
+            "ol_dist": "8914.743",
+            "ol_type": "MELO-ANOM",
+            "ol_comment": "wall thinning on bend",
+            "ol_wl": "19",
+            "ol_orient": "9:18",
+            "ol_len": "8.313",
+            "ol_wid": "3.594",
+            "ol_inter": "ext",
+            "wt": "0.378",
+            "cg_int": "5.619178082",
+            "CGR (Matched)": "-2.690784983",
+            "CGR (UnMatched)": "",
+            "CGR_Combined": "-2.690784983",
+            "Notes": ""
+          }
+        }
+      ]
+    },
+    {
+      "row": 77,
+      "item": 9784,
+      "current_tally_rows": [
+        4873
+      ],
+      "main_old_key_AC": "-",
+      "QA_old_key_AQ": "-",
+      "QA_historical_tally_rows": [],
+      "MOCOM": [
+        {
+          "csv_record_with_header": 8947,
+          "data": {
+            "ID": "9784",
+            "distance": "8884.218",
+            "rel dist": "-0.119",
+            "type": "Metal Loss-Manufacturing Anomaly",
+            "comment": "wall thinning at the bend",
+            "wl": "18",
+            "orient": "6:03",
+            "len": "22.847",
+            "wid": "7.19",
+            "internal": "Ext",
+            "ol_ID": "",
+            "ol_dist": "8997.029",
+            "ol_type": "<-- Equivalent distance in previous inspection",
+            "ol_comment": "",
+            "ol_wl": "",
+            "ol_orient": "",
+            "ol_len": "",
+            "ol_wid": "",
+            "ol_inter": "",
+            "wt": "0.406",
+            "cg_int": "5.619178082",
+            "CGR (Matched)": "",
+            "CGR (UnMatched)": "13.00546075",
+            "CGR_Combined": "13.00546075",
+            "Notes": ""
+          }
+        }
+      ]
+    },
+    {
+      "row": 78,
+      "item": 9787,
+      "current_tally_rows": [
+        1686
+      ],
+      "main_old_key_AC": "-",
+      "QA_old_key_AQ": 5041.0,
+      "QA_historical_tally_rows": [
+        6137
+      ],
+      "MOCOM": [
+        {
+          "csv_record_with_header": 8948,
+          "data": {
+            "ID": "9787",
+            "distance": "8887.122",
+            "rel dist": "-0.431",
+            "type": "Metal Loss-Manufacturing Anomaly",
+            "comment": "wall thinning at the bend",
+            "wl": "30",
+            "orient": "10:07",
+            "len": "16.64",
+            "wid": "14.887",
+            "internal": "Ext",
+            "ol_ID": "5041",
+            "ol_dist": "9000.834",
+            "ol_type": "MELO-ANOM",
+            "ol_comment": "wall thinning on bend",
+            "ol_wl": "29",
+            "ol_orient": "10:32",
+            "ol_len": "16.628",
+            "ol_wid": "11.486",
+            "ol_inter": "ext",
+            "wt": "0.475",
+            "cg_int": "5.619178082",
+            "CGR (Matched)": "0.845319356",
+            "CGR (UnMatched)": "",
+            "CGR_Combined": "0.845319356",
+            "Notes": ""
+          }
+        }
+      ]
+    }
+  ],
+  "2026_source_validation": {
+    "mapped_fields": {
+      "B": "F",
+      "C": "AQ",
+      "D": "AR",
+      "E": "AS",
+      "F": "G",
+      "G": "B",
+      "H": "BD",
+      "I": "Q",
+      "J": "U",
+      "K": "S",
+      "L": "T",
+      "M": "P",
+      "V": "BF"
+    },
+    "uniquely_matched_records": 61,
+    "differences": [],
+    "normalizations": [
+      "Event hyphen spacing",
+      "Numeric clock to12hour hh:mm",
+      "Missing comment to dash"
+    ]
+  },
+  "2020_QA_validation": [
+    {
+      "row": 19,
+      "item": 40,
+      "QA_old_ID": 57.0,
+      "source_row": 105,
+      "unique_exact_distance": true,
+      "checks": {
+        "N": true,
+        "O": true,
+        "P": true,
+        "Q": true,
+        "R": true,
+        "S": true,
+        "T": true,
+        "U": true
+      }
+    },
+    {
+      "row": 22,
+      "item": 167,
+      "QA_old_ID": 121.0,
+      "source_row": 224,
+      "unique_exact_distance": true,
+      "checks": {
+        "N": true,
+        "O": true,
+        "P": true,
+        "Q": true,
+        "R": true,
+        "S": true,
+        "T": true,
+        "U": true
+      }
+    },
+    {
+      "row": 23,
+      "item": 168,
+      "QA_old_ID": 122.0,
+      "source_row": 225,
+      "unique_exact_distance": true,
+      "checks": {
+        "N": true,
+        "O": true,
+        "P": true,
+        "Q": true,
+        "R": true,
+        "S": true,
+        "T": true,
+        "U": true
+      }
+    },
+    {
+      "row": 24,
+      "item": 176,
+      "QA_old_ID": 127.0,
+      "source_row": 231,
+      "unique_exact_distance": true,
+      "checks": {
+        "N": true,
+        "O": true,
+        "P": true,
+        "Q": true,
+        "R": true,
+        "S": true,
+        "T": true,
+        "U": true
+      }
+    },
+    {
+      "row": 25,
+      "item": 190,
+      "QA_old_ID": 136.0,
+      "source_row": 242,
+      "unique_exact_distance": true,
+      "checks": {
+        "N": true,
+        "O": true,
+        "P": true,
+        "Q": true,
+        "R": true,
+        "S": true,
+        "T": true,
+        "U": true
+      }
+    },
+    {
+      "row": 26,
+      "item": 228,
+      "QA_old_ID": 150.0,
+      "source_row": 273,
+      "unique_exact_distance": true,
+      "checks": {
+        "N": true,
+        "O": true,
+        "P": true,
+        "Q": true,
+        "R": true,
+        "S": true,
+        "T": true,
+        "U": true
+      }
+    },
+    {
+      "row": 27,
+      "item": 235,
+      "QA_old_ID": 153.0,
+      "source_row": 278,
+      "unique_exact_distance": true,
+      "checks": {
+        "N": true,
+        "O": true,
+        "P": true,
+        "Q": true,
+        "R": true,
+        "S": true,
+        "T": true,
+        "U": true
+      }
+    },
+    {
+      "row": 32,
+      "item": 427,
+      "QA_old_ID": 517.0,
+      "source_row": 793,
+      "unique_exact_distance": true,
+      "checks": {
+        "N": true,
+        "O": true,
+        "P": true,
+        "Q": true,
+        "R": true,
+        "S": true,
+        "T": true,
+        "U": true
+      }
+    },
+    {
+      "row": 34,
+      "item": 452,
+      "QA_old_ID": 526.0,
+      "source_row": 820,
+      "unique_exact_distance": true,
+      "checks": {
+        "N": true,
+        "O": true,
+        "P": true,
+        "Q": true,
+        "R": true,
+        "S": true,
+        "T": true,
+        "U": true
+      }
+    },
+    {
+      "row": 35,
+      "item": 460,
+      "QA_old_ID": 528.0,
+      "source_row": 827,
+      "unique_exact_distance": true,
+      "checks": {
+        "N": true,
+        "O": true,
+        "P": true,
+        "Q": true,
+        "R": true,
+        "S": true,
+        "T": true,
+        "U": true
+      }
+    },
+    {
+      "row": 37,
+      "item": 968,
+      "QA_old_ID": 697.0,
+      "source_row": 1103,
+      "unique_exact_distance": true,
+      "checks": {
+        "N": true,
+        "O": true,
+        "P": true,
+        "Q": true,
+        "R": true,
+        "S": true,
+        "T": true,
+        "U": true
+      }
+    },
+    {
+      "row": 42,
+      "item": 5099,
+      "QA_old_ID": 2736.0,
+      "source_row": 3320,
+      "unique_exact_distance": true,
+      "checks": {
+        "N": true,
+        "O": true,
+        "P": true,
+        "Q": true,
+        "R": true,
+        "S": true,
+        "T": true,
+        "U": true
+      }
+    },
+    {
+      "row": 45,
+      "item": 6468,
+      "QA_old_ID": 3420.0,
+      "source_row": 4098,
+      "unique_exact_distance": true,
+      "checks": {
+        "N": true,
+        "O": true,
+        "P": true,
+        "Q": true,
+        "R": true,
+        "S": true,
+        "T": true,
+        "U": true
+      }
+    },
+    {
+      "row": 46,
+      "item": 6470,
+      "QA_old_ID": 3421.0,
+      "source_row": 4099,
+      "unique_exact_distance": true,
+      "checks": {
+        "N": true,
+        "O": true,
+        "P": true,
+        "Q": true,
+        "R": true,
+        "S": true,
+        "T": true,
+        "U": true
+      }
+    },
+    {
+      "row": 47,
+      "item": 6471,
+      "QA_old_ID": 3422.0,
+      "source_row": 4100,
+      "unique_exact_distance": true,
+      "checks": {
+        "N": true,
+        "O": true,
+        "P": true,
+        "Q": true,
+        "R": true,
+        "S": true,
+        "T": true,
+        "U": true
+      }
+    },
+    {
+      "row": 48,
+      "item": 6472,
+      "QA_old_ID": 3423.0,
+      "source_row": 4101,
+      "unique_exact_distance": true,
+      "checks": {
+        "N": true,
+        "O": true,
+        "P": true,
+        "Q": true,
+        "R": true,
+        "S": true,
+        "T": true,
+        "U": true
+      }
+    },
+    {
+      "row": 50,
+      "item": 6497,
+      "QA_old_ID": 3433.0,
+      "source_row": 4118,
+      "unique_exact_distance": true,
+      "checks": {
+        "N": true,
+        "O": true,
+        "P": true,
+        "Q": true,
+        "R": true,
+        "S": true,
+        "T": true,
+        "U": true
+      }
+    },
+    {
+      "row": 51,
+      "item": 6537,
+      "QA_old_ID": 3450.0,
+      "source_row": 4144,
+      "unique_exact_distance": true,
+      "checks": {
+        "N": true,
+        "O": true,
+        "P": true,
+        "Q": true,
+        "R": true,
+        "S": true,
+        "T": true,
+        "U": true
+      }
+    },
+    {
+      "row": 52,
+      "item": 6541,
+      "QA_old_ID": 3451.0,
+      "source_row": 4148,
+      "unique_exact_distance": true,
+      "checks": {
+        "N": true,
+        "O": true,
+        "P": true,
+        "Q": true,
+        "R": true,
+        "S": true,
+        "T": true,
+        "U": true
+      }
+    },
+    {
+      "row": 54,
+      "item": 6993,
+      "QA_old_ID": 3645.0,
+      "source_row": 4415,
+      "unique_exact_distance": true,
+      "checks": {
+        "N": true,
+        "O": true,
+        "P": true,
+        "Q": true,
+        "R": true,
+        "S": true,
+        "T": true,
+        "U": true
+      }
+    },
+    {
+      "row": 55,
+      "item": 6997,
+      "QA_old_ID": 3654.0,
+      "source_row": 4427,
+      "unique_exact_distance": true,
+      "checks": {
+        "N": true,
+        "O": true,
+        "P": true,
+        "Q": true,
+        "R": true,
+        "S": true,
+        "T": true,
+        "U": true
+      }
+    },
+    {
+      "row": 56,
+      "item": 7016,
+      "QA_old_ID": 3663.0,
+      "source_row": 4441,
+      "unique_exact_distance": true,
+      "checks": {
+        "N": true,
+        "O": true,
+        "P": true,
+        "Q": true,
+        "R": true,
+        "S": true,
+        "T": true,
+        "U": true
+      }
+    },
+    {
+      "row": 58,
+      "item": 7060,
+      "QA_old_ID": 3686.0,
+      "source_row": 4472,
+      "unique_exact_distance": true,
+      "checks": {
+        "N": true,
+        "O": true,
+        "P": true,
+        "Q": true,
+        "R": true,
+        "S": true,
+        "T": true,
+        "U": true
+      }
+    },
+    {
+      "row": 61,
+      "item": 7076,
+      "QA_old_ID": 3698.0,
+      "source_row": 4487,
+      "unique_exact_distance": true,
+      "checks": {
+        "N": true,
+        "O": true,
+        "P": true,
+        "Q": true,
+        "R": true,
+        "S": true,
+        "T": true,
+        "U": true
+      }
+    },
+    {
+      "row": 62,
+      "item": 7693,
+      "QA_old_ID": 4085.0,
+      "source_row": 4955,
+      "unique_exact_distance": true,
+      "checks": {
+        "N": true,
+        "O": true,
+        "P": true,
+        "Q": true,
+        "R": true,
+        "S": true,
+        "T": true,
+        "U": true
+      }
+    },
+    {
+      "row": 63,
+      "item": 7694,
+      "QA_old_ID": 4086.0,
+      "source_row": 4957,
+      "unique_exact_distance": true,
+      "checks": {
+        "N": true,
+        "O": true,
+        "P": true,
+        "Q": true,
+        "R": true,
+        "S": true,
+        "T": true,
+        "U": true
+      }
+    },
+    {
+      "row": 64,
+      "item": 7711,
+      "QA_old_ID": 4097.0,
+      "source_row": 4972,
+      "unique_exact_distance": true,
+      "checks": {
+        "N": true,
+        "O": true,
+        "P": true,
+        "Q": true,
+        "R": true,
+        "S": true,
+        "T": true,
+        "U": true
+      }
+    },
+    {
+      "row": 65,
+      "item": 7716,
+      "QA_old_ID": 4098.0,
+      "source_row": 4976,
+      "unique_exact_distance": true,
+      "checks": {
+        "N": true,
+        "O": true,
+        "P": true,
+        "Q": true,
+        "R": true,
+        "S": true,
+        "T": true,
+        "U": true
+      }
+    },
+    {
+      "row": 66,
+      "item": 7718,
+      "QA_old_ID": 4099.0,
+      "source_row": 4978,
+      "unique_exact_distance": true,
+      "checks": {
+        "N": true,
+        "O": true,
+        "P": true,
+        "Q": true,
+        "R": true,
+        "S": true,
+        "T": true,
+        "U": true
+      }
+    },
+    {
+      "row": 67,
+      "item": 9055,
+      "QA_old_ID": 4720.0,
+      "source_row": 5705,
+      "unique_exact_distance": true,
+      "checks": {
+        "N": true,
+        "O": true,
+        "P": true,
+        "Q": true,
+        "R": true,
+        "S": true,
+        "T": true,
+        "U": true
+      }
+    },
+    {
+      "row": 68,
+      "item": 9063,
+      "QA_old_ID": 4724.0,
+      "source_row": 5710,
+      "unique_exact_distance": true,
+      "checks": {
+        "N": true,
+        "O": true,
+        "P": true,
+        "Q": true,
+        "R": true,
+        "S": true,
+        "T": true,
+        "U": true
+      }
+    },
+    {
+      "row": 69,
+      "item": 9085,
+      "QA_old_ID": 4736.0,
+      "source_row": 5723,
+      "unique_exact_distance": true,
+      "checks": {
+        "N": true,
+        "O": true,
+        "P": true,
+        "Q": true,
+        "R": true,
+        "S": true,
+        "T": true,
+        "U": true
+      }
+    },
+    {
+      "row": 72,
+      "item": 9535,
+      "QA_old_ID": 4959.0,
+      "source_row": 5997,
+      "unique_exact_distance": true,
+      "checks": {
+        "N": true,
+        "O": true,
+        "P": true,
+        "Q": true,
+        "R": true,
+        "S": true,
+        "T": true,
+        "U": true
+      }
+    },
+    {
+      "row": 73,
+      "item": 9638,
+      "QA_old_ID": 5004.0,
+      "source_row": 6060,
+      "unique_exact_distance": true,
+      "checks": {
+        "N": true,
+        "O": true,
+        "P": true,
+        "Q": true,
+        "R": true,
+        "S": true,
+        "T": true,
+        "U": true
+      }
+    },
+    {
+      "row": 74,
+      "item": 9657,
+      "QA_old_ID": 5009.0,
+      "source_row": 6078,
+      "unique_exact_distance": true,
+      "checks": {
+        "N": true,
+        "O": true,
+        "P": true,
+        "Q": true,
+        "R": true,
+        "S": true,
+        "T": true,
+        "U": true
+      }
+    },
+    {
+      "row": 75,
+      "item": 9669,
+      "QA_old_ID": 5016.0,
+      "source_row": 6088,
+      "unique_exact_distance": true,
+      "checks": {
+        "N": true,
+        "O": true,
+        "P": true,
+        "Q": true,
+        "R": true,
+        "S": true,
+        "T": true,
+        "U": true
+      }
+    },
+    {
+      "row": 76,
+      "item": 9672,
+      "QA_old_ID": 5017.0,
+      "source_row": 6090,
+      "unique_exact_distance": true,
+      "checks": {
+        "N": true,
+        "O": true,
+        "P": true,
+        "Q": true,
+        "R": true,
+        "S": true,
+        "T": true,
+        "U": true
+      }
+    },
+    {
+      "row": 78,
+      "item": 9787,
+      "QA_old_ID": 5041.0,
+      "source_row": 6137,
+      "unique_exact_distance": true,
+      "checks": {
+        "N": true,
+        "O": true,
+        "P": true,
+        "Q": true,
+        "R": true,
+        "S": true,
+        "T": true,
+        "U": true
+      }
+    }
+  ],
+  "original_threaded_comments": [
+    {
+      "cell": "N17",
+      "author": "Kristin Wong",
+      "text": "This should be updated based on the signal comparison",
+      "is_reply": false
+    },
+    {
+      "cell": "O17",
+      "author": "Kristin Wong",
+      "text": "Some are dashes which shouldn’t be, some aren’t corrosion anomalies",
+      "is_reply": false
+    },
+    {
+      "cell": "O17",
+      "author": "Kristin Wong",
+      "text": "Red, replacement section. Shouldn’t have a matched anomaly.",
+      "is_reply": true
+    },
+    {
+      "cell": "P17",
+      "author": "Kristin Wong",
+      "text": "This should be updated based on the signal comparison",
+      "is_reply": false
+    },
+    {
+      "cell": "Q17",
+      "author": "Kristin Wong",
+      "text": "This should be updated based on the signal comparison",
+      "is_reply": false
+    },
+    {
+      "cell": "Q17",
+      "author": "Kristin Wong",
+      "text": "Red, replacement section. Shouldn’t have a matched anomaly.",
+      "is_reply": true
+    },
+    {
+      "cell": "R17",
+      "author": "Kristin Wong",
+      "text": "This should be updated based on the signal comparison",
+      "is_reply": false
+    },
+    {
+      "cell": "R17",
+      "author": "Kristin Wong",
+      "text": "Red, replacement section. Shouldn’t have a matched anomaly.",
+      "is_reply": true
+    },
+    {
+      "cell": "U17",
+      "author": "Kristin Wong",
+      "text": "Red, replacement section. Shouldn’t have a matched anomaly.",
+      "is_reply": false
+    },
+    {
+      "cell": "W17",
+      "author": "Kristin Wong",
+      "text": "Unused recent match based on signal comparison, mismatch",
+      "is_reply": false
+    },
+    {
+      "cell": "X17",
+      "author": "Kristin Wong",
+      "text": "Red is not replacement. I updated the wording of the others",
+      "is_reply": false
+    },
+    {
+      "cell": "Y17",
+      "author": "Kristin Wong",
+      "text": "Mismatch based on signal comparison. The previous depth is different.",
+      "is_reply": false
+    },
+    {
+      "cell": "AA17",
+      "author": "Kristin Wong",
+      "text": "I think all 4 are no clear change, especially because it is a manufacturing anomaly. Update to “Signal comparison shows no clear change between inspections”",
+      "is_reply": false
+    },
+    {
+      "cell": "AB17",
+      "author": "Kristin Wong",
+      "text": "I think it’s no clear change, so 0. Especially because it is a manufacturing anomaly",
+      "is_reply": false
+    }
+  ],
+  "comment_preservation": {
+    "count": 14,
+    "exact_XML_equal_to_original_QA": true,
+    "current_sha256": "0d37dbe0d01d166f550395cd7ade5719c995e5663d94f77ea47f00d85197787a",
+    "original_sha256": "0d37dbe0d01d166f550395cd7ade5719c995e5663d94f77ea47f00d85197787a",
+    "instruction": "Preserve every original message and reply verbatim. Add conflict explanation only as a separate reply or cell comment without overwriting original text."
+  },
+  "dependencies": {
+    "main_data_A18_AB78_are_hardcoded": true,
+    "actual_formulas_outside_QA_checks": [
+      {
+        "cell": "C4",
+        "formula": "Contents!D6",
+        "attributes": {}
+      },
+      {
+        "cell": "C5",
+        "formula": "Contents!D7",
+        "attributes": {}
+      },
+      {
+        "cell": "C6",
+        "formula": "Contents!D8",
+        "attributes": {}
+      },
+      {
+        "cell": "C7",
+        "formula": "Contents!D9",
+        "attributes": {}
+      },
+      {
+        "cell": "C8",
+        "formula": "Contents!D10",
+        "attributes": {}
+      },
+      {
+        "cell": "C9",
+        "formula": "Contents!D11",
+        "attributes": {}
+      }
+    ],
+    "external_sheet_formula_references_to_NonCorrosion_found": 0,
+    "check_formulas": "BG:CH compare main to retained QA using equality. Row15 COUNTIF<>TRUE counts mismatches. Do not edit check formulas or QA values to force zeros.",
+    "expected_remaining_check_counts_after_safe_batch": {
+      "BT15": 1,
+      "BU15": 1,
+      "BV15": 1,
+      "BW15": 1,
+      "BX15": 1,
+      "CC15": 1,
+      "CD15": 1,
+      "CE15": 1
+    },
+    "all_other_check_counts_expected_zero": true
+  },
+  "material_conflicts": [
+    {
+      "id": "NC7060",
+      "cells": [
+        "N58",
+        "O58",
+        "P58",
+        "Q58",
+        "R58",
+        "S58",
+        "T58",
+        "W58",
+        "Y58",
+        "AC58",
+        "AQ58"
+      ],
+      "main_values": {
+        "N": 6091.353,
+        "O": "Metal loss - corrosion anomaly",
+        "P": "-",
+        "Q": 19.0,
+        "R": 0.18680555555555556,
+        "S": 45.25,
+        "T": 13.41,
+        "W": "-",
+        "Y": 5.0,
+        "AC": 3566.0
+      },
+      "QA_values": {
+        "AQ": 3686.0,
+        "AR": 6096.179,
+        "AS": "Metal loss - non-corrosion anomaly",
+        "AT": "wall thinning on bend",
+        "AU": 20.0,
+        "AV": 0.29097222222222224,
+        "AW": 45.25,
+        "AX": 13.41,
+        "BA": "This is an unused matched Recent record.",
+        "BC": 4.0
+      },
+      "MOCOM_current7060_old3682": "csv record6627; old6091.353ft,19%,corrosion,old rectangle dimensions41.746x23.621in;2020 tally4466 center04:29 and rounded41.75x23.62in",
+      "QA_old3686": "2020 tally4472;6096.179ft,20%,non-corrosion,center06:59,45.25x13.41in;MOCOM maps3686 to7063/7067/7072",
+      "suggested_resolution": "Keep current/QA observations and document both. Obtain explicit reviewer decision on which physical old feature and unused-match status applies before replacing the seven disputed main fields. Do not independently rematch based on nearest or matching dimensions. S/T already matchQA but conflict with current N/Q."
+    },
+    {
+      "id": "NC427",
+      "row": 32,
+      "item": 427,
+      "main_repair": "Pipeline is replaced",
+      "QA_repair": "-",
+      "main_depth_change": "-",
+      "QA_depth_change": "-",
+      "arithmetic_difference": -13,
+      "2026_surface": "Internal",
+      "2020_surface": "external",
+      "historical_source": "2020 tally793, MOCOM current427→517",
+      "suggested_resolution": "HoldX32; note QA removes replacement but leaves depth-change uncomputed. Ask whether QA nonreplacement plus missing depth change is intentional. Do not silently setY32=-13 or zero. Pure12hour normalization R32 can proceed without accepting physical mapping."
+    },
+    {
+      "id": "NC460",
+      "row": 35,
+      "item": 460,
+      "2026_surface": "Internal",
+      "2020_surface": "external",
+      "historical_source": "2020 tally827, MOCOM current460→528",
+      "suggested_resolution": "No main-vs-QA mismatch; preserve values and flag cross-surface association as source-supported but not independently physically verified."
+    }
+  ],
+  "signal_checkpoint": {
+    "AA44": "Signal comparison shows no clear change between inspections",
+    "AB44": 0.0,
+    "AA71": "Signal comparison shows no clear change between inspections",
+    "AB71": 0.0,
+    "all_four_signal_comments_agree_QA": true,
+    "basis": "Explicit user choice of QA and Kristin AA17/AB17 comments; raw signal-image validation not performed."
+  },
+  "preserve_nondata_notes": {
+    "12": {
+      "A": "This list includes unused matched recent features (where the same feature in the previous inspection has matched to multiple features in the recent inspection). The growth rate associated with the deepest recent feature is taken as the valid match. The rates associated with these unused matches have not been considered.",
+      "BF": "Rev0-3QA",
+      "BT": "Update the 1",
+      "BU": "Some are dashes which shouldn’t be, some aren’t corrosion anomalies",
+      "BV": "Double check",
+      "BW": "Replaced anomaly, shouldn't match",
+      "BX": "double check, Replaced anomaly, shouldn't match",
+      "BY": "ok",
+      "BZ": "ok",
+      "CA": "Replaced anomaly, shouldn't match",
+      "CC": "Signal comparison mismatch, update",
+      "CD": "Not replaced",
+      "CE": "Signal comparison mismatch, update",
+      "CF": "ok",
+      "CG": "Update",
+      "CH": "No clear change"
+    },
+    "13": {
+      "A": "Depth change due to metal loss of the replaced pipe line section is set to zero as the anomalies reported in 2020 ILI is not applicable.",
+      "BF": "Rev0-2QA",
+      "BM": "updated spaces",
+      "BN": "ok",
+      "BP": "ok",
+      "BT": "double check",
+      "BU": "double check",
+      "BV": "double check",
+      "BW": "double check",
+      "BX": "double check",
+      "BY": "different from PT?",
+      "BZ": "different from PT?",
+      "CA": "double check",
+      "CB": "ok",
+      "CC": "double check",
+      "CD": "double check",
+      "CE": "double check",
+      "CF": "double check",
+      "CG": "double check",
+      "CH": "double check"
+    },
+    "14": {
+      "BF": "Rev0-1QA Comments",
+      "BM": "I think this is because of spaces",
+      "BN": "Not updated?",
+      "BP": "Update to hh:mm (currently text)",
+      "BT": "Double check, imperial units?",
+      "BU": "Update to be consistent with pipe tally, dashes",
+      "BV": "Replacement section, remove the matched information",
+      "BW": "Replacement section, remove the matched information",
+      "BX": "Orientation in pipe tally is centre (not the top left orientation), update to be consistent. Also update to be hh:mm.",
+      "BY": "Double check, imperial units?",
+      "BZ": "Double check, imperial units?",
+      "CA": "Replacement section, remove the matched information",
+      "CB": "Let’s change this to Local WT (update header too) to use for our CGR calculations",
+      "CC": "Add unused recent matches",
+      "CD": "Add this column in",
+      "CE": "Dashed out depths are not calculating properly",
+      "CF": "Add this column in",
+      "CG": "To update",
+      "CH": "To update"
+    }
+  },
+  "limitations": [
+    "2020 tally lacks feature IDs; its row data were verified at exact persisted associated distance, not selected by nearest value. MOCOM identity corroborates37 of38 QA historical associations;7060 is held.",
+    "Replacement applicability is a reviewer decision, not established by raw tally values alone.",
+    "No raw paired signal images reviewed.",
+    "No workbook changes made by this audit worker."
+  ]
+}

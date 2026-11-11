@@ -1,0 +1,341 @@
+{
+  "backup": "24BUNKER_Rev0-4_before_3_rates_77_segments_20261111.xlsx",
+  "sheet": "Corrosion Anomalies",
+  "changes": [
+    {
+      "cell": "AD471",
+      "value": "EC1"
+    },
+    {
+      "cell": "AD474",
+      "value": "EC1"
+    },
+    {
+      "cell": "AD475",
+      "value": "EC1"
+    },
+    {
+      "cell": "AD476",
+      "value": "EC1"
+    },
+    {
+      "cell": "AD478",
+      "value": "EC1"
+    },
+    {
+      "cell": "AD487",
+      "value": "EC1"
+    },
+    {
+      "cell": "AD488",
+      "value": "EC1"
+    },
+    {
+      "cell": "AD489",
+      "value": "EC1"
+    },
+    {
+      "cell": "AD490",
+      "value": "EC1"
+    },
+    {
+      "cell": "AD491",
+      "value": "EC1"
+    },
+    {
+      "cell": "AD492",
+      "value": "EC1"
+    },
+    {
+      "cell": "AD493",
+      "value": "EC1"
+    },
+    {
+      "cell": "AD494",
+      "value": "EC1"
+    },
+    {
+      "cell": "AD495",
+      "value": "EC1"
+    },
+    {
+      "cell": "AD496",
+      "value": "EC1"
+    },
+    {
+      "cell": "AD497",
+      "value": "EC1"
+    },
+    {
+      "cell": "AD498",
+      "value": "EC1"
+    },
+    {
+      "cell": "AD499",
+      "value": "EC1"
+    },
+    {
+      "cell": "AD508",
+      "value": "EC1"
+    },
+    {
+      "cell": "AD511",
+      "value": "EC1"
+    },
+    {
+      "cell": "AD512",
+      "value": "EC1"
+    },
+    {
+      "cell": "AD513",
+      "value": "EC1"
+    },
+    {
+      "cell": "AD514",
+      "value": "EC1"
+    },
+    {
+      "cell": "AD515",
+      "value": "EC1"
+    },
+    {
+      "cell": "AD516",
+      "value": "EC1"
+    },
+    {
+      "cell": "AD517",
+      "value": "EC1"
+    },
+    {
+      "cell": "AD518",
+      "value": "EC1"
+    },
+    {
+      "cell": "AD519",
+      "value": "EC1"
+    },
+    {
+      "cell": "AD520",
+      "value": "EC1"
+    },
+    {
+      "cell": "AD521",
+      "value": "EC1"
+    },
+    {
+      "cell": "AD522",
+      "value": "EC1"
+    },
+    {
+      "cell": "AD523",
+      "value": "EC1"
+    },
+    {
+      "cell": "AD524",
+      "value": "EC1"
+    },
+    {
+      "cell": "AD525",
+      "value": "EC1"
+    },
+    {
+      "cell": "AD526",
+      "value": "EC1"
+    },
+    {
+      "cell": "AD527",
+      "value": "EC1"
+    },
+    {
+      "cell": "AD528",
+      "value": "EC1"
+    },
+    {
+      "cell": "AD529",
+      "value": "EC1"
+    },
+    {
+      "cell": "AD530",
+      "value": "EC1"
+    },
+    {
+      "cell": "AD531",
+      "value": "EC1"
+    },
+    {
+      "cell": "AD532",
+      "value": "EC1"
+    },
+    {
+      "cell": "AD533",
+      "value": "EC1"
+    },
+    {
+      "cell": "AD534",
+      "value": "EC1"
+    },
+    {
+      "cell": "AD535",
+      "value": "EC1"
+    },
+    {
+      "cell": "AD536",
+      "value": "EC1"
+    },
+    {
+      "cell": "AD537",
+      "value": "EC1"
+    },
+    {
+      "cell": "AD538",
+      "value": "EC1"
+    },
+    {
+      "cell": "AD539",
+      "value": "EC1"
+    },
+    {
+      "cell": "AD540",
+      "value": "EC1"
+    },
+    {
+      "cell": "AD541",
+      "value": "EC1"
+    },
+    {
+      "cell": "AD542",
+      "value": "EC1"
+    },
+    {
+      "cell": "AD543",
+      "value": "EC1"
+    },
+    {
+      "cell": "AD544",
+      "value": "EC1"
+    },
+    {
+      "cell": "AD545",
+      "value": "EC1"
+    },
+    {
+      "cell": "AD546",
+      "value": "EC1"
+    },
+    {
+      "cell": "AD547",
+      "value": "EC1"
+    },
+    {
+      "cell": "AD548",
+      "value": "EC1"
+    },
+    {
+      "cell": "AD549",
+      "value": "EC1"
+    },
+    {
+      "cell": "AD550",
+      "value": "EC1"
+    },
+    {
+      "cell": "AD551",
+      "value": "EC1"
+    },
+    {
+      "cell": "AD552",
+      "value": "EC1"
+    },
+    {
+      "cell": "AD553",
+      "value": "EC1"
+    },
+    {
+      "cell": "AD554",
+      "value": "EC1"
+    },
+    {
+      "cell": "AD555",
+      "value": "EC1"
+    },
+    {
+      "cell": "AD556",
+      "value": "EC1"
+    },
+    {
+      "cell": "AD557",
+      "value": "EC1"
+    },
+    {
+      "cell": "AD558",
+      "value": "EC1"
+    },
+    {
+      "cell": "AD559",
+      "value": "EC1"
+    },
+    {
+      "cell": "AD560",
+      "value": "EC1"
+    },
+    {
+      "cell": "AD561",
+      "value": "EC1"
+    },
+    {
+      "cell": "AD562",
+      "value": "EC1"
+    },
+    {
+      "cell": "AD563",
+      "value": "EC1"
+    },
+    {
+      "cell": "AD564",
+      "value": "EC1"
+    },
+    {
+      "cell": "AD565",
+      "value": "EC1"
+    },
+    {
+      "cell": "AD566",
+      "value": "EC1"
+    },
+    {
+      "cell": "AD567",
+      "value": "EC1"
+    },
+    {
+      "cell": "AD568",
+      "value": "EC1"
+    },
+    {
+      "cell": "Z823",
+      "formula": "=ROUND(Y823*V823*10/((DATE(2026,5,21)-DATE(2020,10,7))/365),1)"
+    },
+    {
+      "cell": "Z4026",
+      "formula": "=ROUND(Y4026*V4026*10/((DATE(2026,5,21)-DATE(2020,10,7))/365),1)"
+    },
+    {
+      "cell": "Z6449",
+      "formula": "=ROUND(Y6449*V6449*10/((DATE(2026,5,21)-DATE(2020,10,7))/365),1)"
+    }
+  ],
+  "issue_log_changes": [
+    {
+      "cell": "C14",
+      "value": "352 additional Z corrections were stable under both candidate intervals. Three further rates (rows 823,4026,6449) now use formulas with verified UTWM dates: 7 October 2020 to 21 May 2026, 2,052 days."
+    },
+    {
+      "cell": "D14",
+      "value": "2,903 Z/BH flags remain, including 751 user-directed unmatched dashes and five local-vs-joint WT effects. The 2,147 other arithmetic corrections (1,804 unused and 343 repaired records) await the treatment decision; no broad rate change made."
+    },
+    {
+      "cell": "C25",
+      "value": "77 orange Outlier-to-EC1 classifications now follow explicit QA review. Remaining section flags: 1,142 EC1/dash and 20 Outlier/dash. Applied-rate flags remain: 7,165 at 15 versus 14.9; 1,162 at 15 versus dash. The current and QA Contents summaries both retain 15."
+    }
+  ],
+  "basis": "Three used/unrepaired rates use verified UTWM dates (7 October 2020 to 21 May 2026; 2052 days). All 77 orange Outlier-to-EC1 changes follow explicit QA review in AD16. Recommended rates, other CGRs, exclusions and original comments unchanged."
+}
