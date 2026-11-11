@@ -1,0 +1,35 @@
+{
+  "backup": "C:\\Users\\razza\\house_inspection_record\\24BUNKER\\backups\\24BUNKER_Rev0-4_before_NC_signal_QA_20261111.xlsx",
+  "backup_sha256": "6ef9fb8253d9092c261d06b3faa34bed57da58129b51cf439fc806b1706bf805",
+  "sheet": "Non-Corrosion Metal Loss",
+  "status": "SAVED and live readback matched QA; independent audit pending",
+  "basis": "User explicitly chose QA signal descriptions and their associated post-comparison depth change. QA values independently match retained original Rev0-3QA source. Physical signal images were not independently interpreted.",
+  "writes": [
+    {
+      "cell": "AA44",
+      "old": "Possible Growth",
+      "value": "Signal comparison shows no clear change between inspections",
+      "qa": "BE44",
+      "item": 6466,
+      "signal": 20
+    },
+    {
+      "cell": "AB44",
+      "old": 21,
+      "value": 0,
+      "qa": "BF44",
+      "item": 6466,
+      "signal": 20
+    },
+    {
+      "cell": "AA71",
+      "old": "Inconclusive",
+      "value": "Signal comparison shows no clear change between inspections",
+      "qa": "BE71",
+      "item": 9532,
+      "signal": 29
+    }
+  ],
+  "preserve": "AB71 is already0. Do not change sources, raw QA, original comments, other NC fields, or any other worksheet.",
+  "saved_sha256": "3d320ad5fd1fb8187acdda594c0d40673771274efacfda0259a23888fc242321"
+}

@@ -1,0 +1,18 @@
+{
+  "sheet": "Unresolved Issues",
+  "changes": [
+    {
+      "cell": "B8",
+      "value": "RESOLVED: Metal-loss CGR uses the UTWM run dates and a 2,052-day interval."
+    },
+    {
+      "cell": "C8",
+      "value": "Original 2020 final report, section 3.2, printed p15 / PDF p25: UTWM run 7 October 2020. Original 2026 final report, section 3.2, printed p13 / PDF p21: UTWM run 21 May 2026."
+    },
+    {
+      "cell": "D8",
+      "value": "Elapsed time is 2,052 days / 365 = 5.62191780821918 years. The 2020 tally's 8 October header is the aggregate survey date. Use actual local WT: ROUND(depth change * local WT in inches * 10 / years,1). Unused/repair treatment remains under review."
+    }
+  ],
+  "basis": "Original UTWM inspection conditions in the 2020 and 2026 final reports."
+}
