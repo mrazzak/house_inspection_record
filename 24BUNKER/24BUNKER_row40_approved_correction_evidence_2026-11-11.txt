@@ -1,0 +1,26 @@
+24BUNKER ROW 40: HIGHLIGHTED USER-APPROVED CORRECTION
+Prepared 2026-11-11. This note does not mean the workbook edit has been applied.
+
+HIGHLIGHT FOR THE FUTURE EVIDENCE SHEET
+Replace the F40 QA location 7307.854 ft with 6020.088 ft in D40, as explicitly approved by Razzak. Preserve the original QA comment F40.
+
+Original QA location: 7307.854 ft, feature ID 7838.
+Pipe tally working workbook, Sheet, row 9446: feature Girth Weld Deformation Anomaly-Dent; AO=Y (girth interaction), AP=N (seam interaction), O=Body (seam-weld proximity), J=Seamless. CGApro BM Listing Rev0-3QA, Deformations row 181 also identifies this as a girth-weld dent.
+
+Approved replacement: 6020.088 ft, feature ID 7126.
+Pipe tally working workbook, Sheet: seam-weld interaction AP=Y; included in the seam-weld population. Compliance Summary F38 explicitly states unacceptable weld strain >4% at 6020.088 ft. The numerical strain calculation has not been independently located or reproduced; the strain conclusion is from QA.
+
+User authorization:
+Assistant: The dent at six thousand twenty point zero eight eight feet is marked as seam-weld interacting and appears in the strain comment. That's an inference, though, so I won't substitute that for seven thousand three hundred and seven point eight five four without your green light.
+Razzak: I'm giving you the green light, but in the evidence sheet, please highlight it.
+
+Population reconciliation:
+Pipe tally Sheet has 196 dents. Column O (seam-weld proximity) = At yields 34 dents. Column AP = Y yields 33. The additional O=At/AP=N record is ID 1225 at 3201.438 ft, row 7738, a girth-weld feature with J=Longseam and AO=Y. Therefore the QA count of 34 is reproducible using O=At; it is not the same as the AP flag count. No At/Near definition has been found.
+
+Proposed D40, not yet entered:
+34 unrepaired dents were reported to be interacting with the seam weld. Three of these dents, at log distances 4741.287 ft, 6020.088 ft and 8773.554 ft, have unacceptable local weld strain >4%. Given the pipeline vintage (1979), the seam welds may be brittle because they may have been manufactured using low-frequency electric-resistance welding (LF-ERW).
+
+E40 requested count correction: 16 to 34, preserving the conditional statement about LF-ERW or inability to confirm high-frequency ERW.
+C40 currently 16; proposed scope must remain consistent with the conditional LF-ERW criterion. The 34 affected population is not independently confirmed as an unconditional noncompliance count.
+
+D39 was personally corrected by Razzak and verified saved with 2026 ILI. Do not overwrite it.
