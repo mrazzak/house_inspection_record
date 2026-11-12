@@ -1,0 +1,36 @@
+{
+  "scope": "Report Table 12 and footnote 5 only",
+  "time": "2026-11-11T22:56:36.3389708-06:00",
+  "report_file": "NPS 24 Refinery to Dock #1 Bunker Pipeline (24BUNKER)_CGApro_BM_with_FFP_Rev0-2_Draft.docx",
+  "report_sha256": "753A990A97DE251AB9419EB0AB7702A344B74188E5D13730474758EDDEBF570D",
+  "values": {
+    "start_log_distance_ft": -5.648,
+    "end_log_distance_ft": 8900.482,
+    "assessment_pressure_bar": 23.17,
+    "safety_factor": 1.28,
+    "method_label": "Modified ASME B31G"
+  },
+  "provenance": {
+    "bounds": "Current pipe tally, previously verified full-line boundaries",
+    "pressure": "Current corrosion FFP U2=23.16638351956604 bar, displayed to two decimal places",
+    "factor": "User explicitly directed a single 1.28 after stating that the non-corrosion workbook was updated; source re-verification pending",
+    "footnote5": "The Modified ASME B31G safe working pressure is calculated by dividing the predicted failure pressure by a safety factor of 1.28."
+  },
+  "preservation": {
+    "section4_2_table_text_and_field_codes": "Verified unchanged",
+    "footnote6": "Unchanged under latest narrow scope",
+    "comments": 47,
+    "footnotes": 13,
+    "original_ffp_sources": "Not changed by this report edit",
+    "prepared_ffp_copy": "Not adopted"
+  },
+  "visual_verification": {
+    "page": 20,
+    "page_count": 31,
+    "result": "Fresh render inspected: legible, no clipping or overlap"
+  },
+  "outstanding": [
+    "The user-reported non-corrosion source factor change is being verified read-only.",
+    "This report remains a draft with unresolved technical matters outside this narrow edit scope."
+  ]
+}

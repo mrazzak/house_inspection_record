@@ -1,0 +1,72 @@
+{
+  "updated": "2026-11-11T23:21:25.9485587-06:00",
+  "report_file": "NPS 24 Refinery to Dock #1 Bunker Pipeline (24BUNKER)_CGApro_BM_with_FFP_Rev0-2_Draft.docx",
+  "report_sha256": "01A2B2CB5325EE4267FA9A2EC6A64269B7F669A4430DE1E4979C7049458D9A8B",
+  "scope": "Sections 4, 5.1 and 6.1 current draft verification",
+  "section4": {
+    "start_ft": -5.648,
+    "end_ft": 8900.482,
+    "pressure_bar": 23.17,
+    "method": "Modified ASME B31G",
+    "factor_display": "1.28 / 1.39",
+    "factor_status": "Red-highlighted source discrepancy",
+    "source": "Current original corrosion FFP uses 1.28; last verified live non-corrosion BD/BN remain 1.39, while BX/CH use 1.28. Prepared 1.28 copy not adopted.",
+    "section4_2_references": "Unchanged",
+    "footnote6": "Unchanged"
+  },
+  "section5": {
+    "figure10": "Non-corrosion SWP, user-inserted image, native SEQ Figure field",
+    "figure11": "External-corrosion SWP, user-inserted image, native SEQ Figure field",
+    "table14": "No metal-loss anomalies fail immediate assessment",
+    "corrosion_count": 8331,
+    "corrosion_min_swp_bar": 38.0076009,
+    "noncorrosion_count": 61,
+    "noncorrosion_live_min_swp_bar": 87.2190552,
+    "source_pressure_bar": 23.16638351956604,
+    "source_notes": "Live non-corrosion chart values used; saved-file cache was stale. No source workbook changed by report edits."
+  },
+  "section6": {
+    "top_of_line": 9,
+    "sharp_total": 120,
+    "sharp_top_of_line": 3,
+    "body_complex": {
+      "count": 54,
+      "top_of_line": 0,
+      "sharp": 36,
+      "status": "Explicit tally flag basis, red-highlighted"
+    },
+    "weld_le2": {
+      "count": 36,
+      "top_of_line": 1,
+      "sharp": 22
+    },
+    "weld_gt2_or_complex": {
+      "count": 17,
+      "top_of_line": 2,
+      "sharp": 8,
+      "status": "Explicit tally flag basis, red-highlighted"
+    },
+    "weld_category_overlap": 12,
+    "reported_unacceptable_weld_strain": 4,
+    "other_reported_categories": 0,
+    "source": "Current tally B, AD, AI/AJ, AK/AL, AO/AP, U, BD; CSA Summary C29, D34/E34, C35:C37, C41, C45:C47, C50; Non Compliance Anomaly List rows18:21",
+    "unresolved": [
+      "Explicit complex flags identify69 versus CSA summary74.",
+      "Burial status not verified; table criterion changed to TOL.",
+      "CSA body-dent threshold >6% OD replaces template >7% OD, highlighted."
+    ],
+    "population_basis": "Counts include sleeved dents and overlap. They are criterion populations, not additive failure totals."
+  },
+  "preservation": {
+    "comments": 47,
+    "footnotes": 13,
+    "chart_images": 12,
+    "section4_2": "No edits",
+    "table14": "Unchanged after user approval"
+  },
+  "visual_checks": [
+    "Pages20–24 inspected; charts, captions and tables readable, no overlap or clipping."
+  ],
+  "transmittal_status": "manual_verification_required",
+  "notice": "Manual verification of the report is required prior to transmittal."
+}
