@@ -1,0 +1,7 @@
+Figure 1. River-Bottom Profile (RBP) extraction from UT wall-thickness data [21].
+
+Figure 2. General flowchart of the automated finite element modeling and simulation procedure [24].
+
+Figure 3. Dual-scale CNN algorithm for extracting defect depth using a neural network [5].
+
+Figure 4. Evolution of pipeline integrity assessment from traditional semi-empirical methods to real-time digital twin platforms. Each stage represents a distinct advance in fidelity, automation, and computational approach.
